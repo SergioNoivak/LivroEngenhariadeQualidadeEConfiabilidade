@@ -11,7 +11,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,calc,fit}
+\usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,calc,fit,shadows}
 \usetikzlibrary{shapes.gates.logic.US, positioning}
 
 \usepackage{hyperref}
@@ -117,7 +117,7 @@
       % Texto do Topo: Autores e Título
       \node[anchor=north, text width=\paperwidth, align=center]
         at ([yshift=-1.5cm]current page.north) {%
-          {\Large\sffamily\color{white} SERGIO SOUZA NOVAK,\ \ ADRIANO S. de O. BAILÃO}\\[0.8cm]
+          {\Large\sffamily\color{white} SERGIO S. NOVAK,\\ ADRIANO S. de O. BAILÃO, \\ LEANDRO M. P. SANCHES}\\[0.8cm]
           {\Huge\bfseries\sffamily\color{yellow} Tópicos em Confiabilidade e Qualidade de Software}\\[0.4cm]
           {\Large\sffamily\color{white} 1\textordfeminine{} EDI\c{C}\~{A}O}%
         };
@@ -199,7 +199,7 @@ aplicadas à agricultura digital.
 \begin{minipage}[t]{0.30\textwidth}
 \begin{authorcard}
 \centering
-{\small\bfseries\color{white} Ronaldo}
+{\small\bfseries\color{white} ADRIANO S. de O. BAILÃO}
 
 \vspace{0.6cm}
 
@@ -220,17 +220,16 @@ consectetur ante hendrerit.
 \begin{minipage}[t]{0.30\textwidth}
 \begin{authorcard}
 \centering
-{\small\bfseries\color{white} Leandro}
+{\small\bfseries Leandro Manuel Pereira Sanches}
 
 \vspace{0.6cm}
 
-\authorphoto{foto_sergio.jpeg}
+\authorphoto{foto-leandro.jpg}
 
 \vspace{0.7cm}
 
 \justifying\footnotesize\color{white}
-Leandro possui experiência em computação aplicada, análise de sistemas e
-desenvolvimento tecnológico, participando de projetos acadêmicos e educacionais.
+Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experiência em computação aplicada à educação, análise e desenvolvimento de software, banco de dados, processamento de linguagens naturais. Pariticipou de projetos de desenvolvimento de software comerciais e educacionais.
 \end{authorcard}
 \end{minipage}
 
@@ -258,90 +257,168 @@ desenvolvimento tecnológico, participando de projetos acadêmicos e educacionai
 
 \chapter{Introdução à Engenharia da Qualidade}
 
-A Engenharia da Qualidade é uma área da engenharia dedicada ao planejamento,
-ao controle, à garantia e à melhoria da qualidade de produtos, serviços e
-processos. Enquanto a qualidade era, historicamente, tratada de forma
-predominantemente \emph{inspetiva} --- isto é, por meio de inspeções ao final
-do processo produtivo --- a Engenharia da Qualidade traz uma abordagem
-proativa, baseada em métodos científicos, estatística e pensamento sistêmico.
-
-\begin{figure}[h]
-    \centering
-    \begin{tikzpicture}[node distance=2cm, auto]
-        \node[draw, rectangle, fill=red!10, text width=4cm, align=center] (insp) {Abordagem Inspetiva \\ (Histórica)};
-        \node[draw, rectangle, fill=green!10, text width=4cm, align=center, right=of insp] (eng) {Engenharia da Qualidade \\ (Proativa)};
-        
-        \node[below=0.5cm of insp, font=\small, text width=4cm, align=center] {Foco no final; \\ Corretiva; \\ Reativa a falhas.};
-        \node[below=0.5cm of eng, font=\small, text width=4cm, align=center] {Foco no projeto; \\ Preventiva; \\ Melhoria contínua.};
-        
-        \draw[->, ultra thick] (insp) -- (eng) node[midway, above] {Evolução};
-    \end{tikzpicture}
-    \caption{Evolução da gestão da qualidade: do modelo reativo ao proativo.}
-\end{figure}
-
-O ponto de partida é a compreensão de que \textbf{qualidade não é um acaso},
-mas sim o resultado de processos bem projetados e bem controlados. Um produto
-ou serviço de qualidade é aquele que atende aos requisitos explícitos
-especificados em normas, contratos e regulamentos; que satisfaz às expectativas
-implícitas dos clientes, muitas vezes não completamente formalizadas; que
-apresenta desempenho consistente ao longo do tempo, com baixa variabilidade e
-taxa reduzida de falhas; e que é produzido de forma eficiente, com mínimo
-despídio de recursos.
+Em sua concepção mais ampla e geral, a Engenharia da Qualidade é uma disciplina dedicada ao planejamento, ao controle, à garantia e à melhoria da qualidade de produtos, serviços e processos nos mais diversos setores. Conforme ilustrado na Figura \ref{fig:evolucao_qualidade}, enquanto a qualidade era, historicamente, tratada de forma predominantemente \emph{inspetiva} — isto é, com foco no final do processo produtivo e reativa a falhas —, a Engenharia da Qualidade moderna traz uma abordagem proativa e preventiva. Essa evolução direciona o foco para o projeto e para a melhoria contínua, baseando-se em métodos científicos, estatística e pensamento sistêmico.
 
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        every node/.style={draw, circle, fill=blue!5, align=center, font=\small, inner sep=5pt},
-        center node/.style={fill=blue!20, font=\bfseries, inner sep=10pt}
+        node distance=3.1cm, % Valor aumentado para dar mais espaço à seta
+        auto,
+        caixa/.style={
+            draw=gray!60, 
+            thick, 
+            rectangle,
+            rounded corners=4pt, 
+            text width=4.5cm, 
+            minimum height=2.2cm, 
+            align=center, 
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            inner sep=8pt
+        },
+        texto_desc/.style={
+            font=\small\color{darkgray}, 
+            text width=4.5cm, 
+            align=center
+        }
     ]
-        \node[center node] (c) {Qualidade do\\Produto};
-        \node[above=of c] (r) {Requisitos\\Explicitos};
-        \node[below=of c] (e) {Eficiência de\\Produção};
-        \node[left=of c] (x) {Expectativas\\do Cliente};
-        \node[right=of c] (v) {Baixa\\Variabilidade};
         
-        \draw[thick] (c) -- (r);
-        \draw[thick] (c) -- (e);
-        \draw[thick] (c) -- (x);
-        \draw[thick] (c) -- (v);
+        % Caixas Principais
+        \node[caixa, top color=red!2, bottom color=red!15] (insp) 
+            {\textbf{Abordagem Inspetiva} \\[0.5ex] \textit{(Histórica)}};
+            
+        \node[caixa, top color=green!2, bottom color=green!15, right=of insp] (eng) 
+            {\textbf{Engenharia da Qualidade} \\[0.5ex] \textit{(Proativa)}};
+        
+        % Textos Descritivos Inferiores
+        \node[texto_desc, below=0.4cm of insp] 
+            {Foco no final; \\ Corretiva; \\ Reativa a falhas.};
+            
+        \node[texto_desc, below=0.4cm of eng] 
+            {Foco no projeto; \\ Preventiva; \\ Melhoria contínua.};
+        
+        % Seta de Evolução
+        \draw[-{Stealth[length=3mm]}, line width=1.5pt, color=gray!80] 
+            (insp) -- (eng) node[midway, above, font=\bfseries, color=black!80] {Evolução};
+            
     \end{tikzpicture}
-    \caption{Os quatro pilares de um produto ou serviço de qualidade.}
+    \caption{Evolução da gestão da qualidade: do modelo reativo ao proativo.}
+    \label{fig:evolucao_qualidade}
 \end{figure}
 
-Do ponto de vista da organização, a Engenharia da Qualidade também está
-fortemente ligada à competitividade. Empresas que dominam as ferramentas e
-conceitos de qualidade tendem a lançar produtos mais confiáveis e atraentes,
-reduzindo custos de retrabalho, garantia e suporte. Com isso, ganham reputação
-positiva junto aos clientes e se diferenciam em mercados cada vez mais
-exigentes.
+O ponto de partida é a compreensão de que \textbf{qualidade não é um acaso}, mas sim o resultado de processos bem projetados e bem controlados. Como ilustra a \textbf{Figura \ref{fig:pilares_qualidade}}, a qualidade de um produto ou serviço sustenta-se em quatro pilares fundamentais. É aquele que atende aos requisitos explícitos especificados em normas, contratos e regulamentos; que satisfaz às expectativas implícitas dos clientes, muitas vezes não completamente formalizadas; que apresenta desempenho consistente ao longo do tempo, com baixa variabilidade e taxa reduzida de falhas; e que é produzido de forma eficiente, com mínimo desperdício de recursos.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1.7cm, 
+        every node/.style={
+            draw=gray!60, 
+            thick, 
+            circle, % Volta a ser círculo
+            align=center, 
+            font=\small, 
+            inner sep=8pt, % Maior preenchimento interno
+            minimum size=2.8cm, % Define um tamanho mínimo maior para os círculos externos
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex} % Sombra aplicada
+        },
+        center node/.style={
+            draw=blue!50,
+            fill=blue!5, 
+            font=\bfseries, 
+            inner sep=12pt, % Maior preenchimento para o centro
+            minimum size=2.8cm, % Define um tamanho mínimo maior para o círculo central
+            top color=blue!2, % Gradiente suave
+            bottom color=blue!15
+        },
+        outer node/.style={
+            fill=gray!2,
+            top color=gray!1, % Gradiente suave
+            bottom color=gray!10
+        },
+        linha/.style={
+            line width=1.5pt, 
+            color=gray!70
+        }
+    ]
+        
+        % Nós
+        \node[center node] (c) {Qualidade do\\Produto};
+        \node[outer node, above=of c] (r) {Requisitos\\Explícitos};
+        \node[outer node, below=of c] (e) {Eficiência de\\Produção};
+        \node[outer node, left=of c] (x) {Expectativas\\do Cliente};
+        \node[outer node, right=of c] (v) {Baixa\\Variabilidade};
+        
+        % Linhas de Conexão
+        \draw[linha] (c) -- (r);
+        \draw[linha] (c) -- (e);
+        \draw[linha] (c) -- (x);
+        \draw[linha] (c) -- (v);
+        
+    \end{tikzpicture}
+    \caption{Os quatro pilares de um produto ou serviço de qualidade.}
+    \label{fig:pilares_qualidade}
+\end{figure}
+
+Para as organizações, a Engenharia da Qualidade atua como um fator determinante de competitividade. Empresas que dominam suas ferramentas e conceitos tendem a lançar produtos mais confiáveis e atraentes, o que reduz custos com retrabalho, garantias e suporte. Consequentemente, essas organizações constroem uma reputação sólida junto aos clientes e destacam-se em mercados cada vez mais rigorosos.
 
 \section{Qualidade e Confiabilidade}
-
-\subsection{Definições Básicas}
 
 Embora intimamente relacionadas, qualidade e confiabilidade não são sinônimos.
 De forma simplificada, podemos dizer que \textbf{qualidade} está associada ao
 grau em que um produto ou serviço atende às especificações e às expectativas
-do cliente \emph{no momento em que é entregue}. Já a \textbf{confiabilidade}
+do cliente \emph{no momento em que é entregue}. 
+
+Já a \textbf{confiabilidade}
 diz respeito à capacidade desse produto ou serviço de manter seu desempenho
-adequado \emph{ao longo do tempo}, sob condições de uso específicas. Enquanto
-a qualidade pode ser observada num instante, a confiabilidade é necessariamente
-uma propriedade temporal.
+adequado \emph{ao longo do tempo}, sob condições de uso específicas. 
+
+Como ilustra a \textbf{Figura \ref{fig:qualidade_vs_confiabilidade}}, enquanto a qualidade pode ser observada em um único instante (a entrega), a confiabilidade é necessariamente uma propriedade temporal que se estende durante o uso contínuo.
 
 \begin{figure}[h]
     \centering
-    \begin{tikzpicture}[thick]
-        \draw[->] (0,0) -- (8,0) node[right] {Tempo};
-        \draw[fill=blue!20] (0,0.5) rectangle (1,2) node[midway] {Qualidade};
-        \draw[fill=green!20] (1,0.5) rectangle (7,2) node[midway] {Confiabilidade};
-        
-        \node[below] at (0.5, 0.5) {Entrega};
-        \node[below] at (4, 0.5) {Uso contínuo em produção};
-        
-        \node[align=center, font=\small] at (0.5, 2.5) {Atendimento a\\especificações};
-        \node[align=center, font=\small] at (4, 2.5) {Manutenção do desempenho sob condições normais};
+    \begin{tikzpicture}[
+        caixa_qual/.style={
+            draw=gray!60, thick, rectangle, rounded corners=4pt,
+            minimum width=3cm, minimum height=1.6cm, align=center,
+            top color=blue!2, bottom color=blue!15,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        caixa_conf/.style={
+            draw=gray!60, thick, rectangle, rounded corners=4pt,
+            minimum width=7.5cm, minimum height=1.6cm, align=center,
+            top color=green!2, bottom color=green!15,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        texto_sup/.style={
+            font=\small\color{darkgray}, align=center
+        },
+        texto_inf/.style={
+            font=\small\color{black}, align=center
+        }
+    ]
+
+        % Caixas Principais
+        \node[caixa_qual] (qual) at (0,0) {\textbf{Qualidade}};
+        \node[caixa_conf] (conf) at (5.5,0) {\textbf{Confiabilidade}};
+
+        % Textos Superiores
+        \node[texto_sup] at (0, 1.4) {Atendimento a\\[0.5ex]especificações};
+        \node[texto_sup] at (5.5, 1.4) {Manutenção do desempenho\\[0.5ex]sob condições normais};
+
+        % Eixo do Tempo
+        \draw[-{Stealth[length=3mm]}, line width=1.5pt, color=gray!80] 
+            (-1.8, -1.6) -- (10, -1.6) node[right, font=\bfseries, color=black!80] {Tempo};
+            
+        % Marcador de 'Entrega' no eixo
+        \draw[thick, color=gray!80] (0, -1.5) -- (0, -1.7);
+
+        % Textos Inferiores
+        \node[texto_inf, anchor=south] at (0, -1.5) {\textbf{Entrega}};
+        \node[texto_inf, anchor=south] at (5.5, -1.5) {Uso contínuo em produção};
+
     \end{tikzpicture}
     \caption{Qualidade (foco no momento da entrega) versus Confiabilidade (foco na duração).}
+    \label{fig:qualidade_vs_confiabilidade}
 \end{figure}
 
 Por exemplo, um sistema de software pode ser entregue com todas as
@@ -350,17 +427,16 @@ falhas frequentes em produção, terá baixa confiabilidade. Em contrapartida,
 um sistema levemente limitado em funcionalidades mas extremamente estável
 pode ser percebido como mais confiável e, em muitos contextos, mais valioso.
 
-Ao longo desta disciplina, exploraremos justamente essa interseção entre
+Ao longo deste livro, exploraremos justamente essa interseção entre
 qualidade de software, confiabilidade operacional e práticas modernas de
 engenharia, como o \emph{Site Reliability Engineering} (SRE) adotado pelo
 Google \cite{beyer2016sre, googlesre2024}.
 
-\subsection{Qualidade ao Longo do Tempo}
+%\subsection{Qualidade ao Longo do Tempo}
 
 \section{Áreas de Atuação da Engenharia da Qualidade}
 
-\subsection{Setores em que a Qualidade é Crítica}
-
+%\subsection{Setores em que a Qualidade é Crítica}
 A Engenharia da Qualidade está presente em uma ampla variedade de setores
 econômicos. Tradicionalmente, associamos qualidade à indústria de
 manufatura, mas hoje ela é igualmente crítica nos \textbf{serviços} (bancos,
@@ -376,15 +452,93 @@ mapear processos e identificar pontos críticos, medir desempenho por meio de
 indicadores, reduzir variabilidade e desperdícios, promover a melhoria contínua
 (\emph{kaizen}) e apoiar a tomada de decisão baseada em dados.
 
-No contexto específico da Engenharia de Software, a qualidade se manifesta,
-por exemplo, na definição de requisitos claros, na aplicação de boas práticas
-de desenvolvimento, na realização de testes sistemáticos e na operação
-confiável em produção.
+\subsection{Qualidade de software}
+Em epecífico ao setor de tecnologia da informação, quando aplicamos esses conceitos gerais de Engenharia de Qualidade, entramos no domínio específico da Qualidade de Software. 
 
+Historicamente, os problemas nessa área foram inicialmente identificados na década de 1960, em um período que ficou conhecido como a Crise do Software. Com a construção dos primeiros grandes sistemas complexos e a ausência de métodos rigorosos de desenvolvimento, os projetos frequentemente extrapolavam orçamentos, atrasavam e entregavam produtos finais que se mostravam lentos, pouco confiáveis e extremamente difíceis de manter e reutilizar. 
+
+Foi em resposta a esse cenário crítico de insatisfação que se impulsionou o surgimento e a importância da qualidade de software. Assim, a indústria de software passou a adotar metodologias sistemáticas e técnicas formais de gerenciamento de qualidade baseadas na indústria manufatureira, buscando trazer previsibilidade, controle e excelência ao desenvolvimento de sistemas.
+
+No entanto, é crucial entender que a qualidade de software não é diretamente comparável à qualidade na manufatura. Na indústria tradicional, a qualidade costuma ser entendida de forma objetiva como a estrita conformidade com uma especificação física detalhada. No software, por outro lado, pode ser quase impossível concluir objetivamente se o sistema cumpre ou não todas as suas especificações. 
+
+Isso ocorre por três motivos principais: primeiro, é notoriamente difícil escrever especificações de software que sejam absolutamente completas e precisas; segundo, clientes e desenvolvedores frequentemente interpretam os requisitos de maneiras diferentes, dificultando um consenso; e terceiro, é impossível medir determinadas características de qualidade diretamente (como a manutenibilidade) no momento da entrega.
+
+Por conta dessas particularidades, a avaliação da qualidade de software é, em grande parte, um processo \emph{subjetivo}. A equipe de gerenciamento precisa usar seu julgamento analítico para decidir se foi alcançado um nível aceitável de qualidade, determinando se o sistema é adequado para sua finalidade e se atende às reais necessidades do cliente. Trata-se de responder a perguntas críticas sobre o sistema, tais como: 
+
+\begin{itemize}
+    \item Os padrões de programação foram seguidos?
+    \item O software foi devidamente testado?
+    \item O sistema é suficientemente confiável para ser colocado em uso?
+    \item O desempenho é aceitável para as condições normais de operação?
+    \item O código é útil, bem estruturado e compreensível?
+\end{itemize}
+
+Para garantir que a resposta a essas perguntas seja positiva, é necessário olhar além do código. Conforme ilustrado na \textbf{Figura \ref{fig:fatores_qualidade}}, a qualidade de um produto de software é o resultado de uma interação complexa entre quatro fatores fundamentais.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1.5cm and 2cm, 
+        caixa_central/.style={
+            draw=gray!60, 
+            thick, 
+            rectangle,
+            text width=3cm, 
+            minimum height=2cm, 
+            align=center, 
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            top color=gray!5, 
+            bottom color=gray!15,
+            font=\bfseries
+        },
+        caixa_externa/.style={
+            draw=gray!60, 
+            thick, 
+            rectangle,
+            rounded corners=15pt, % Cria o efeito de formato "pílula/elipse"
+            text width=3.8cm, 
+            minimum height=1.6cm, 
+            align=center, 
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            top color=gray!2, 
+            bottom color=gray!10,
+            font=\small\color{darkgray}
+        },
+        linha/.style={
+            line width=1.5pt, 
+            color=gray!70
+        }
+    ]
+        
+        % Nó Central
+        \node[caixa_central] (c) {Qualidade de\\produto de \\software};
+        
+        % Nós Externos
+        \node[caixa_externa, above=of c] (t) {\textbf{Tecnologia de}\\desenvolvimento};
+        \node[caixa_externa, below=of c] (ct) {\textbf{Custos, tempo}\\e cronograma};
+        \node[caixa_externa, left=of c] (qp) {\textbf{Qualidade}\\de processo};
+        \node[caixa_externa, right=of c] (qpe) {\textbf{Qualidade}\\de pessoas};
+        
+        % Linhas de Conexão
+        \draw[linha] (c) -- (t);
+        \draw[linha] (c) -- (ct);
+        \draw[linha] (c) -- (qp);
+        \draw[linha] (c) -- (qpe);
+        
+    \end{tikzpicture}
+    \caption{Fatores que afetam o produto de software. Adaptado de Sommerville\cite{sommerville2015software}.}
+    \label{fig:fatores_qualidade}
+\end{figure}
+
+Cada um desses fatores exerce uma influência direta e decisiva sobre o resultado final do projeto. A \textbf{qualidade de processo}, por exemplo, envolve as metodologias, normas e práticas adotadas ao longo de todo o ciclo de desenvolvimento. Quando esses processos são maduros e bem estruturados, eles trazem previsibilidade, padronizam entregas e ajudam a interceptar falhas muito antes que o produto alcance o usuário final.
+
+Atuando como suporte prático, a \textbf{tecnologia de desenvolvimento} abrange as linguagens de programação, os \emph{frameworks}, os ambientes de teste e a infraestrutura. O emprego de ferramentas modernas e adequadas ao cenário otimiza o trabalho da equipe, viabilizando a construção de sistemas que sejam, ao mesmo tempo, seguros, escaláveis e de fácil manutenção.
+
+Contudo, ferramentas e métodos dependem majoritariamente da \textbf{qualidade de pessoas}, fator habitualmente apontado como o pilar mais sensível e crítico da engenharia de software. Sua relevância transcende a mera capacitação técnica e experiência acumulada, refletindo essencialmente o grau de engajamento, o comprometimento e a eficácia na comunicação e na colaboração dentro do grupo.
+
+Por fim, todo esse ecossistema técnico e humano está sujeito a \textbf{custos, tempo e cronograma}, que impõem as inevitáveis restrições gerenciais inerentes a qualquer iniciativa. Quando o orçamento se mostra muito escasso ou os prazos tornam-se irreais, a urgência frequentemente se sobrepõe ao planejamento. Nessas situações, a equipe acaba sendo pressionada a recorrer a atalhos técnicos, o que invariavelmente penaliza a solidez estrutural do código e faz a dívida técnica disparar, prejudicando a sustentabilidade da solução a longo prazo.
 
 \section{O Programa Apollo e a Engenharia de Confiabilidade}
-
-\subsection{Contexto Histórico}
 
 Um dos exemplos históricos mais interessantes na área de confiabilidade é o
 trabalho de \textbf{Margaret Hamilton} no programa Apollo, da NASA \cite{hamilton1976apollo, fisher2019moon}. Ela foi
@@ -433,23 +587,50 @@ sistema deve ser projetado para lidar com isso.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        block/.style={draw, rounded corners, fill=blue!8, minimum width=3cm, minimum height=1cm, align=center, font=\small},
-        alert/.style={draw, rounded corners, fill=red!15, minimum width=3cm, minimum height=1cm, align=center, font=\small},
-        arrow/.style={->, thick, >=stealth}
+        node distance=1cm and 1.2cm, % Ajuste automático da distância vertical e horizontal
+        caixa/.style={
+            draw=gray!60, thick, rectangle, rounded corners=4pt,
+            minimum width=3.4cm, minimum height=1.8cm, align=center,
+            font=\small, inner sep=8pt,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        caixa_normal/.style={
+            caixa, top color=blue!2, bottom color=blue!15
+        },
+        caixa_alerta/.style={
+            caixa, top color=red!2, bottom color=red!15
+        },
+        caixa_sucesso/.style={
+            caixa, top color=green!2, bottom color=green!15
+        },
+        seta/.style={
+            -{Stealth[length=3mm]}, line width=1.5pt, color=gray!70
+        },
+        seta_retorno/.style={
+            -{Stealth[length=3mm]}, dashed, line width=1.5pt, color=green!60!black
+        }
     ]
-    % Nós
-    \node[block] (lauren) {Lauren pressiona\\teclas do DSKY};
-    \node[block, right=1.8cm of lauren] (p01) {Programa \textbf{P01}\\é ativado};
-    \node[alert, right=1.8cm of p01] (nav) {Dados de navegação\\são apagados};
-    \node[alert, below=1.2cm of nav] (falha) {Missão simulada\\\textbf{FALHA}};
-    \node[block, fill=green!12, below=1.2cm of lauren] (hamilton) {Hamilton:\\``O sistema é frágil,\\não o usuário.''};
-    % Setas
-    \draw[arrow] (lauren) -- (p01);
-    \draw[arrow] (p01) -- (nav);
-    \draw[arrow] (nav) -- (falha);
-    \draw[arrow, dashed, green!50!black] (falha) -| (hamilton);
+    
+    % Nós Principais (Linha de cima)
+    \node[caixa_normal] (lauren) {Lauren pressiona\\teclas do DSKY};
+    \node[caixa_normal, right=of lauren] (p01) {Programa \textbf{P01}\\é ativado};
+    \node[caixa_alerta, right=of p01] (nav) {Dados de navegação\\são apagados};
+    
+    % Nós Secundários (Linha de baixo)
+    \node[caixa_alerta, below=of nav] (falha) {Missão simulada\\\textbf{FALHA}};
+    \node[caixa_sucesso, below=of lauren] (hamilton) {Hamilton:\\``O sistema é frágil,\\não o usuário.''};
+    
+    % Setas de Conexão
+    \draw[seta] (lauren) -- (p01);
+    \draw[seta] (p01) -- (nav);
+    \draw[seta] (nav) -- (falha);
+    
+    % Seta tracejada de retorno
+    \draw[seta_retorno] (falha.west) -- (hamilton.east);
+    
     \end{tikzpicture}
     \caption{Fluxo do episódio no simulador: uma ação inocente desencadeou uma falha catastrófica, revelando fragilidades no design.}
+    \label{fig:fluxo_simulador}
 \end{figure}
 
 \subsection{O Problema Técnico Identificado}
@@ -467,24 +648,55 @@ of failure}) altamente sensível a erro humano.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        comp/.style={draw, rounded corners, fill=cyan!10, minimum width=1cm, minimum height=1cm, align=center, font=\small},
-        spof/.style={draw, very thick, rounded corners, fill=red!25, minimum width=3cm, minimum height=1.2cm, align=center, font=\small\bfseries},
-        arrow/.style={->, thick, >=stealth}
+        node distance=1.2cm and 1.8cm, 
+        auto,
+        caixa/.style={
+            thick, rectangle, rounded corners=4pt,
+            align=center, font=\small, inner sep=6pt,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            minimum width=3.6cm, minimum height=1.6cm
+        },
+        comp/.style={
+            caixa, draw=gray!60,
+            top color=cyan!2, bottom color=cyan!15
+        },
+        spof/.style={
+            caixa, draw=red!60!black,
+            top color=red!5, bottom color=red!20
+        },
+        seta/.style={
+            -{Stealth[length=3mm]}, line width=1.5pt, color=gray!70
+        },
+        seta_falha/.style={
+            -{Stealth[length=3mm]}, dashed, line width=1.5pt, color=red!80
+        }
     ]
+
+    % Linha 1: Entrada e Ponto Crítico
     \node[comp] (astro) {Astronauta};
-    \node[comp, right=0.5cm of astro] (dsky) {Painel DSKY};
-    \node[spof, right=0.5cm of dsky] (p01) {Programa P01\\(Limpa Navegação)};
-    \node[comp, right=0.5cm of p01] (agc) {Computador AGC};
-    \node[comp, right=0.5cm of agc] (nav) {Navegação\\e Retorno};
-    % Setas
-    \draw[arrow] (astro) -- (dsky);
-    \draw[arrow] (dsky) -- (p01);
-    \draw[arrow] (p01) -- node[above, font=\tiny, red] {sem dados!} (agc);
-    \draw[arrow, dashed, red] (agc) -- node[above, font=\tiny, red] {FALHA} (nav);
-    % Ícone SPOF
-    \node[below=0.3cm of p01, font=\footnotesize, red!70!black] {$\bigotimes$ Single Point of Failure};
+    \node[comp, right=of astro] (dsky) {Painel\\DSKY};
+    \node[spof, right=of dsky] (p01) {\textbf{Programa P01}\\[0.5ex]\textit{(Limpa Navegação)}};
+
+    % Linha 2: Consequências (Espaçamento vertical aumentado para 2.6cm)
+    \node[comp, below=2cm of p01] (agc) {Computador\\AGC}; 
+    \node[comp, left=of agc] (nav) {Navegação\\e Retorno}; 
+
+    % Conexões Superiores
+    \draw[seta] (astro) -- (dsky);
+    \draw[seta] (dsky) -- (p01);
+
+    % Conexão de Falha (Vertical) - Texto aumentado e com mais afastamento
+    \draw[seta] (p01.south) -- node[right=6pt, font=\small, color=red!80!black] {sem dados!} (agc.north);
+
+    % Conexão de Falha (Horizontal) - Texto aumentado
+    \draw[seta_falha] (agc) -- node[above=4pt, font=\small\bfseries, color=red!80!black] {FALHA} (nav);
+
+    % Identificação SPOF (Acima do Bloco P01)
+    \node[above=0.4cm of p01, font=\footnotesize\bfseries, color=red!70!black] {$\bigotimes$ Single Point of Failure};
+
     \end{tikzpicture}
-    \caption{Ponto Único de Falha: a execução acidental do P01 era o elo mais fraco de toda a cadeia de navegação do Apollo.}
+    \caption{Ponto Único de Falha: a execução acidental do P01 era o elo mais fraco de toda a cadeia de navegação da missão Apollo.}
+    \label{fig:spof_apollo_final}
 \end{figure}
 
 \subsection{A Proposta de Solução de Margaret Hamilton}
@@ -506,33 +718,67 @@ de engano. Essa confiança excessiva nos operadores contrasta com a visão
 contemporânea de SRE, que parte do princípio oposto: \textbf{erros humanos
 sempre acontecerão}.
 
-
 \begin{figure}[h]
-    \centering
-    \begin{tikzpicture}[
-        layer/.style={draw, rounded corners, minimum width=10cm, minimum height=1.1cm, align=center, font=\small},
-        arrow/.style={->, thick, >=Stealth}
-    ]
-    % Camadas de defesa
-    \node[layer, fill=green!15] (l1) at (0,0) {\textbf{Camada 1:} Verificação de Erro --- Detectar uso indevido do P01};
-    \node[layer, fill=yellow!15] (l2) at (0,-1.6) {\textbf{Camada 2:} Bloqueio --- Impedir P01 em fases críticas do voo};
-    \node[layer, fill=orange!15] (l3) at (0,-3.2) {\textbf{Camada 3:} Recuperação Automática --- Restaurar dados se P01 for acionado};
+\centering
+\begin{tikzpicture}[
+    % Estilos de nó aprimorados
+    layer/.style={
+        draw=gray!60, % Borda mais sutil
+        thick,
+        rounded corners=4pt,
+        minimum width=11cm, % Um pouco mais largo para o texto respirar
+        minimum height=1.4cm, % Um pouco mais alto para o texto
+        align=center,
+        font=\small,
+        drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex} % Sombra para profundidade
+    },
+    % Novo estilo de nó central (retângulo arredondado para harmonia)
+    start_node/.style={
+        draw=blue!50,
+        thick,
+        rounded corners=8pt,
+        fill=blue!5,
+        font=\bfseries\small, % Texto em negrito e menor
+        inner sep=8pt,
+        text width=3cm, % Largura fixa para equilíbrio
+        align=center,
+        drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+    },
+    % Estilos de seta aprimorados
+    arrow/.style={-{Stealth[length=3mm]}, line width=1.5pt, color=gray!70},
+    dashed_arrow/.style={-{Stealth[length=2.5mm]}, dashed, line width=1.5pt, color=gray!70},
+    % Estilos de etiqueta aprimorados (texto maior e cor mais escura para legibilidade)
+    pass_label/.style={font=\scriptsize\itshape, color=gray!90, fill=white, inner sep=2pt},
+    check_label/.style={font=\footnotesize\bfseries, inner sep=2pt}
+]
 
-    % Ação do astronauta
-    \node[draw, circle, fill=blue!10, font=\small] (astro) at (0,4) {Astronauta executa P01};
+% Ação do astronauta (coordenada Y aumentada para 4)
+\node[start_node] (astro) at (0,4) {Astronauta executa P01};
 
-    % Setas
-    \draw[arrow] (astro) -- (l1);
-    \draw[arrow, dashed] (l1) -- node[right, font=\tiny] {se passar} (l2);
-    \draw[arrow, dashed] (l2) -- node[right, font=\tiny] {se passar} (l3);
+% Camadas de defesa (espaçamento vertical aumentado entre os nós)
+\node[layer, top color=green!2, bottom color=green!15] (l1) at (0,1.5) 
+    {\textbf{Camada 1: Verificação de Erro} --- \textit{Detectar uso indevido do P01}};
+    
+\node[layer, top color=yellow!2, bottom color=yellow!15] (l2) at (0,-1) 
+    {\textbf{Camada 2: Bloqueio} --- \textit{Impedir P01 em fases críticas do voo}};
+    
+\node[layer, top color=orange!2, bottom color=orange!15] (l3) at (0,-3.5) 
+    {\textbf{Camada 3: Recuperação Automática} --- \textit{Restaurar dados se P01 for acionado}};
 
-    % Etiquetas
-    \node[right=0.3cm of l1, font=\footnotesize, green!50!black] {$\checkmark$ Detecta};
-    \node[right=0.3cm of l2, font=\footnotesize, yellow!60!black] {$\checkmark$ Bloqueia};
-    \node[right=0.3cm of l3, font=\footnotesize, orange!70!black] {$\checkmark$ Recupera};
+% Setas
+\draw[arrow] (astro) -- (l1);
+% O texto "se passar" agora usa right=4pt para ficar perto e alinhado à seta
+\draw[dashed_arrow] (l1) -- (l2) node[midway, right=4pt, pass_label] {se passar};
+\draw[dashed_arrow] (l2) -- (l3) node[midway, right=4pt, pass_label] {se passar};
 
-    \end{tikzpicture}
-    \caption{Camadas de defesa propostas por Margaret Hamilton: detecção, bloqueio e recuperação automática --- o modelo de ``Defesa em Profundidade''.}
+% Etiquetas de confirmação reposicionadas e coloridas
+\node[right=0.2cm of l1.east, check_label, color=green!60!black] {$\checkmark$ Detecta};
+\node[right=0.2cm of l2.east, check_label, color=yellow!70!black] {$\checkmark$ Bloqueia};
+\node[right=0.2cm of l3.east, check_label, color=orange!80!black] {$\checkmark$ Recupera};
+
+\end{tikzpicture}
+\caption{Camadas de defesa propostas por Margaret Hamilton: detecção, bloqueio e recuperação automática --- o modelo de ``Defesa em Profundidade''.}
+\label{fig:defesa_profundidade}
 \end{figure}
 
 \subsection{O Incidente Real na Apollo 8}
@@ -573,32 +819,73 @@ crítica, como energia e telecomunicações.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        central/.style={draw, circle, fill=blue!15, minimum size=2.5cm, align=center, font=\small\bfseries},
-        lesson/.style={draw, rounded corners, fill=gray!8, minimum width=3.5cm, minimum height=0.9cm, align=center, font=\footnotesize}
+        % Estilo do nó central
+        central/.style={
+            draw=blue!50,
+            thick,
+            circle,
+            top color=blue!2,
+            bottom color=blue!15,
+            minimum size=3.2cm,
+            align=center,
+            font=\small\bfseries,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            inner sep=5pt
+        },
+        % Estilo base das lições (agora com tamanho uniforme e fonte legível)
+        lesson/.style={
+            thick,
+            rectangle,
+            rounded corners=6pt,
+            minimum width=4.2cm,
+            minimum height=1.4cm,
+            align=center,
+            font=\small,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex},
+            inner sep=6pt
+        },
+        % Variações de cor para as caixas de lição
+        lesson_red/.style={lesson, draw=red!40, top color=red!2, bottom color=red!10},
+        lesson_orange/.style={lesson, draw=orange!40, top color=orange!2, bottom color=orange!10},
+        lesson_green/.style={lesson, draw=green!40, top color=green!2, bottom color=green!10},
+        lesson_cyan/.style={lesson, draw=cyan!40, top color=cyan!2, bottom color=cyan!10},
+        % Estilo das setas de conexão
+        seta/.style={-{Stealth[length=3mm]}, line width=1.5pt}
     ]
-    % Centro
-    \node[central] (centro) {Lições do\\Programa\\Apollo};
-    % Lições
-    \node[lesson, fill=red!10] (l1) at (90:3.8cm) {Erros humanos\\são \textbf{inevitáveis}};
-    \node[lesson, fill=orange!10] (l2) at (0:4.5cm) {Sistemas críticos\\devem ser \textbf{resilientes}};
-    \node[lesson, fill=green!10] (l3) at (270:3.8cm) {Documentação e preparo\\são \textbf{vitais}};
-    \node[lesson, fill=cyan!10] (l4) at (180:4.5cm) {Confiabilidade é\\\textbf{requisito de projeto}};
-    % Conexões
-    \draw[thick, red!50!black] (centro) -- (l1);
-    \draw[thick, orange!50!black] (centro) -- (l2);
-    \draw[thick, green!50!black] (centro) -- (l3);
-    \draw[thick, cyan!50!black] (centro) -- (l4);
+    
+    % Nó Central
+    \node[central] (centro) {Lições do\\[0.5ex]Programa\\[0.5ex]Apollo};
+    
+    % Nós das Lições (posicionados com coordenadas polares ajustadas para respiro)
+    \node[lesson_red] (l1) at (90:4cm) {Erros humanos\\são \textbf{inevitáveis}};
+    
+    \node[lesson_orange] (l2) at (0:5cm) {Sistemas críticos\\devem ser \textbf{resilientes}};
+    
+    \node[lesson_green] (l3) at (270:4cm) {Documentação e preparo\\são \textbf{vitais}};
+    
+    \node[lesson_cyan] (l4) at (180:5cm) {Confiabilidade é\\\textbf{requisito de projeto}};
+    
+    % Conexões com setas coloridas
+    \draw[seta, color=red!60] (centro) -- (l1);
+    \draw[seta, color=orange!60] (centro) -- (l2);
+    \draw[seta, color=green!60] (centro) -- (l3);
+    \draw[seta, color=cyan!60] (centro) -- (l4);
+    
     \end{tikzpicture}
     \caption{Mapa das lições fundamentais do Programa Apollo para a Engenharia de Confiabilidade moderna.}
+    \label{fig:licoes_apollo}
 \end{figure}
 
 \section{Modelo Tradicional: Sysadmin, Dev e Ops}
 
-\subsection{Separação entre Dev e Ops}
+No modelo tradicional, as organizações estruturavam suas equipes de tecnologia em dois grandes grupos distintos: Desenvolvimento (Dev) e Operações (Ops). Enquanto os desenvolvedores focavam na criação de novas funcionalidades, os administradores de sistemas (sysadmins), como integrantes da equipe de operações, eram encarregados de manter os serviços em pleno funcionamento. Na prática, a rotina desses profissionais envolvia integrar componentes de software, implantar os serviços em produção, monitorar a saúde dos servidores e das redes, além de atuar diretamente na resposta a incidentes e na execução de manutenções.
 
-Historicamente, muitas organizações estruturaram suas equipes de tecnologia
-em dois grandes grupos: \textbf{Desenvolvimento (Dev)} e \textbf{Operações
-(Ops)}. Nesse modelo, os administradores de sistemas (\emph{sysadmins}) eram
+O grande desafio dessa estrutura, no entanto, reside na sua escalabilidade. À medida que o serviço cresce em complexidade, infraestrutura e base de usuários, a demanda sobre a equipe de operações aumenta na mesma proporção. Consequentemente, faz-se necessário expandir o quadro de sysadmins, o que leva os custos operacionais a crescerem de forma quase linear em relação à escala do serviço, dificultando um crescimento mais sustentável.
+
+
+No modelo tradicional, as organizações estruturavam suas equipes de tecnologia
+em dois grandes grupos distintos: \textbf{Desenvolvimento (Dev)} e \textbf{Operações
+(Ops)}. Os administradores de sistemas (\emph{sysadmins}), integrantes da equipe de operações, eram
 responsáveis por manter serviços em funcionamento, enquanto os desenvolvedores
 criavam novas funcionalidades.
 
@@ -621,31 +908,58 @@ forma linear com a escala do serviço.
     \centering
     \begin{tikzpicture}
         \begin{axis}[
-            width=11cm, height=6cm,
-            title={Custo Operacional no Modelo Sysadmin},
+            width=11cm, height=6.5cm, % Altura levemente ajustada para a legenda respirar
+            title={\textbf{Custo Operacional vs. Escala}},
             xlabel={Escala do Serviço (usuários)},
             ylabel={Custo Operacional (equipe)},
-            xmin=0, xmax=10, ymin=0, ymax=10,
+            xmin=0, xmax=10.5, ymin=0, ymax=10.5, % Uma pequena margem (0.5) para as pontas não colarem
             xtick={2,4,6,8,10},
             xticklabels={10k, 50k, 100k, 500k, 1M},
             ytick={2,4,6,8,10},
             yticklabels={2, 4, 6, 8, 10 sysadmins},
             grid=major,
+            grid style={dashed, gray!30}, % Grade mais suave e elegante
+            axis lines=left, % Remove a caixa superior e direita
+            thick,
+            tick align=outside,
+            legend pos=north west, % Posiciona a legenda no espaço em branco
+            legend style={
+                draw=gray!40, 
+                rounded corners=4pt, 
+                font=\footnotesize,
+                fill=white,
+                drop shadow={opacity=0.1, shadow xshift=0.2ex, shadow yshift=-0.2ex} % Sombra na legenda
+            },
             every axis title/.style={at={(0.5,1.05)}, font=\small\bfseries}
         ]
-        % Linha linear
-        \addplot[thick, red, mark=square*, mark size=2pt] coordinates {
+        
+        % Linha linear (Modelo Tradicional)
+        \addplot[
+            color=red!70!black, 
+            line width=1.5pt, 
+            mark=*, % Marcador em formato de bolinha
+            mark options={fill=white, draw=red!70!black, thick, scale=0.8} % Fundo branco na bolinha
+        ] coordinates {
             (1,1) (2,2) (4,4) (6,6) (8,8) (10,10)
         };
         \addlegendentry{Modelo Sysadmin (linear)}
-        % Linha ideal sublinear
-        \addplot[thick, green!60!black, mark=triangle*, mark size=2pt, dashed] coordinates {
+        
+        % Linha ideal sublinear (SRE)
+        \addplot[
+            color=green!60!black, 
+            line width=1.5pt, 
+            dashed, 
+            mark=*, 
+            mark options={solid, fill=white, draw=green!60!black, thick, scale=0.8} % Fundo branco na bolinha
+        ] coordinates {
             (1,1) (2,1.4) (4,2) (6,2.5) (8,2.8) (10,3)
         };
         \addlegendentry{Modelo ideal (sublinear)}
+        
         \end{axis}
     \end{tikzpicture}
     \caption{No modelo tradicional, o crescimento do serviço exige crescimento proporcional da equipe de operações, enquanto modelos baseados em automação (como SRE) escalam de forma sublinear.}
+    \label{fig:escala_sysadmin_sre}
 \end{figure}
 
 Entre as vantagens desse modelo, podemos destacar:
@@ -675,29 +989,63 @@ Assim, emergem objetivos que podem ser conflitantes:
 
 \begin{figure}[h]
     \centering
-    \begin{tikzpicture}[thick, node distance=2.2cm]
-        % Blocos Dev e Ops
-        \node[draw, rounded corners, minimum width=3cm, minimum height=2cm, fill=blue!10, align=center] (dev) {\textbf{Desenvolvimento}\\\footnotesize Escreve código\\\footnotesize Cria features};
-        \node[draw, rounded corners, minimum width=3cm, minimum height=2cm, fill=red!10, align=center, right=3.5cm of dev] (ops) {\textbf{Operações}\\\footnotesize Mantém servidores\\\footnotesize Responde incidentes};
+    \begin{tikzpicture}[
+        node distance=3cm, 
+        auto,
+        caixa/.style={
+            thick, rectangle, rounded corners=4pt,
+            minimum width=3.4cm, minimum height=2.2cm, align=center,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        caixa_dev/.style={
+            caixa, draw=blue!60, top color=blue!2, bottom color=blue!15
+        },
+        caixa_ops/.style={
+            caixa, draw=red!60, top color=red!2, bottom color=red!15
+        },
+        caixa_result/.style={
+            caixa, draw=orange!60, top color=orange!2, bottom color=orange!15, 
+            minimum height=1.2cm, font=\small
+        },
+        parede/.style={
+            draw=gray!80, thick, rectangle, rounded corners=2pt,
+            top color=gray!10, bottom color=gray!35,
+            minimum width=0.8cm, minimum height=4cm, align=center,
+            drop shadow={opacity=0.2, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        seta_dev/.style={
+            -{Stealth[length=3mm]}, ultra thick, color=blue!60!black
+        },
+        seta_ops/.style={
+            -{Stealth[length=3mm]}, ultra thick, color=red!60!black
+        }
+    ]
 
-        % Parede da Confusão
-        \fill[gray!30] ($(dev.east)!0.5!(ops.west)$) ++(-0.4,-1.8) rectangle ++(0.8,3.6);
-        \draw[dashed, very thick, gray!60] ($(dev.east)!0.5!(ops.west)$) ++(-0.4,-1.8) rectangle ++(0.8,3.6);
-        \node[rotate=90, font=\bfseries\footnotesize, gray!70!black] at ($(dev.east)!0.5!(ops.west)$) {Parede da Confusão};
+        % Blocos Principais (Dev e Ops)
+        \node[caixa_dev] (dev) at (0,0) {\textbf{Desenvolvimento}\\[1ex] \textit{\footnotesize Escreve código}\\ \textit{\footnotesize Cria features}};
+        
+        \node[caixa_ops] (ops) at (7,0) {\textbf{Operações}\\[1ex] \textit{\footnotesize Mantém servidores}\\ \textit{\footnotesize Responde incidentes}};
 
-        % Metas acima
-        \node[above=0.5cm of dev, font=\small\bfseries, blue!70!black] {Meta: \Large$\uparrow$ Velocidade};
-        \node[above=0.5cm of ops, font=\small\bfseries, red!70!black] {Meta: \Large$\uparrow$ Estabilidade};
+        % Parede da Confusão (Centralizada entre Dev e Ops)
+        \node[parede] (wall) at (3.5,0) {\rotatebox{90}{\textbf{\footnotesize Parede da Confusão}}};
 
-        % Setas de conflito
-        \draw[->, ultra thick, blue!60!black] (dev.east) -- ($(dev.east)!0.48!(ops.west)$)
-            node[midway, above, font=\scriptsize] {Deploys};
-        \draw[->, ultra thick, red!60!black] (ops.west) -- ($(ops.west)!0.48!(dev.east)$)
-            node[midway, above, font=\scriptsize] {Barreiras};
+        % Metas (Acima dos blocos)
+        \node[above=0.4cm of dev, font=\small\bfseries, color=blue!70!black] {Meta: $\uparrow$ Velocidade};
+        \node[above=0.4cm of ops, font=\small\bfseries, color=red!70!black] {Meta: $\uparrow$ Estabilidade};
 
-        % Resultado abaixo
-        \node[below=2.5cm of $(dev.east)!0.5!(ops.west)$, draw, rounded corners, fill=yellow!15, align=center, font=\footnotesize] (resultado) {Resultado: Atrito, lentidão\\e culpabilização mútua};
-        \draw[->, thick, gray] ($(dev.east)!0.5!(ops.west)$) ++(0,-1.8) -- (resultado);
+        % Setas de Conflito
+        \draw[seta_dev] (dev.east) -- (wall.west) 
+            node[midway, above, font=\scriptsize, color=blue!80!black] {Deploys};
+            
+        \draw[seta_ops] (ops.west) -- (wall.east) 
+            node[midway, above, font=\scriptsize, color=red!80!black] {Barreiras};
+
+        % Resultado (Abaixo da parede)
+        \node[caixa_result, below=1.5cm of wall] (resultado) {\textbf{Resultado:} Atrito, lentidão\\e culpabilização mútua};
+        
+        % Seta ligando a parede ao resultado
+        \draw[-{Stealth[length=3mm]}, thick, color=gray!80] (wall.south) -- (resultado.north);
+
     \end{tikzpicture}
     \caption{A ``Parede da Confusão'': Dev empurra código para produção enquanto Ops ergue barreiras para proteger a estabilidade, gerando atrito.}
     \label{fig:parede-confusao}
@@ -736,36 +1084,57 @@ desenvolvimento e de operações.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
+        auto,
         block/.style={
-            draw,
-            rounded corners,
-            fill=orange!10,
-            minimum width=3.2cm,
-            minimum height=0.9cm,
-            text width=3.2cm,
+            thick,
+            rectangle,
+            rounded corners=6pt,
+            minimum width=3.6cm,
+            minimum height=1.6cm,
+            text width=3.4cm,
             align=center,
-            font=\footnotesize
+            font=\small,
+            top color=orange!2,
+            bottom color=orange!15,
+            draw=orange!60,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
         },
-        arrow/.style={->, thick, >=Stealth}
+        centro/.style={
+            circle,
+            thick,
+            draw=red!60,
+            top color=red!5,
+            bottom color=red!20,
+            align=center,
+            font=\small\bfseries,
+            inner sep=8pt,
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        },
+        arrow/.style={
+            -{Stealth[length=3mm]},
+            line width=1.5pt,
+            color=red!70!black
+        }
     ]
 
-    % Ciclo
-    \node[block] (barr) at (90:2.8cm) {Ops cria mais\\barreiras e controles};
-    \node[block] (acum) at (0:3.5cm) {Dev acumula\\mudanças em\\mega-releases};
-    \node[block] (risco) at (270:2.8cm) {Deploys grandes\\= maior risco\\de falha};
-    \node[block] (falha) at (180:3.5cm) {Falhas em\\produção\\aumentam};
+    % Nó Central
+    \node[centro] (centro) at (0,0) {Ciclo\\[0.5ex]Vicioso};
 
-    % Setas
-    \draw[arrow, red!60!black] (barr) -- (acum);
-    \draw[arrow, red!60!black] (acum) -- (risco);
-    \draw[arrow, red!60!black] (risco) -- (falha);
-    \draw[arrow, red!60!black] (falha) -- (barr);
+    % Nós do Ciclo (Coordenadas polares ajustadas para dar respiro às setas)
+    \node[block] (barr) at (90:3.2cm) {Ops cria mais\\barreiras e controles};
+    \node[block] (acum) at (0:4.2cm) {Dev acumula\\mudanças em\\mega-releases};
+    \node[block] (risco) at (270:3.2cm) {Deploys grandes\\= maior risco\\de falha};
+    \node[block] (falha) at (180:4.2cm) {Falhas em\\produção\\aumentam};
 
-    % Centro
-    \node[font=\small\bfseries, red!70!black, align=center] at (0,0) {Ciclo\\Vicioso};
+    % Setas Curvas (O comando 'bend left' faz a linha arquear, formando um círculo)
+    \draw[arrow] (barr) to[bend left=25] (acum);
+    \draw[arrow] (acum) to[bend left=25] (risco);
+    \draw[arrow] (risco) to[bend left=25] (falha);
+    \draw[arrow] (falha) to[bend left=25] (barr);
 
     \end{tikzpicture}
     \caption{O ciclo vicioso do modelo tradicional: mais barreiras geram releases maiores, que geram mais falhas, que geram ainda mais barreiras.}
+    \label{fig:ciclo_vicioso}
 \end{figure}
 
 \section{A Abordagem do Google: Site Reliability Engineering (SRE)} \cite{beyer2016sre, beyer2018workbook}
@@ -933,26 +1302,51 @@ para reduzir a necessidade de intervenção manual.
 
 \begin{figure}[h]
     \centering
-    \begin{tikzpicture}
-        % Fundo do relógio dividido
-        % Metade esquerda (Engenharia) --- verde
-        \fill[green!20] (0,0) -- (180:2.8cm) arc[start angle=180, end angle=360, radius=2.8cm] -- cycle;
-        % Metade direita (Operações) --- laranja
-        \fill[orange!20] (0,0) -- (0:2.8cm) arc[start angle=0, end angle=180, radius=2.8cm] -- cycle;
-        % Borda
-        \draw[very thick] (0,0) circle[radius=2.8cm];
-        % Linha divisória
-        \draw[very thick, dashed, gray] (0,-2.8) -- (0,2.8);
-        % Rótulos
-        \node[font=\small\bfseries, green!50!black, align=center] at (-1.4,0) {50\%\\Engenharia\\Automação\\Melhoria};
-        \node[font=\small\bfseries, orange!70!black, align=center] at (1.4,0) {$\leq$50\%\\Operações\\Incidentes\\Manutenção};
-        % Ponteiro alerta (acima de 50\% ops)
-        \draw[->, very thick, red] (0,0) -- (50:2.3cm);
-        \node[above right, font=\tiny\bfseries, red] at (50:2.3cm) {Alerta!};
-        % Título
-        \node[above=3.2cm, font=\small\bfseries] at (0,0) {A Regra dos 50\% de Tempo SRE};
+    \begin{tikzpicture}[
+        % Definindo o estilo da agulha para facilitar
+        seta/.style={-{Stealth[length=4mm, width=2.5mm]}, line width=1.5pt, color=red!80!black}
+    ]
+        
+        % Fundo branco com sombra para todo o gráfico
+        \node[circle, minimum size=5.6cm, fill=white, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}] at (0,0) {};
+
+        % Metade esquerda (Engenharia) - Verde
+        \fill[top color=green!2, bottom color=green!20] 
+            (0,0) -- (90:2.8cm) arc (90:270:2.8cm) -- cycle;
+
+        % Metade direita (Operações) - Laranja
+        \fill[top color=orange!2, bottom color=orange!20] 
+            (0,0) -- (-90:2.8cm) arc (-90:90:2.8cm) -- cycle;
+
+        % Borda externa do medidor
+        \draw[thick, gray!50] (0,0) circle (2.8cm);
+
+        % Linha divisória central (Tracejada)
+        \draw[thick, dashed, gray!60] (0,-2.8cm) -- (0,2.8cm);
+
+        % Rótulos de Texto
+        \node[font=\small, color=green!50!black, align=center] at (-1.4,0) 
+            {\textbf{50\%}\\[0.5ex] Engenharia\\Automação\\Melhoria};
+            
+        \node[font=\small, color=orange!70!black, align=center] at (1.4,0) 
+            {\textbf{$\leq$ 50\%}\\[0.5ex] Operações\\Incidentes\\Manutenção};
+
+        % Agulha do medidor (Ponteiro indicando excesso de operações)
+        \draw[seta] (0,0) -- (45:2.4cm);
+
+        % Pino central do medidor (detalhe estético)
+        \node[circle, fill=gray!70, inner sep=2.5pt] at (0,0) {};
+        \node[circle, fill=white, inner sep=1pt] at (0,0) {}; % Brilho no centro do pino
+
+        % Etiqueta de "Alerta!" flutuante com fundo vermelho e sombra
+        \node[font=\scriptsize\bfseries, color=white, fill=red!80!black, rounded corners=2pt, inner sep=3pt, drop shadow={opacity=0.2, shadow xshift=0.2ex, shadow yshift=-0.2ex}] at (45:3.1cm) {Alerta!};
+
+        % Título da Figura (interno)
+        \node[above=3.2cm, font=\small\bfseries, color=gray!80!black] at (0,0) {A Regra dos 50\% de Tempo SRE};
+
     \end{tikzpicture}
     \caption{O tempo da equipe SRE deve ser dividido igualmente entre engenharia/automação e atividades operacionais. Se as operações consumirem mais de 50\%, o sistema precisa ser redesenhado.}
+    \label{fig:regra_50_sre}
 \end{figure}
 
 \subsection{Benefícios e Desafios do Modelo SRE}
@@ -1029,34 +1423,60 @@ larga escala.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}
-        % Esfera DevOps (esquerda)
-        \fill[blue!15] (-1.5,0) circle[radius=3.2cm];
-        \draw[thick, blue!60!black] (-1.5,0) circle[radius=3.2cm];
-        % Esfera SRE (direita)
-        \fill[green!15] (1.5,0) circle[radius=3.2cm];
-        \draw[thick, green!60!black] (1.5,0) circle[radius=3.2cm];
-        % Interseção --- área compartilhada (branco sobre sobreposição)
+
+        % 1. Sombra unificada do diagrama (Deslocada para baixo e direita)
+        \fill[gray!25] (-1.4, -0.1) circle[radius=3.2cm];
+        \fill[gray!25] (1.6, -0.1) circle[radius=3.2cm];
+
+        % 2. Fundo branco (Para "limpar" a parte interna da sombra)
+        \fill[white] (-1.5, 0) circle[radius=3.2cm];
+        \fill[white] (1.5, 0) circle[radius=3.2cm];
+
+        % 3. Preenchimentos com gradientes radiais
+        % Círculo DevOps (Esquerda)
+        \fill[top color=blue!2, bottom color=blue!15] (-1.5,0) circle[radius=3.2cm];
+        
+        % Círculo SRE (Direita)
+        \fill[top color=green!2, bottom color=green!15] (1.5,0) circle[radius=3.2cm];
+
+        % 4. Interseção (Área compartilhada)
         \begin{scope}
             \clip (-1.5,0) circle[radius=3.2cm];
-            \fill[purple!15] (1.5,0) circle[radius=3.2cm];
+            \fill[top color=purple!5, bottom color=purple!20] (1.5,0) circle[radius=3.2cm];
         \end{scope}
-        % Títulos dos círculos
-        \node[font=\bfseries\small, blue!70!black] at (-3.2,0) {DevOps};
-        \node[font=\bfseries\small, green!60!black] at (3.2,0) {SRE};
-        % Conteúdo DevOps exclusivo
-        \node[font=\tiny, blue!70!black, align=center] at (-2.8,1.2) {Cultura\\colaborativa};
-        \node[font=\tiny, blue!70!black, align=center] at (-2.8,-1.2) {CI/CD\\Deploy rápido};
-        % Conteúdo SRE exclusivo
-        \node[font=\tiny, green!60!black, align=center] at (2.8,1.2) {SLI/SLO\\Error Budget};
-        \node[font=\tiny, green!60!black, align=center] at (2.8,-1.2) {Regra 50\%\\Toil limit};
-        % Interseção (compartilhado)
-        \node[font=\tiny, purple!70!black, align=center] at (0,0.8) {Automação};
-        \node[font=\tiny, purple!70!black, align=center] at (0,0) {Confiabilidade};
-        \node[font=\tiny, purple!70!black, align=center] at (0,-0.8) {Monitoração};
-        % Legenda inferior
-        \node[font=\footnotesize, gray!70!black] at (0,-4.2) {SRE = implementação concreta de princípios DevOps};
+
+        % 5. Bordas dos círculos (Desenhadas por último para sobrepor os preenchimentos)
+        \draw[line width=1.5pt, blue!60] (-1.5,0) circle[radius=3.2cm];
+        \draw[line width=1.5pt, green!60] (1.5,0) circle[radius=3.2cm];
+
+        % 6. Títulos dos Círculos
+        \node[font=\large\bfseries, color=blue!80!black] at (-3.2, 2.0) {DevOps};
+        \node[font=\large\bfseries, color=green!80!black] at (3.2, 2.0) {SRE};
+
+        % 7. Textos Exclusivos - DevOps
+        \node[font=\small, color=blue!80!black, align=center] at (-3.0, 0.6) {\textbf{Cultura}\\[0.5ex] colaborativa};
+        \node[font=\small, color=blue!80!black, align=center] at (-3.0, -1.2) {\textbf{CI/CD}\\[0.5ex] Deploy rápido};
+
+        % 8. Textos Exclusivos - SRE
+        \node[font=\small, color=green!80!black, align=center] at (3.0, 0.6) {\textbf{SLI / SLO}\\[0.5ex] Error Budget};
+        \node[font=\small, color=green!80!black, align=center] at (3.0, -1.2) {\textbf{Regra 50\%}\\[0.5ex] Toil limit};
+
+        % 9. Textos da Interseção (Princípios Compartilhados)
+        \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, 1.2) {Automação};
+        \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, 0) {Confiabilidade};
+        \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, -1.2) {Monitoração};
+
+        % 10. Legenda Inferior Destacada (Caixa flutuante)
+        \node[
+            draw=gray!40, fill=white, thick, 
+            rounded corners=6pt, inner sep=8pt, 
+            font=\footnotesize\bfseries, color=gray!70!black, 
+            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
+        ] at (0,-4.2) {SRE = implementação concreta de princípios DevOps};
+
     \end{tikzpicture}
     \caption{Diagrama de Venn ilustrando a relação entre DevOps e SRE. DevOps define a cultura e práticas gerais; o SRE do Google representa uma implementação prescritiva dessas ideias com foco em confiabilidade.}
+    \label{fig:venn_devops_sre}
 \end{figure}
 
 \section*{Considerações Finais}

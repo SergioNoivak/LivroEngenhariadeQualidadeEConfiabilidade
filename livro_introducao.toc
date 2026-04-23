@@ -1,167 +1,163 @@
 \babel@toc {portuguese}{}\relax 
 \contentsline {chapter}{\numberline {1}Introdução à Engenharia da Qualidade}{6}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Qualidade e Confiabilidade}{7}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Definições Básicas}{7}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Qualidade ao Longo do Tempo}{8}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Áreas de Atuação da Engenharia da Qualidade}{8}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Setores em que a Qualidade é Crítica}{8}{subsection.1.2.1}%
-\contentsline {section}{\numberline {1.3}O Programa Apollo e a Engenharia de Confiabilidade}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Contexto Histórico}{9}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Margaret Hamilton e o Pensamento de Confiabilidade}{9}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}O Episódio no Simulador de Missão}{9}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}O Problema Técnico Identificado}{10}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}A Proposta de Solução de Margaret Hamilton}{10}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.3.6}O Incidente Real na Apollo 8}{11}{subsection.1.3.6}%
-\contentsline {subsection}{\numberline {1.3.7}Lições para a Engenharia Moderna e SRE}{11}{subsection.1.3.7}%
-\contentsline {section}{\numberline {1.4}Modelo Tradicional: Sysadmin, Dev e Ops}{12}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Separação entre Dev e Ops}{12}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}A Abordagem com Administradores de Sistemas}{12}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Conflitos Estruturais entre Dev e Ops}{13}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Respostas Típicas ao Conflito}{14}{subsection.1.4.4}%
-\contentsline {section}{\numberline {1.5}A Abordagem do Google: Site Reliability Engineering (SRE)}{14}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Motivação para o Modelo SRE}{15}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Definição de SRE}{15}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}Composição e Perfil das Equipes de SRE}{15}{subsection.1.5.3}%
-\contentsline {subsection}{\numberline {1.5.4}Escalabilidade por Engenharia, não por Pessoas}{16}{subsection.1.5.4}%
-\contentsline {subsection}{\numberline {1.5.5}A Regra dos 50\%}{16}{subsection.1.5.5}%
-\contentsline {subsection}{\numberline {1.5.6}Benefícios e Desafios do Modelo SRE}{17}{subsection.1.5.6}%
-\contentsline {section}{\numberline {1.6}DevOps versus SRE}{18}{section.1.6}%
-\contentsline {section}{Considerações Finais}{19}{section*.2}%
-\contentsline {chapter}{\numberline {2}Engenharia da Confiabilidade segundo Sommerville}{20}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Disponibilidade de Serviços e Desafios}{20}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Erro, Defeito e Falha}{20}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Erro Humano}{21}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Defeito de Sistema}{21}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Erro de Sistema e Falha}{21}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Nem Todo Defeito Gera Falha}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Prevenção, Detecção e Tolerância a Defeitos}{22}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Prevenção de Defeitos}{22}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Detecção e Correção de Defeitos}{22}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Tolerância a Defeitos}{22}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Confiabilidade e Disponibilidade}{23}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Confiabilidade}{23}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Disponibilidade}{23}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Dependabilidade}{23}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Métricas de Confiabilidade e Disponibilidade}{23}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}POFOD e ROCOF}{24}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}MTTR e Disponibilidade}{24}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Visão Baseada em Entradas e Saídas}{25}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Considerações Finais sobre Sommerville}{25}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Arquiteturas Tolerantes a Defeitos e Diversidade de Software}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Arquiteturas Tolerantes a Defeitos}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Visão Geral em Blocos}{26}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Sistemas de Proteção}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Diagrama de um Sistema de Proteção}{28}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Arquiteturas de Automonitoramento}{28}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Esquema de Dois Canais em Paralelo}{29}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Diversidade de Hardware e de Software}{29}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Diversidade de Hardware}{29}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Diversidade de Software}{29}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Programação N-versões}{30}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Diagrama Conceitual de N-versões}{30}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Conclusões sobre Diversidade e Tolerância a Defeitos}{31}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Hadoop: Tolerância a Defeitos em Escala Planetária}{31}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}O Que é o Hadoop}{31}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Como Funciona o Cluster Hadoop}{33}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Tolerância a Defeitos no Hadoop}{34}{subsection.3.7.3}%
-\contentsline {chapter}{\numberline {4}Monitoração Agregada: Princípios do Google SRE e Métricas de Confiabilidade}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}A Filosofia da Medição no Google SRE}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Impactos das Falhas de Serviço}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Downtime Não Planejado e Disponibilidade}{36}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Cálculo de Disponibilidade Baseada em Tempo}{36}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}A Escala dos Noves}{37}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Confiabilidade em Sistemas Distribuídos}{37}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}O Problema da Falha Localizada}{38}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Disponibilidade Baseada em Requisições}{38}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Exemplo de Cálculo de Orçamento de Erro}{38}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Monitoração de APIs REST e Protocolo HTTP}{39}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}A Requisição HTTP}{39}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Métodos HTTP Principais}{39}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Classificação de Códigos de Status HTTP}{40}{section.4.7}%
-\contentsline {paragraph}{Faixa 1xx (Informacional)}{40}{section*.3}%
-\contentsline {paragraph}{Faixa 2xx (Sucesso)}{40}{section*.4}%
-\contentsline {paragraph}{Faixa 3xx (Redirecionamento)}{40}{section*.5}%
-\contentsline {paragraph}{Faixa 4xx (Erro do Cliente)}{40}{section*.6}%
-\contentsline {paragraph}{Faixa 5xx (Erro do Servidor)}{40}{section*.7}%
-\contentsline {section}{\numberline {4.8}Estudo de Caso: Caldeira Industrial Siderúrgica}{40}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Logs de Execução}{40}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Cálculo da Disponibilidade Observada}{41}{subsection.4.8.2}%
-\contentsline {section}{\numberline {4.9}Service Level Objectives (SLO) e Error Budgets}{41}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Exercícios de Revisão}{41}{section.4.10}%
-\contentsline {chapter}{\numberline {5}Métricas de Confiabilidade no Modelo Google SRE}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}A Filosofia da Medição e a Gestão de Riscos}{43}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Impactos das Falhas de Serviço}{43}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Downtime não Planejado como Métrica Central}{44}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Definição e Importância}{44}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Disponibilidade: A Matemática dos Noves}{45}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Limitações do Modelo de Disponibilidade Baseada em Tempo}{46}{section.5.4}%
-\contentsline {section}{\numberline {5.5}APIs REST e Requisições: A Unidade Fundamental de Sucesso}{46}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}O Protocolo HTTP e a Confiabilidade}{46}{subsection.5.5.1}%
-\contentsline {section}{\numberline {5.6}Taxonomia SRE de Status Codes HTTP}{47}{section.5.6}%
-\contentsline {paragraph}{Faixa 2xx (Sucesso)}{47}{section*.8}%
-\contentsline {paragraph}{Faixa 4xx (Erro do Cliente)}{47}{section*.9}%
-\contentsline {paragraph}{Faixa 5xx (Erro do Servidor)}{47}{section*.10}%
-\contentsline {section}{\numberline {5.7}Cálculo de Disponibilidade SRE: A Fórmula Fundamental}{47}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Exemplo de Grande Escala}{48}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}SLO e Error Budget: O Equilíbrio entre Inovação e Estabilidade}{48}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Estudo de Caso Avançado: A Caldeira Industrial II}{48}{section.5.9}%
-\contentsline {paragraph}{Logs de Auditoria (1 hora):}{49}{section*.11}%
-\contentsline {paragraph}{Análise de Dados:}{49}{section*.12}%
-\contentsline {section}{\numberline {5.10}Exercícios de Aprofundamento}{49}{section.5.10}%
-\contentsline {chapter}{\numberline {6}Estudo de Caso Prático: Análise de Logs de Servidor Web}{51}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Contexto e Origem dos Dados}{51}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Revisão: Distribuições Simétricas, Assimétricas e Boxplot}{52}{subsection.6.1.1}%
-\contentsline {subsubsection}{Distribuição Simétrica (Normal)}{52}{section*.13}%
-\contentsline {subsubsection}{Distribuição Assimétrica (Skewed)}{52}{section*.14}%
-\contentsline {subsubsection}{A Distribuição de Latência e os Percentis P90, P98 e P99}{53}{section*.15}%
-\contentsline {subsubsection}{Boxplot: Resumo Visual dos Cinco Números}{54}{section*.16}%
-\contentsline {section}{\numberline {6.2}Processamento de Dados com Python e Pandas}{55}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Análise Estrutural e Descritiva}{56}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Análise de Latência: A Importância do Percentil 90}{57}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}O Foco no Fim da Cauda}{57}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Calculando Disponibilidade (Availability) e Error Rate}{57}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}O Teste do SLA e dos Noves}{58}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Discussão e Causa Raiz}{58}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Métricas Fundamentais: MTTF e MTTR}{59}{section.6.7}%
-\contentsline {section}{\numberline {6.8}O Fator Humano: Seres Humanos Acrescentam Latência}{60}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}O Manual de Regras (Runbook / Playbook)}{60}{subsection.6.8.1}%
-\contentsline {section}{\numberline {6.9}Práticas de Preparação: A Cultura SRE}{61}{section.6.9}%
-\contentsline {subsection}{\numberline {6.9.1}A Dinâmica do ``Jogo''}{61}{subsection.6.9.1}%
-\contentsline {section}{\numberline {6.10}As Coisas Quebram: A Vida É Assim}{62}{section.6.10}%
-\contentsline {subsection}{\numberline {6.10.1}O Que Fazer Quando os Sistemas Falham}{62}{subsection.6.10.1}%
-\contentsline {section}{\numberline {6.11}Estudos de Caso SRE: Taxonomia das Emergências}{63}{section.6.11}%
-\contentsline {subsection}{\numberline {6.11.1}1. Emergência Induzida por Testes (O Caso do DB MySQL)}{63}{subsection.6.11.1}%
-\contentsline {subsection}{\numberline {6.11.2}2. Emergência Induzida por Alterações de Configuração}{64}{subsection.6.11.2}%
-\contentsline {subsection}{\numberline {6.11.3}3. Emergência Induzida por Processos Automáticos (Caso Diskerase)}{65}{subsection.6.11.3}%
-\contentsline {section}{\numberline {6.12}Aprenda com o Passado: O Valor da Cultura \textit {Blameless}}{66}{section.6.12}%
-\contentsline {subsection}{\numberline {6.12.1}Testes Proativos e o Círculo Virtuoso da Resiliência Sistêmica}{66}{subsection.6.12.1}%
-\contentsline {chapter}{\numberline {7}Engenharia de Segurança}{68}{chapter.7}%
-\contentsline {section}{\numberline {7.1}O Software como Componente Crítico: O Caso de Varsóvia}{68}{section.7.1}%
-\contentsline {section}{\numberline {7.2}O que é Segurança (\textit {Safety})?}{69}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}\textit {Safety} versus \textit {Security}}{70}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}A Segurança na Árvore da Dependabilidade}{70}{section.7.3}%
-\contentsline {section}{\numberline {7.4}O Duplo Papel do Software na Segurança}{70}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Papel 1: Controle Direto}{71}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Papel 2: Monitoramento e Salvaguarda}{71}{subsection.7.4.2}%
-\contentsline {section}{\numberline {7.5}A Falácia: Se é Confiável, é Seguro}{71}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Análise de Perigos: Antecipando o Desastre}{72}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Árvore de Falhas (\textit {Fault Tree Analysis} — FTA)}{73}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}FMEA: Análise de Modos de Falha e Efeitos}{73}{subsection.7.6.2}%
-\contentsline {section}{\numberline {7.7}Categorias de Criticidade em Segurança}{73}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Requisitos de Segurança: O Poder do ``Não Deve''}{74}{section.7.8}%
-\contentsline {section}{\numberline {7.9}Arquitetura e Programação para Sistemas Seguros}{75}{section.7.9}%
-\contentsline {subsection}{\numberline {7.9.1}Prevenção de Falhas (Fuga de Erros)}{75}{subsection.7.9.1}%
-\contentsline {subsection}{\numberline {7.9.2}Tolerância a Falhas (Redundância e Votação)}{75}{subsection.7.9.2}%
-\contentsline {subsection}{\numberline {7.9.3}O Estado Seguro (\textit {Safe State})}{75}{subsection.7.9.3}%
-\contentsline {section}{\numberline {7.10}Software Crítico Primário vs. Secundário}{76}{section.7.10}%
-\contentsline {section}{\numberline {7.11}Especificação Dirigida por Perigos}{77}{section.7.11}%
-\contentsline {subsection}{\numberline {7.11.1}Terminologia Fundamental}{77}{subsection.7.11.1}%
-\contentsline {subsection}{\numberline {7.11.2}O Fluxo da Especificação}{77}{subsection.7.11.2}%
-\contentsline {section}{\numberline {7.12}Abordagens Práticas para Mitigação de Riscos}{78}{section.7.12}%
-\contentsline {section}{\numberline {7.13}Cultura de Segurança e ``Acidentes Normais''}{78}{section.7.13}%
-\contentsline {section}{\numberline {7.14}O Registro de Perigos (\textit {Hazard Registry})}{79}{section.7.14}%
-\contentsline {chapter}{\numberline {A}Exercícios de Fixação}{80}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Atividade Prática Sugerida}{104}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Glossário de Termos Técnicos}{112}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Tabela de Siglas e Acrônimos}{115}{appendix.D}%
-\contentsline {chapter}{Referências Bibliográficas}{117}{appendix*.29}%
+\contentsline {subsection}{\numberline {1.2.1}Qualidade de software}{9}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}O Programa Apollo e a Engenharia de Confiabilidade}{11}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Margaret Hamilton e o Pensamento de Confiabilidade}{11}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}O Episódio no Simulador de Missão}{11}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}O Problema Técnico Identificado}{12}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}A Proposta de Solução de Margaret Hamilton}{13}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}O Incidente Real na Apollo 8}{13}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Lições para a Engenharia Moderna e SRE}{14}{subsection.1.3.6}%
+\contentsline {section}{\numberline {1.4}Modelo Tradicional: Sysadmin, Dev e Ops}{15}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}A Abordagem com Administradores de Sistemas}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Conflitos Estruturais entre Dev e Ops}{16}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Respostas Típicas ao Conflito}{17}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}A Abordagem do Google: Site Reliability Engineering (SRE)}{18}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Motivação para o Modelo SRE}{18}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Definição de SRE}{18}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Composição e Perfil das Equipes de SRE}{18}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Escalabilidade por Engenharia, não por Pessoas}{19}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}A Regra dos 50\%}{20}{subsection.1.5.5}%
+\contentsline {subsection}{\numberline {1.5.6}Benefícios e Desafios do Modelo SRE}{20}{subsection.1.5.6}%
+\contentsline {section}{\numberline {1.6}DevOps versus SRE}{21}{section.1.6}%
+\contentsline {section}{Considerações Finais}{22}{section*.2}%
+\contentsline {chapter}{\numberline {2}Engenharia da Confiabilidade segundo Sommerville}{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Disponibilidade de Serviços e Desafios}{23}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Erro, Defeito e Falha}{23}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Erro Humano}{24}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Defeito de Sistema}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Erro de Sistema e Falha}{24}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Nem Todo Defeito Gera Falha}{24}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Prevenção, Detecção e Tolerância a Defeitos}{25}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Prevenção de Defeitos}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Detecção e Correção de Defeitos}{25}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Tolerância a Defeitos}{25}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Confiabilidade e Disponibilidade}{26}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Confiabilidade}{26}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Disponibilidade}{26}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Dependabilidade}{26}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Métricas de Confiabilidade e Disponibilidade}{26}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}POFOD e ROCOF}{27}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}MTTR e Disponibilidade}{27}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}Visão Baseada em Entradas e Saídas}{28}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Considerações Finais sobre Sommerville}{28}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Arquiteturas Tolerantes a Defeitos e Diversidade de Software}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Arquiteturas Tolerantes a Defeitos}{29}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Visão Geral em Blocos}{29}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Sistemas de Proteção}{30}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Diagrama de um Sistema de Proteção}{31}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Arquiteturas de Automonitoramento}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Esquema de Dois Canais em Paralelo}{32}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Diversidade de Hardware e de Software}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Diversidade de Hardware}{32}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Diversidade de Software}{32}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Programação N-versões}{33}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Diagrama Conceitual de N-versões}{33}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Conclusões sobre Diversidade e Tolerância a Defeitos}{34}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Hadoop: Tolerância a Defeitos em Escala Planetária}{34}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}O Que é o Hadoop}{34}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Como Funciona o Cluster Hadoop}{36}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Tolerância a Defeitos no Hadoop}{37}{subsection.3.7.3}%
+\contentsline {chapter}{\numberline {4}Monitoração Agregada: Princípios do Google SRE e Métricas de Confiabilidade}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}A Filosofia da Medição no Google SRE}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Impactos das Falhas de Serviço}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Downtime Não Planejado e Disponibilidade}{39}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Cálculo de Disponibilidade Baseada em Tempo}{39}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}A Escala dos Noves}{40}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Confiabilidade em Sistemas Distribuídos}{40}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}O Problema da Falha Localizada}{41}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Disponibilidade Baseada em Requisições}{41}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Exemplo de Cálculo de Orçamento de Erro}{41}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Monitoração de APIs REST e Protocolo HTTP}{42}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}A Requisição HTTP}{42}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Métodos HTTP Principais}{42}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Classificação de Códigos de Status HTTP}{43}{section.4.7}%
+\contentsline {paragraph}{Faixa 1xx (Informacional)}{43}{section*.3}%
+\contentsline {paragraph}{Faixa 2xx (Sucesso)}{43}{section*.4}%
+\contentsline {paragraph}{Faixa 3xx (Redirecionamento)}{43}{section*.5}%
+\contentsline {paragraph}{Faixa 4xx (Erro do Cliente)}{43}{section*.6}%
+\contentsline {paragraph}{Faixa 5xx (Erro do Servidor)}{43}{section*.7}%
+\contentsline {section}{\numberline {4.8}Estudo de Caso: Caldeira Industrial Siderúrgica}{43}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Logs de Execução}{43}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Cálculo da Disponibilidade Observada}{44}{subsection.4.8.2}%
+\contentsline {section}{\numberline {4.9}Service Level Objectives (SLO) e Error Budgets}{44}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Exercícios de Revisão}{44}{section.4.10}%
+\contentsline {chapter}{\numberline {5}Métricas de Confiabilidade no Modelo Google SRE}{46}{chapter.5}%
+\contentsline {section}{\numberline {5.1}A Filosofia da Medição e a Gestão de Riscos}{46}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Impactos das Falhas de Serviço}{46}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Downtime não Planejado como Métrica Central}{47}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Definição e Importância}{47}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Disponibilidade: A Matemática dos Noves}{48}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Limitações do Modelo de Disponibilidade Baseada em Tempo}{49}{section.5.4}%
+\contentsline {section}{\numberline {5.5}APIs REST e Requisições: A Unidade Fundamental de Sucesso}{49}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}O Protocolo HTTP e a Confiabilidade}{49}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Taxonomia SRE de Status Codes HTTP}{50}{section.5.6}%
+\contentsline {paragraph}{Faixa 2xx (Sucesso)}{50}{section*.8}%
+\contentsline {paragraph}{Faixa 4xx (Erro do Cliente)}{50}{section*.9}%
+\contentsline {paragraph}{Faixa 5xx (Erro do Servidor)}{50}{section*.10}%
+\contentsline {section}{\numberline {5.7}Cálculo de Disponibilidade SRE: A Fórmula Fundamental}{50}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Exemplo de Grande Escala}{51}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}SLO e Error Budget: O Equilíbrio entre Inovação e Estabilidade}{51}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Estudo de Caso Avançado: A Caldeira Industrial II}{51}{section.5.9}%
+\contentsline {paragraph}{Logs de Auditoria (1 hora):}{52}{section*.11}%
+\contentsline {paragraph}{Análise de Dados:}{52}{section*.12}%
+\contentsline {section}{\numberline {5.10}Exercícios de Aprofundamento}{52}{section.5.10}%
+\contentsline {chapter}{\numberline {6}Estudo de Caso Prático: Análise de Logs de Servidor Web}{54}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Contexto e Origem dos Dados}{54}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Revisão: Distribuições Simétricas, Assimétricas e Boxplot}{55}{subsection.6.1.1}%
+\contentsline {subsubsection}{Distribuição Simétrica (Normal)}{55}{section*.13}%
+\contentsline {subsubsection}{Distribuição Assimétrica (Skewed)}{55}{section*.14}%
+\contentsline {subsubsection}{A Distribuição de Latência e os Percentis P90, P98 e P99}{56}{section*.15}%
+\contentsline {subsubsection}{Boxplot: Resumo Visual dos Cinco Números}{57}{section*.16}%
+\contentsline {section}{\numberline {6.2}Processamento de Dados com Python e Pandas}{58}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Análise Estrutural e Descritiva}{59}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Análise de Latência: A Importância do Percentil 90}{60}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}O Foco no Fim da Cauda}{60}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Calculando Disponibilidade (Availability) e Error Rate}{60}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}O Teste do SLA e dos Noves}{61}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Discussão e Causa Raiz}{61}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Métricas Fundamentais: MTTF e MTTR}{62}{section.6.7}%
+\contentsline {section}{\numberline {6.8}O Fator Humano: Seres Humanos Acrescentam Latência}{63}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}O Manual de Regras (Runbook / Playbook)}{63}{subsection.6.8.1}%
+\contentsline {section}{\numberline {6.9}Práticas de Preparação: A Cultura SRE}{64}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}A Dinâmica do ``Jogo''}{64}{subsection.6.9.1}%
+\contentsline {section}{\numberline {6.10}As Coisas Quebram: A Vida É Assim}{65}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}O Que Fazer Quando os Sistemas Falham}{65}{subsection.6.10.1}%
+\contentsline {section}{\numberline {6.11}Estudos de Caso SRE: Taxonomia das Emergências}{66}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}1. Emergência Induzida por Testes (O Caso do DB MySQL)}{66}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}2. Emergência Induzida por Alterações de Configuração}{67}{subsection.6.11.2}%
+\contentsline {subsection}{\numberline {6.11.3}3. Emergência Induzida por Processos Automáticos (Caso Diskerase)}{68}{subsection.6.11.3}%
+\contentsline {section}{\numberline {6.12}Aprenda com o Passado: O Valor da Cultura \textit {Blameless}}{69}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Testes Proativos e o Círculo Virtuoso da Resiliência Sistêmica}{69}{subsection.6.12.1}%
+\contentsline {chapter}{\numberline {7}Engenharia de Segurança}{71}{chapter.7}%
+\contentsline {section}{\numberline {7.1}O Software como Componente Crítico: O Caso de Varsóvia}{71}{section.7.1}%
+\contentsline {section}{\numberline {7.2}O que é Segurança (\textit {Safety})?}{72}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}\textit {Safety} versus \textit {Security}}{73}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}A Segurança na Árvore da Dependabilidade}{73}{section.7.3}%
+\contentsline {section}{\numberline {7.4}O Duplo Papel do Software na Segurança}{73}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Papel 1: Controle Direto}{74}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Papel 2: Monitoramento e Salvaguarda}{74}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}A Falácia: Se é Confiável, é Seguro}{74}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Análise de Perigos: Antecipando o Desastre}{75}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Árvore de Falhas (\textit {Fault Tree Analysis} — FTA)}{76}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}FMEA: Análise de Modos de Falha e Efeitos}{76}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.7}Categorias de Criticidade em Segurança}{76}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Requisitos de Segurança: O Poder do ``Não Deve''}{77}{section.7.8}%
+\contentsline {section}{\numberline {7.9}Arquitetura e Programação para Sistemas Seguros}{78}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Prevenção de Falhas (Fuga de Erros)}{78}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Tolerância a Falhas (Redundância e Votação)}{78}{subsection.7.9.2}%
+\contentsline {subsection}{\numberline {7.9.3}O Estado Seguro (\textit {Safe State})}{78}{subsection.7.9.3}%
+\contentsline {section}{\numberline {7.10}Software Crítico Primário vs. Secundário}{79}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Especificação Dirigida por Perigos}{80}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Terminologia Fundamental}{80}{subsection.7.11.1}%
+\contentsline {subsection}{\numberline {7.11.2}O Fluxo da Especificação}{80}{subsection.7.11.2}%
+\contentsline {section}{\numberline {7.12}Abordagens Práticas para Mitigação de Riscos}{81}{section.7.12}%
+\contentsline {section}{\numberline {7.13}Cultura de Segurança e ``Acidentes Normais''}{81}{section.7.13}%
+\contentsline {section}{\numberline {7.14}O Registro de Perigos (\textit {Hazard Registry})}{82}{section.7.14}%
+\contentsline {chapter}{\numberline {A}Exercícios de Fixação}{83}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Atividade Prática Sugerida}{107}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Glossário de Termos Técnicos}{115}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Tabela de Siglas e Acrônimos}{118}{appendix.D}%
+\contentsline {chapter}{Referências Bibliográficas}{120}{appendix*.29}%

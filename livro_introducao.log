@@ -1,123 +1,139 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.6)  10 APR 2026 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.12)  17 APR 2026 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/sergio/Documentos/unirv/2026-01/ENGENHARIA DA QUALIDADE E CONFIABILIDADE/aulas/1.Introducao/livro_introducao.tex"
-(/home/sergio/Documentos/unirv/2026-01/ENGENHARIA DA QUALIDADE E CONFIABILIDADE/aulas/1.Introducao/livro_introducao.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+**e:/Livro/Livro-qualidade/livro_introducao.tex
+(e:/Livro/Livro-qualidade/livro_introducao.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@chapter=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count196
-\U@D=\dimen141
-\l@unhyphenated=\language89
- (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count197
- (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
-Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
-Package babel Info: Making " an active character on input line 143.
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex
+\bbl@dirlevel=\count285
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4196.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\babel-portuguese.tex)
 Package babel Info: Importing font and identification data for portuguese
-(babel)             from babel-pt.ini. Reported on input line 11.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+(babel)             from babel-pt.ini. Reported on input line 4320.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\portuguese.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Making " an active character on input line 132.
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen142
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen150
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen143
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen151
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count198
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count199
-\leftroot@=\count266
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count267
-\DOTSCASE@=\count268
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen144
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count269
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count270
-\dotsspace@=\muskip16
-\c@parentequation=\count271
-\dspbrk@lvl=\count272
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
 \tag@help=\toks20
-\row@=\count273
-\column@=\count274
-\maxfields@=\count275
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
 \andhelp@=\toks21
-\eqnshift@=\dimen145
-\alignsep@=\dimen146
-\tagshift@=\dimen147
-\tagwidth@=\dimen148
-\totwidth@=\dimen149
-\lineht@=\dimen150
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
 \@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -151,731 +167,731 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen153
-\pgfutil@tempdimb=\dimen154
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box53
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box55
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks26
 \pgfkeys@temptoks=\toks27
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen155
-\pgf@y=\dimen156
-\pgf@xa=\dimen157
-\pgf@ya=\dimen158
-\pgf@xb=\dimen159
-\pgf@yb=\dimen160
-\pgf@xc=\dimen161
-\pgf@yc=\dimen162
-\pgf@xd=\dimen163
-\pgf@yd=\dimen164
+\pgf@x=\dimen163
+\pgf@y=\dimen164
+\pgf@xa=\dimen165
+\pgf@ya=\dimen166
+\pgf@xb=\dimen167
+\pgf@yb=\dimen168
+\pgf@xc=\dimen169
+\pgf@yc=\dimen170
+\pgf@xd=\dimen171
+\pgf@yd=\dimen172
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count276
-\c@pgf@countb=\count277
-\c@pgf@countc=\count278
-\c@pgf@countd=\count279
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count280
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+\pgf@sys@id@count=\count302
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count281
-\pgfsyssoftpath@bigbuffer@items=\count282
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count303
+\pgfsyssoftpath@bigbuffer@items=\count304
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen165
-\pgfmath@count=\count283
-\pgfmath@box=\box54
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen173
+\pgfmath@count=\count305
+\pgfmath@box=\box56
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count284
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen166
-\pgf@picmaxx=\dimen167
-\pgf@picminy=\dimen168
-\pgf@picmaxy=\dimen169
-\pgf@pathminx=\dimen170
-\pgf@pathmaxx=\dimen171
-\pgf@pathminy=\dimen172
-\pgf@pathmaxy=\dimen173
-\pgf@xx=\dimen174
-\pgf@xy=\dimen175
-\pgf@yx=\dimen176
-\pgf@yy=\dimen177
-\pgf@zx=\dimen178
-\pgf@zy=\dimen179
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen180
-\pgf@path@lasty=\dimen181
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen182
-\pgf@shorten@start@additional=\dimen183
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box55
-\pgf@hbox=\box56
-\pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count285
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen184
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen185
-\pgf@pt@y=\dimen186
-\pgf@pt@temp=\dimen187
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen188
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count286
-\pgf@shadingcount=\count287
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box58
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box59
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen190
-\pgf@nodesepend=\dimen191
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen192
-\pgffor@skip=\dimen193
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count306
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen174
+\pgf@picmaxx=\dimen175
+\pgf@picminy=\dimen176
+\pgf@picmaxy=\dimen177
+\pgf@pathminx=\dimen178
+\pgf@pathmaxx=\dimen179
+\pgf@pathminy=\dimen180
+\pgf@pathmaxy=\dimen181
+\pgf@xx=\dimen182
+\pgf@xy=\dimen183
+\pgf@yx=\dimen184
+\pgf@yy=\dimen185
+\pgf@zx=\dimen186
+\pgf@zy=\dimen187
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen188
+\pgf@path@lasty=\dimen189
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen190
+\pgf@shorten@start@additional=\dimen191
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count307
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen192
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen193
+\pgf@pt@y=\dimen194
+\pgf@pt@temp=\dimen195
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen196
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen197
+\pgf@sys@shading@range@num=\count308
+\pgf@shadingcount=\count309
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box60
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box61
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen198
+\pgf@nodesepend=\dimen199
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count288
-\pgfplotmarksize=\dimen194
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count310
+\pgfplotmarksize=\dimen258
 )
-\tikz@lastx=\dimen195
-\tikz@lasty=\dimen196
-\tikz@lastxsaved=\dimen197
-\tikz@lastysaved=\dimen198
-\tikz@lastmovetox=\dimen199
-\tikz@lastmovetoy=\dimen256
-\tikzleveldistance=\dimen257
-\tikzsiblingdistance=\dimen258
-\tikz@figbox=\box60
-\tikz@figbox@bg=\box61
-\tikz@tempbox=\box62
-\tikz@tempbox@bg=\box63
-\tikztreelevel=\count289
-\tikznumberofchildren=\count290
-\tikznumberofcurrentchild=\count291
-\tikz@fig@count=\count292
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count293
-\pgfmatrixcurrentcolumn=\count294
-\pgf@matrix@numberofcolumns=\count295
+\tikz@lastx=\dimen259
+\tikz@lasty=\dimen260
+\tikz@lastxsaved=\dimen261
+\tikz@lastysaved=\dimen262
+\tikz@lastmovetox=\dimen263
+\tikz@lastmovetoy=\dimen264
+\tikzleveldistance=\dimen265
+\tikzsiblingdistance=\dimen266
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count311
+\tikznumberofchildren=\count312
+\tikznumberofcurrentchild=\count313
+\tikz@fig@count=\count314
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count315
+\pgfmatrixcurrentcolumn=\count316
+\pgf@matrix@numberofcolumns=\count317
 )
-\tikz@expandcount=\count296
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+\tikz@expandcount=\count318
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
 \t@pgfplots@toka=\toks37
 \t@pgfplots@tokb=\toks38
 \t@pgfplots@tokc=\toks39
-\pgfplots@tmpa=\dimen259
-\c@pgfplots@coordindex=\count297
-\c@pgfplots@scanlineindex=\count298
- (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+\pgfplots@tmpa=\dimen267
+\c@pgfplots@coordindex=\count319
+\c@pgfplots@scanlineindex=\count320
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks40
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count299
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count300
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count321
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count322
 \t@pgfplotstable@a=\toks43
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count301
- (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen260
-\pgfdecoratedremainingdistance=\dimen261
-\pgfdecoratedinputsegmentcompleteddistance=\dimen262
-\pgfdecoratedinputsegmentremainingdistance=\dimen263
-\pgf@decorate@distancetomove=\dimen264
-\pgf@decorate@repeatstate=\count302
-\pgfdecorationsegmentamplitude=\dimen265
-\pgfdecorationsegmentlength=\dimen266
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count323
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen268
+\pgfdecoratedremainingdistance=\dimen269
+\pgfdecoratedinputsegmentcompleteddistance=\dimen270
+\pgfdecoratedinputsegmentremainingdistance=\dimen271
+\pgf@decorate@distancetomove=\dimen272
+\pgf@decorate@repeatstate=\count324
+\pgfdecorationsegmentamplitude=\dimen273
+\pgfdecorationsegmentlength=\dimen274
 )
-\tikz@lib@dec@box=\box64
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count303
-\pgfplots@xmin@reg=\dimen267
-\pgfplots@xmax@reg=\dimen268
-\pgfplots@ymin@reg=\dimen269
-\pgfplots@ymax@reg=\dimen270
-\pgfplots@zmin@reg=\dimen271
-\pgfplots@zmax@reg=\dimen272
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen273
-\pgfarrowlength=\dimen274
-\pgfarrowwidth=\dimen275
-\pgfarrowlinewidth=\dimen276
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box65
-\pgfnodeparttwobox=\box66
-\pgfnodepartthreebox=\box67
-\pgfnodepartfourbox=\box68
-\pgfnodeparttwentybox=\box69
-\pgfnodepartnineteenbox=\box70
-\pgfnodeparteighteenbox=\box71
-\pgfnodepartseventeenbox=\box72
-\pgfnodepartsixteenbox=\box73
-\pgfnodepartfifteenbox=\box74
-\pgfnodepartfourteenbox=\box75
-\pgfnodepartthirteenbox=\box76
-\pgfnodeparttwelvebox=\box77
-\pgfnodepartelevenbox=\box78
-\pgfnodeparttenbox=\box79
-\pgfnodepartninebox=\box80
-\pgfnodeparteightbox=\box81
-\pgfnodepartsevenbox=\box82
-\pgfnodepartsixbox=\box83
-\pgfnodepartfivebox=\box84
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
-File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.gates.logic.US.code.tex
-File: tikzlibraryshapes.gates.logic.US.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.logic.US.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.logic.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+\tikz@lib@dec@box=\box66
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count325
+\pgfplots@xmin@reg=\dimen275
+\pgfplots@xmax@reg=\dimen276
+\pgfplots@ymin@reg=\dimen277
+\pgfplots@ymax@reg=\dimen278
+\pgfplots@zmin@reg=\dimen279
+\pgfplots@zmax@reg=\dimen280
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen281
+\pgfarrowlength=\dimen282
+\pgfarrowwidth=\dimen283
+\pgfarrowlinewidth=\dimen284
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodepartlowerbox=\box67
+\pgfnodeparttwobox=\box68
+\pgfnodepartthreebox=\box69
+\pgfnodepartfourbox=\box70
+\pgfnodeparttwentybox=\box71
+\pgfnodepartnineteenbox=\box72
+\pgfnodeparteighteenbox=\box73
+\pgfnodepartseventeenbox=\box74
+\pgfnodepartsixteenbox=\box75
+\pgfnodepartfifteenbox=\box76
+\pgfnodepartfourteenbox=\box77
+\pgfnodepartthirteenbox=\box78
+\pgfnodeparttwelvebox=\box79
+\pgfnodepartelevenbox=\box80
+\pgfnodeparttenbox=\box81
+\pgfnodepartninebox=\box82
+\pgfnodeparteightbox=\box83
+\pgfnodepartsevenbox=\box84
+\pgfnodepartsixbox=\box85
+\pgfnodepartfivebox=\box86
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.gates.logic.US.code.tex
+File: tikzlibraryshapes.gates.logic.US.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/circuits\pgflibraryshapes.gates.logic.US.code.tex (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes/circuits\pgflibraryshapes.gates.logic.code.tex))) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count304
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count305
+\c@section@level=\count326
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count327
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen277
-\Hy@linkcounter=\count306
-\Hy@pagecounter=\count307
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen285
+\Hy@linkcounter=\count328
+\Hy@pagecounter=\count329
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count308
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count330
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count309
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count331
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen278
- (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen286
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count310
-\Field@Width=\dimen279
-\Fld@charsize=\dimen280
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring OFF on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
- (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count311
-\c@Item=\count312
-\c@Hfootnote=\count313
+\Fld@menulength=\count332
+\Field@Width=\dimen287
+\Fld@charsize=\dimen288
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count333
+\c@Item=\count334
+\c@Hfootnote=\count335
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
- (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-)
-\Fld@listcount=\count314
-\c@bookmark@seq@number=\count315
- (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count336
+\c@bookmark@seq@number=\count337
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip53
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
- (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\Hy@SectionHShift=\skip54
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks44
 \verbatim@line=\toks45
 \verbatim@in@stream=\read4
-) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box85
-\tcb@upperbox=\box86
-\tcb@lowerbox=\box87
-\tcb@phantombox=\box88
-\c@tcbbreakpart=\count316
-\c@tcblayer=\count317
-\c@tcolorbox@number=\count318
-\l__tcobox_tmpa_box=\box89
-\l__tcobox_tmpa_dim=\dimen281
-\tcb@temp=\box90
-\tcb@temp=\box91
+\tcb@titlebox=\box87
+\tcb@upperbox=\box88
+\tcb@lowerbox=\box89
+\tcb@phantombox=\box90
+\c@tcbbreakpart=\count338
+\c@tcblayer=\count339
+\c@tcolorbox@number=\count340
+\l__tcobox_tmpa_box=\box91
+\l__tcobox_tmpa_dim=\dimen289
 \tcb@temp=\box92
 \tcb@temp=\box93
- (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
-\c@tcbrastercolumn=\count319
-\c@tcbrasterrow=\count320
-\c@tcbrasternum=\count321
-\c@tcbraster=\count322
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+\tcb@temp=\box94
+\tcb@temp=\box95
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.9.0'
+\c@tcbrastercolumn=\count341
+\c@tcbrasterrow=\count342
+\c@tcbrasternum=\count343
+\c@tcbraster=\count344
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
- (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-common.sty
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
-) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box94
-)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
-)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+\l__tikzfill_img_box=\box96
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box95
-\tcb@totalupperbox=\box96
-\tcb@totallowerbox=\box97
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
-\tcbfitdim=\dimen282
-\tcb@lowerfitdim=\dimen283
-\tcb@upperfitdim=\dimen284
-\tcb@cur@hbadness=\count323
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
-Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
-Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count324
-\lst@gtempboxa=\box98
+\tcb@testbox=\box97
+\tcb@totalupperbox=\box98
+\tcb@totallowerbox=\box99
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.9.0'
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.9.0'
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.9.0'
+\tcbfitdim=\dimen290
+\tcb@lowerfitdim=\dimen291
+\tcb@upperfitdim=\dimen292
+\tcb@cur@hbadness=\count345
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.9.0'
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.9.0'
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count346
+\lst@gtempboxa=\box100
 \lst@token=\toks46
-\lst@length=\count325
-\lst@currlwidth=\dimen285
-\lst@column=\count326
-\lst@pos=\count327
-\lst@lostspace=\dimen286
-\lst@width=\dimen287
-\lst@newlines=\count328
-\lst@lineno=\count329
-\lst@maxwidth=\dimen288
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count330
-\lst@skipnumbers=\count331
-\lst@framebox=\box99
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
+\lst@length=\count347
+\lst@currlwidth=\dimen293
+\lst@column=\count348
+\lst@pos=\count349
+\lst@lostspace=\dimen294
+\lst@width=\dimen295
+\lst@newlines=\count350
+\lst@lineno=\count351
+\lst@maxwidth=\dimen296
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count352
+\lst@skipnumbers=\count353
+\lst@framebox=\box101
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
-Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
-Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.9.0'
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.9.0'
 )
-\c@tcblisting=\count332
-)) (/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+\c@tcblisting=\count354
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
-Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
-Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
-Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
-Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
-)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
- (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.9.0'
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.9.0'
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.9.0'
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.9.0'
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count333
- (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+\lrq@indent=\count355
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count334
-\c@listtotal=\count335
-\c@listcount=\count336
-\c@liststart=\count337
-\c@liststop=\count338
-\c@citecount=\count339
-\c@citetotal=\count340
-\c@multicitecount=\count341
-\c@multicitetotal=\count342
-\c@instcount=\count343
-\c@maxnames=\count344
-\c@minnames=\count345
-\c@maxitems=\count346
-\c@minitems=\count347
-\c@citecounter=\count348
-\c@maxcitecounter=\count349
-\c@savedcitecounter=\count350
-\c@uniquelist=\count351
-\c@uniquename=\count352
-\c@refsection=\count353
-\c@refsegment=\count354
-\c@maxextratitle=\count355
-\c@maxextratitleyear=\count356
-\c@maxextraname=\count357
-\c@maxextradate=\count358
-\c@maxextraalpha=\count359
-\c@abbrvpenalty=\count360
-\c@highnamepenalty=\count361
-\c@lownamepenalty=\count362
-\c@maxparens=\count363
-\c@parenlevel=\count364
-\blx@tempcnta=\count365
-\blx@tempcntb=\count366
-\blx@tempcntc=\count367
-\c@blx@maxsection=\count368
-\blx@maxsegment@0=\count369
-\blx@notetype=\count370
-\blx@parenlevel@text=\count371
-\blx@parenlevel@foot=\count372
-\blx@sectionciteorder@0=\count373
-\blx@sectionciteorderinternal@0=\count374
-\blx@entrysetcounter=\count375
-\blx@biblioinstance=\count376
-\labelnumberwidth=\skip54
-\labelalphawidth=\skip55
-\biblabelsep=\skip56
-\bibitemsep=\skip57
-\bibnamesep=\skip58
-\bibinitsep=\skip59
-\bibparsep=\skip60
-\bibhang=\skip61
+\c@tabx@nest=\count356
+\c@listtotal=\count357
+\c@listcount=\count358
+\c@liststart=\count359
+\c@liststop=\count360
+\c@citecount=\count361
+\c@citetotal=\count362
+\c@multicitecount=\count363
+\c@multicitetotal=\count364
+\c@instcount=\count365
+\c@maxnames=\count366
+\c@minnames=\count367
+\c@maxitems=\count368
+\c@minitems=\count369
+\c@citecounter=\count370
+\c@maxcitecounter=\count371
+\c@savedcitecounter=\count372
+\c@uniquelist=\count373
+\c@uniquename=\count374
+\c@refsection=\count375
+\c@refsegment=\count376
+\c@maxextratitle=\count377
+\c@maxextratitleyear=\count378
+\c@maxextraname=\count379
+\c@maxextradate=\count380
+\c@maxextraalpha=\count381
+\c@abbrvpenalty=\count382
+\c@highnamepenalty=\count383
+\c@lownamepenalty=\count384
+\c@maxparens=\count385
+\c@parenlevel=\count386
+\blx@tempcnta=\count387
+\blx@tempcntb=\count388
+\blx@tempcntc=\count389
+\c@blx@maxsection=\count390
+\blx@maxsegment@0=\count391
+\blx@notetype=\count392
+\blx@parenlevel@text=\count393
+\blx@parenlevel@foot=\count394
+\blx@sectionciteorder@0=\count395
+\blx@sectionciteorderinternal@0=\count396
+\blx@entrysetcounter=\count397
+\blx@biblioinstance=\count398
+\labelnumberwidth=\skip55
+\labelalphawidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
 \blx@bcfin=\read5
 \blx@bcfout=\write4
-\blx@langwohyphens=\language90
-\c@mincomprange=\count377
-\c@maxcomprange=\count378
-\c@mincompwidth=\count379
+\blx@langwohyphens=\language80
+\c@mincomprange=\count399
+\c@maxcomprange=\count400
+\c@mincompwidth=\count401
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count380
-\c@savedafterword=\count381
-\c@annotator=\count382
-\c@savedannotator=\count383
-\c@author=\count384
-\c@savedauthor=\count385
-\c@bookauthor=\count386
-\c@savedbookauthor=\count387
-\c@commentator=\count388
-\c@savedcommentator=\count389
-\c@editor=\count390
-\c@savededitor=\count391
-\c@editora=\count392
-\c@savededitora=\count393
-\c@editorb=\count394
-\c@savededitorb=\count395
-\c@editorc=\count396
-\c@savededitorc=\count397
-\c@foreword=\count398
-\c@savedforeword=\count399
-\c@holder=\count400
-\c@savedholder=\count401
-\c@introduction=\count402
-\c@savedintroduction=\count403
-\c@namea=\count404
-\c@savednamea=\count405
-\c@nameb=\count406
-\c@savednameb=\count407
-\c@namec=\count408
-\c@savednamec=\count409
-\c@translator=\count410
-\c@savedtranslator=\count411
-\c@shortauthor=\count412
-\c@savedshortauthor=\count413
-\c@shorteditor=\count414
-\c@savedshorteditor=\count415
-\c@labelname=\count416
-\c@savedlabelname=\count417
-\c@institution=\count418
-\c@savedinstitution=\count419
-\c@lista=\count420
-\c@savedlista=\count421
-\c@listb=\count422
-\c@savedlistb=\count423
-\c@listc=\count424
-\c@savedlistc=\count425
-\c@listd=\count426
-\c@savedlistd=\count427
-\c@liste=\count428
-\c@savedliste=\count429
-\c@listf=\count430
-\c@savedlistf=\count431
-\c@location=\count432
-\c@savedlocation=\count433
-\c@organization=\count434
-\c@savedorganization=\count435
-\c@origlocation=\count436
-\c@savedoriglocation=\count437
-\c@origpublisher=\count438
-\c@savedorigpublisher=\count439
-\c@publisher=\count440
-\c@savedpublisher=\count441
-\c@language=\count442
-\c@savedlanguage=\count443
-\c@origlanguage=\count444
-\c@savedoriglanguage=\count445
-\c@pageref=\count446
-\c@savedpageref=\count447
-\shorthandwidth=\skip62
-\shortjournalwidth=\skip63
-\shortserieswidth=\skip64
-\shorttitlewidth=\skip65
-\shortauthorwidth=\skip66
-\shorteditorwidth=\skip67
-\locallabelnumberwidth=\skip68
-\locallabelalphawidth=\skip69
-\localshorthandwidth=\skip70
-\localshortjournalwidth=\skip71
-\localshortserieswidth=\skip72
-\localshorttitlewidth=\skip73
-\localshortauthorwidth=\skip74
-\localshorteditorwidth=\skip75
+\c@afterword=\count402
+\c@savedafterword=\count403
+\c@annotator=\count404
+\c@savedannotator=\count405
+\c@author=\count406
+\c@savedauthor=\count407
+\c@bookauthor=\count408
+\c@savedbookauthor=\count409
+\c@commentator=\count410
+\c@savedcommentator=\count411
+\c@editor=\count412
+\c@savededitor=\count413
+\c@editora=\count414
+\c@savededitora=\count415
+\c@editorb=\count416
+\c@savededitorb=\count417
+\c@editorc=\count418
+\c@savededitorc=\count419
+\c@foreword=\count420
+\c@savedforeword=\count421
+\c@holder=\count422
+\c@savedholder=\count423
+\c@introduction=\count424
+\c@savedintroduction=\count425
+\c@namea=\count426
+\c@savednamea=\count427
+\c@nameb=\count428
+\c@savednameb=\count429
+\c@namec=\count430
+\c@savednamec=\count431
+\c@translator=\count432
+\c@savedtranslator=\count433
+\c@shortauthor=\count434
+\c@savedshortauthor=\count435
+\c@shorteditor=\count436
+\c@savedshorteditor=\count437
+\c@labelname=\count438
+\c@savedlabelname=\count439
+\c@institution=\count440
+\c@savedinstitution=\count441
+\c@lista=\count442
+\c@savedlista=\count443
+\c@listb=\count444
+\c@savedlistb=\count445
+\c@listc=\count446
+\c@savedlistc=\count447
+\c@listd=\count448
+\c@savedlistd=\count449
+\c@liste=\count450
+\c@savedliste=\count451
+\c@listf=\count452
+\c@savedlistf=\count453
+\c@location=\count454
+\c@savedlocation=\count455
+\c@organization=\count456
+\c@savedorganization=\count457
+\c@origlocation=\count458
+\c@savedoriglocation=\count459
+\c@origpublisher=\count460
+\c@savedorigpublisher=\count461
+\c@publisher=\count462
+\c@savedpublisher=\count463
+\c@language=\count464
+\c@savedlanguage=\count465
+\c@origlanguage=\count466
+\c@savedoriglanguage=\count467
+\c@pageref=\count468
+\c@savedpageref=\count469
+\shorthandwidth=\skip63
+\shortjournalwidth=\skip64
+\shortserieswidth=\skip65
+\shorttitlewidth=\skip66
+\shortauthorwidth=\skip67
+\shorteditorwidth=\skip68
+\locallabelnumberwidth=\skip69
+\locallabelalphawidth=\skip70
+\localshorthandwidth=\skip71
+\localshortjournalwidth=\skip72
+\localshortserieswidth=\skip73
+\localshorttitlewidth=\skip74
+\localshortauthorwidth=\skip75
+\localshorteditorwidth=\skip76
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count448
-\c@textcitetotal=\count449
-\c@textcitemaxnames=\count450
-\c@biburlbigbreakpenalty=\count451
-\c@biburlbreakpenalty=\count452
-\c@biburlnumpenalty=\count453
-\c@biburlucpenalty=\count454
-\c@biburllcpenalty=\count455
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count456
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count470
+\c@textcitetotal=\count471
+\c@textcitemaxnames=\count472
+\c@biburlbigbreakpenalty=\count473
+\c@biburlbreakpenalty=\count474
+\c@biburlnumpenalty=\count475
+\c@biburlucpenalty=\count476
+\c@biburllcpenalty=\count477
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count478
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/abnt.bbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/bbx\abnt.bbx
 File: abnt.bbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
- (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-01-22 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count457
-\l__pdf_internal_box=\box100
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-12-24 L3 programming layer (loader) 
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count479
 ))
-Package: xparse 2023-10-10 L3 Experimental document command parser
-) (/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count458
-\c@bbx:relatedtotal=\count459
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count480
+\c@bbx:relatedtotal=\count481
 ))
 Package biblatex Info: Trying to load citation style 'abnt'...
 Package biblatex Info: ... file 'abnt.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/abnt.cbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/cbx\abnt.cbx
 File: abnt.cbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear-comp.cbx
-File: authoryear-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear-comp.cbx
+File: authoryear-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -900,243 +916,241 @@ Package biblatex Info: Redefining '\citeyear'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2024-01-22 L3 programming layer (loader) 
+(biblatex)             2025-12-24 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
-)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count460
-\Gm@cntv=\count461
-\c@Gm@tempcnt=\count462
-\Gm@bindingoffset=\dimen289
-\Gm@wd@mp=\dimen290
-\Gm@odd@mp=\dimen291
-\Gm@even@mp=\dimen292
-\Gm@layoutwidth=\dimen293
-\Gm@layoutheight=\dimen294
-\Gm@layouthoffset=\dimen295
-\Gm@layoutvoffset=\dimen296
+\Gm@cnth=\count482
+\Gm@cntv=\count483
+\c@Gm@tempcnt=\count484
+\Gm@bindingoffset=\dimen297
+\Gm@wd@mp=\dimen298
+\Gm@odd@mp=\dimen299
+\Gm@even@mp=\dimen300
+\Gm@layoutwidth=\dimen301
+\Gm@layoutheight=\dimen302
+\Gm@layouthoffset=\dimen303
+\Gm@layoutvoffset=\dimen304
 \Gm@dimlist=\toks47
-) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen297
-\lightrulewidth=\dimen298
-\cmidrulewidth=\dimen299
-\belowrulesep=\dimen300
-\belowbottomsep=\dimen301
-\aboverulesep=\dimen302
-\abovetopsep=\dimen303
-\cmidrulesep=\dimen304
-\cmidrulekern=\dimen305
-\defaultaddspace=\dimen306
-\@cmidla=\count463
-\@cmidlb=\count464
-\@aboverulesep=\dimen307
-\@belowrulesep=\dimen308
-\@thisruleclass=\count465
-\@lastruleclass=\count466
-\@thisrulewidth=\dimen309
-) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip76
-\enit@outerparindent=\dimen310
+\heavyrulewidth=\dimen305
+\lightrulewidth=\dimen306
+\cmidrulewidth=\dimen307
+\belowrulesep=\dimen308
+\belowbottomsep=\dimen309
+\aboverulesep=\dimen310
+\abovetopsep=\dimen311
+\cmidrulesep=\dimen312
+\cmidrulekern=\dimen313
+\defaultaddspace=\dimen314
+\@cmidla=\count485
+\@cmidlb=\count486
+\@aboverulesep=\dimen315
+\@belowrulesep=\dimen316
+\@thisruleclass=\count487
+\@lastruleclass=\count488
+\@thisrulewidth=\dimen317
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip77
+\enit@outerparindent=\dimen318
 \enit@toks=\toks48
-\enit@inbox=\box101
-\enit@count@id=\count467
-\enitdp@description=\count468
+\enit@inbox=\box102
+\enit@count@id=\count489
+\enitdp@description=\count490
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 76.
- (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip77
-\RaggedLeftLeftskip=\skip78
-\RaggedRightLeftskip=\skip79
-\CenteringRightskip=\skip80
-\RaggedLeftRightskip=\skip81
-\RaggedRightRightskip=\skip82
-\CenteringParfillskip=\skip83
-\RaggedLeftParfillskip=\skip84
-\RaggedRightParfillskip=\skip85
-\JustifyingParfillskip=\skip86
-\CenteringParindent=\skip87
-\RaggedLeftParindent=\skip88
-\RaggedRightParindent=\skip89
-\JustifyingParindent=\skip90
+\CenteringLeftskip=\skip78
+\RaggedLeftLeftskip=\skip79
+\RaggedRightLeftskip=\skip80
+\CenteringRightskip=\skip81
+\RaggedLeftRightskip=\skip82
+\RaggedRightRightskip=\skip83
+\CenteringParfillskip=\skip84
+\RaggedLeftParfillskip=\skip85
+\RaggedRightParfillskip=\skip86
+\JustifyingParfillskip=\skip87
+\CenteringParindent=\skip88
+\RaggedLeftParindent=\skip89
+\RaggedRightParindent=\skip90
+\JustifyingParindent=\skip91
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count469
-\@quotereset=\count470
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 250.
-(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+\@quotelevel=\count491
+\@quotereset=\count492
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 249.
+(C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./livro_introducao.aux)
+) (livro_introducao.aux
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported on input line 9.
+)
 \openout1 = `livro_introducao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count471
-\scratchdimen=\dimen311
-\scratchbox=\box102
-\nofMPsegments=\count472
-\nofMParguments=\count473
+\scratchcounter=\count493
+\scratchdimen=\dimen319
+\scratchbox=\box103
+\nofMPsegments=\count494
+\nofMParguments=\count495
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count474
-\MPscratchDim=\dimen312
-\MPnumerator=\count475
-\makeMPintoPDFobject=\count476
+\MPscratchCnt=\count496
+\MPscratchDim=\dimen320
+\MPnumerator=\count497
+\makeMPintoPDFobject=\count498
 \everyMPtoPDFconversion=\toks50
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring ON on input line 250.
-(./livro_introducao.out) (./livro_introducao.out)
+Package hyperref Info: Link coloring ON on input line 249.
+(livro_introducao.out) (livro_introducao.out)
 \@outlinefile=\write5
 \openout5 = `livro_introducao.out'.
 
-\c@lstlisting=\count477
+\c@lstlisting=\count499
 Package biblatex Info: Trying to load language 'portuguese' -> 'portuguese-abnt'...
 Package biblatex Info: ... file 'portuguese-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/portuguese-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\portuguese-abnt.lbx
 File: portuguese-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
-
-
-Package biblatex Warning: File 'brazilian-abnt-abnt.lbx' not found!
-(biblatex)                Ignoring mapping 'brazilian-abnt' -> 'brazilian-abnt-abnt'.
-
 Package biblatex Info: Trying to load language 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )))
 Package biblatex Info: Trying to load language 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'brazil' -> 'brazil-abnt'...
 Package biblatex Info: ... file 'brazil-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazil-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazil-abnt.lbx
 File: brazil-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazil.lbx
-File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazil.lbx
+File: brazil.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )))))
 Package biblatex Info: Trying to load language 'brazil' -> 'brazil-abnt'...
 Package biblatex Info: ... file 'brazil-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazil-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazil-abnt.lbx
 File: brazil-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazil.lbx
-File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazil.lbx
+File: brazil.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )))
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazil.lbx
-File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazil.lbx
+File: brazil.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'...
 Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-abnt/lbx\brazilian-abnt.lbx
 File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'brazil'...
 Package biblatex Info: ... file 'brazil.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazil.lbx
-File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazil.lbx
+File: brazil.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
-File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\brazilian.lbx
+File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 ))))))))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1144,10 +1158,14 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `livro_introducao.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
+
+
+Package biblatex Warning: File 'livro_introducao.bbl' is wrong format version - expected 3.3.
+
 Package biblatex Info: ... file 'livro_introducao.bbl' found.
- (./livro_introducao.bbl)
-Package biblatex Info: Reference section=0 on input line 250.
-Package biblatex Info: Reference segment=0 on input line 250.
+(livro_introducao.bbl)
+Package biblatex Info: Reference section=0 on input line 249.
+Package biblatex Info: Reference segment=0 on input line 249.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1183,30 +1201,146 @@ Package biblatex Info: Reference segment=0 on input line 250.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 253.
-(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+
+Overfull \hbox (37.89673pt too wide) in paragraph at lines 23--250
+[]\T1/lmr/m/n/12 author4ul=2un=0,uniquepart=base,hash=804009dd6ea3185359156e228afc3f35family=Beyer,
+ []
+
+
+Overfull \hbox (196.28838pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=B., gi-ven=Betsy, gi-veni=B., gi-ve-nun=0un=0,uniquepart=base,hash=f5e3bc5ee6025ef3a58750c6498c5553family=Jones,
+ []
+
+
+Overfull \hbox (199.16496pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=J., gi-ven=Chris, gi-veni=C., gi-ve-nun=0un=0,uniquepart=base,hash=1e5b9f6a7c8eeb221b19889433ae21a3family=Petoff,
+ []
+
+
+Overfull \hbox (219.16835pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=P., gi-ven=Jennifer, gi-veni=J., gi-ve-nun=0un=0,uniquepart=base,hash=a07a7a3144d96f35e13fdc8d88a76f72family=Murphy,
+ []
+
+
+Overfull \hbox (372.8898pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=M., gi-ven=Niall Ri-chard, gi-veni=N. R., gi-ve-nun=0                    author5ul=2un=0,uniquepart=base,hash=804009dd6ea3185359156e228afc3f35family=Beyer,
+ []
+
+
+Overfull \hbox (210.74803pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=B., gi-ven=Betsy, gi-veni=B., gi-ve-nun=0un=0,uniquepart=base,hash=a07a7a3144d96f35e13fdc8d88a76f72family=Murphy,
+ []
+
+
+Overfull \hbox (259.69807pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=M., gi-ven=Niall Ri-chard, gi-veni=N. R., gi-ve-nun=0un=0,uniquepart=base,hash=68e1f539865ece1454614190fc6cb96bfamily=Rensin,
+ []
+
+
+Overfull \hbox (253.7601pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=R., gi-ven=David K., gi-veni=D. K., gi-ve-nun=0un=0,uniquepart=base,hash=859eaf844d06ef7e836d1308c534838efamily=Kawahara,
+ []
+
+
+Overfull \hbox (210.19077pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=K., gi-ven=Kent, gi-veni=K., gi-ve-nun=0un=0,uniquepart=base,hash=8359d5c5f7462b94cad9aeb6cb31a61bfamily=Thorne,
+ []
+
+
+Overfull \hbox (301.16428pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=T., gi-ven=Stephen, gi-veni=S., gi-ve-nun=0                  author1un=0,uniquepart=base,hash=4a912a49e9449bf533ac7bbe9d8cf849family=Fisher,
+ []
+
+
+Overfull \hbox (296.27437pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=F., gi-ven=Nate, gi-veni=N., gi-ve-nun=0                 author1un=0,uniquepart=base,hash=5d9e5a8a4561cb862f2476bc464d12cdfamily=Garman,
+ []
+
+
+Overfull \hbox (324.26508pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=G., gi-ven=John R., gi-veni=J. R., gi-ve-nun=0                    author1un=0,uniquepart=base,hash=aca5e4bc2c593382171c6ae44b950dbdfamily=Google
+ []
+
+
+Overfull \hbox (183.36603pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 SRE Team, fa-milyi=G.                     author2un=0,uniquepart=base,hash=596fefb544ed97a82b4ff5d161516210family=Hamilton,
+ []
+
+
+Overfull \hbox (258.8161pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=H., gi-ven=Margaret H., gi-veni=M. H., gi-ve-nun=0un=0,uniquepart=base,hash=50bf012bd517b36db2b4ca3e86e019e7family=Zeldin,
+ []
+
+
+Overfull \hbox (315.94873pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=Z., gi-ven=Saydean, gi-veni=S., gi-ve-nun=0                     author2un=0,uniquepart=base,hash=9e89d796d06f74d6551850b1c3bff900family=Humble,
+ []
+
+
+Overfull \hbox (184.8955pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=H., gi-ven=Jez, gi-veni=J., gi-ve-nun=0un=0,uniquepart=base,hash=e88f486e16133b897ffb346a75f56d96family=Farley,
+ []
+
+
+Overfull \hbox (281.83516pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=F., gi-ven=David, gi-veni=D., gi-ve-nun=0                  author4un=0,uniquepart=base,hash=8e1c949be5801a6f56b7ac5df47a58a9family=Kim,
+ []
+
+
+Overfull \hbox (203.07721pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=K., gi-ven=Gene, gi-veni=G., gi-ve-nun=0un=0,uniquepart=base,hash=a0f7c9b6bc980e2a3126cc043f559c07family=Debois,
+ []
+
+
+Overfull \hbox (210.09473pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=D., gi-ven=Patrick, gi-veni=P., gi-ve-nun=0un=0,uniquepart=base,hash=a09b6fdd8891cc3ae443eb45fd16799bfamily=Willis,
+ []
+
+
+Overfull \hbox (208.23213pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=W., gi-ven=John, gi-veni=J., gi-ve-nun=0un=0,uniquepart=base,hash=9e89d796d06f74d6551850b1c3bff900family=Humble,
+ []
+
+
+Overfull \hbox (299.61514pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=H., gi-ven=Jez, gi-veni=J., gi-ve-nun=0                   author1un=0,uniquepart=base,hash=27ca77940a5e8c07c5d89d0f3fb11d75family=McKinney,
+ []
+
+
+Overfull \hbox (321.55307pt too wide) in paragraph at lines 23--250
+\T1/lmr/m/n/12 fa-milyi=M., gi-ven=Wes, gi-veni=W., gi-ve-nun=0                   author1un=0,uniquepart=base,hash=70341b3bfcce7026902f4eb1e4111b58family=Sommerville,
+ []
+
+[1
+
+{C:/Users/Leandro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 252.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 253.
- (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 252.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] (./livro_introducao.toc
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \makecapa
+                [1{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (livro_introducao.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
- (/usr/share/texmf/tex/latex/lm/omllmm.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
- (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
- (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1216,17 +1350,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ....2}Erro, Defeito e Falha}{20}{section.2.2}
+l.32 ... Todo Defeito Gera Falha}{24}{section.2.3}
                                                   % [1
 
 ] [2] [3] [4])
@@ -1241,257 +1375,314 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6
 
 
-]
+] [7]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'beyer2016sre' on page 8 undefined on input line 433.
 
-[7] [8]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 404.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+
+LaTeX Warning: Citation 'googlesre2024' on page 8 undefined on input line 433.
+
+[8]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 469.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+) [9]
+
+LaTeX Warning: Citation 'sommerville2015software' on page 10 undefined on input line 529.
+
+
+LaTeX Warning: Citation 'sommerville2015software' on page 10 undefined on input line 529.
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 529--529
+[]\T1/lmr/m/n/12 Figura 1.4: []Fatores que afe-tam o pro-duto de soft-ware. Adap-tado de
+ []
+
+[10]
+
+LaTeX Warning: Citation 'hamilton1976apollo' on page 11 undefined on input line 544.
+
+
+LaTeX Warning: Citation 'fisher2019moon' on page 11 undefined on input line 544.
+
+
+LaTeX Warning: Citation 'garman2011apollo' on page 11 undefined on input line 546.
+
+
+Overfull \hbox (43.20958pt too wide) in paragraph at lines 543--547
+\T1/lmr/bx/n/12 Mar-ga-ret Ha-mil-ton \T1/lmr/m/n/12 no pro-grama Apollo, da NASA ([]; []).
+ []
+
+[11]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 695.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 695.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 695.
+ [12{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (22.00566pt too wide) in paragraph at lines 779--780
+ [][] 
+ []
+
+[13] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
+[15]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 485.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 485.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 485.
+(Font)              <10.95> on input line 1033.
+ [16{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
-Overfull \hbox (7.63974pt too wide) in paragraph at lines 486--487
- [][] 
+LaTeX Warning: Citation 'beyer2016sre' on page 17 undefined on input line 1140.
+
+
+LaTeX Warning: Citation 'beyer2018workbook' on page 17 undefined on input line 1140.
+
+[17]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[19] [20]
+
+LaTeX Warning: Citation 'kim2018devops' on page 21 undefined on input line 1400.
+
+
+LaTeX Warning: Citation 'humble2010' on page 21 undefined on input line 1400.
+
+
+LaTeX Warning: Citation 'beyer2016sre' on page 21 undefined on input line 1400.
+
+
+Overfull \hbox (53.61966pt too wide) in paragraph at lines 1399--1401
+\T1/lmr/m/n/12 Por fim, é im-por-tante di-fe-ren-ciar, ainda que bre-ve-mente, os con-cei-tos de \T1/lmr/bx/n/12 De-vOps \T1/lmr/m/n/12 ([];
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [11] [12]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 689.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [15]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 948.
- [17] [18] [19]
+[21] [22]
 Cap\'{\i }tulo 2.
-[20
+
+LaTeX Warning: Citation 'sommerville2019' on page 23 undefined on input line 1498.
+
+[23
 
 
-] [21{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}] [22]
+] [24{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [25]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]
-Overfull \hbox (15.6296pt too wide) in paragraph at lines 1343--1344
+[26]
+Overfull \hbox (15.6296pt too wide) in paragraph at lines 1763--1764
  [][] 
  []
 
-[24{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [25]
+[27{C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [28]
 Cap\'{\i }tulo 3.
 
-Overfull \hbox (19.7264pt too wide) in paragraph at lines 1457--1458
+Overfull \hbox (19.7264pt too wide) in paragraph at lines 1877--1878
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26
+[29
 
 
-] [27] [28] [29]
+] [30] [31] [32]
 
-LaTeX Warning: Reference `fig:n-versoes' on page 30 undefined on input line 1671.
+LaTeX Warning: Reference `fig:n-versoes' on page 33 undefined on input line 2091.
 
-[30]
-<hadoop.jpg, id=1020, 1284.8pt x 643.40375pt>
+[33]
+<hadoop.jpg, id=1016, 1284.8pt x 643.40375pt>
 File: hadoop.jpg Graphic file (type jpg)
 <use hadoop.jpg>
-Package pdftex.def Info: hadoop.jpg  used on input line 1754.
+Package pdftex.def Info: hadoop.jpg  used on input line 2174.
 (pdftex.def)             Requested size: 455.24411pt x 227.97304pt.
 
-Overfull \hbox (6.52798pt too wide) in paragraph at lines 1754--1755
+Overfull \hbox (6.52798pt too wide) in paragraph at lines 2174--2175
 [][]\T1/lmr/m/n/12 [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32 <./hadoop.jpg>]
+[34] [35 <./hadoop.jpg>]
 
-LaTeX Warning: Reference `fig:hadoop-cluster' on page 33 undefined on input line 1878.
-
-[33] [34]
-Cap\'{\i }tulo 4.
-[35
-
-
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:hadoop-cluster' on page 36 undefined on input line 2298.
 
 [36] [37]
+Cap\'{\i }tulo 4.
+[38
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38] [39]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2215.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [40] [41] [42]
-Cap\'{\i }tulo 5.
-[43
 
 ]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44]
-Package pgfplots info on input line 2376: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
-Package pgfplots info on input line 2376: Using 'lua backend=false' for axis: x coord trafo unsupported.
- [45] [46] [47] [48] [49] [50]
+[39] [40]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41] [42]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2635.
+ (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [43] [44] [45]
+Cap\'{\i }tulo 5.
+[46
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47]
+Package pgfplots info on input line 2796: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 2796: Using 'lua backend=false' for axis: x coord trafo unsupported.
+ [48] [49] [50] [51] [52] [53]
 Cap\'{\i }tulo 6.
-[51
+[54
 
-] [52]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[53]
+] [55]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[54] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
+[56]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'mckinney2022' on page 57 undefined on input line 3192.
+
+
+Overfull \hbox (6.18602pt too wide) in paragraph at lines 3192--3193
+\T1/lmr/bx/n/12 Ex-pres-sões Re-gu-la-res (Re-gex) \T1/lmr/m/n/12 com-bi-na-das com a bi-bli-o-teca \T1/lmr/bx/n/12 Pan-das \T1/lmr/m/n/12 ([])
+ []
+
+[57] (C:\Users\Leandro\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 2776.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 3196.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2777.
- [55]
-Overfull \hbox (17.68909pt too wide) in paragraph at lines 2814--2815
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 3197.
+ [58]
+Overfull \hbox (17.68909pt too wide) in paragraph at lines 3234--3235
 \T1/lmr/m/n/12 Um dos pri-mei-ros pas-sos da aná-lise é ro-dar co-man-dos des-cri-ti-vos ge-rais, como o `df.describe()`,
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56] [57] [58]
+[59] [60] [61]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59] [60]
+[62] [63]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61]
+[64]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[62]
-Overfull \hbox (16.79865pt too wide) in paragraph at lines 3043--3043
+[65]
+Overfull \hbox (16.79865pt too wide) in paragraph at lines 3463--3463
 []\T1/lmr/bx/n/14.4 1. Emer-gên-cia In-du-zida por Tes-tes (O Caso do DB MySQL) 
  []
 
-[63] [64]
-Overfull \hbox (5.04759pt too wide) in paragraph at lines 3082--3082
+[66] [67]
+Overfull \hbox (5.04759pt too wide) in paragraph at lines 3502--3502
 []\T1/lmr/bx/n/14.4 3. Emer-gên-cia In-du-zida por Pro-ces-sos Au-to-má-ti-cos (Caso
  []
 
-[65] [66] [67]
+[68] [69] [70]
 Cap\'{\i }tulo 7.
-[68
+[71
 
-] [69]
-Overfull \hbox (13.00226pt too wide) in paragraph at lines 3220--3221
+] [72]
+Overfull \hbox (13.00226pt too wide) in paragraph at lines 3640--3641
  [][] 
  []
 
-[70]
+[73]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[71]
-Overfull \hbox (2.93796pt too wide) in paragraph at lines 3296--3297
+[74]
+Overfull \hbox (2.93796pt too wide) in paragraph at lines 3716--3717
 \T1/lmr/m/n/12 A FTA é uma téc-nica de-du-tiva (\T1/lmr/m/it/12 top-down\T1/lmr/m/n/12 ) que co-meça com um "Evento de Topo"indesejado
  []
 
-[72]
+[75]
 
-Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``f1''? on input line 3318.
+Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``f1''? on input line 3738.
 
 
-Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``f3''? on input line 3320.
+Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``f3''? on input line 3740.
 
-[73]
-Overfull \hbox (3.40417pt too wide) in paragraph at lines 3375--3375
+[76]
+Overfull \hbox (3.40417pt too wide) in paragraph at lines 3795--3795
 []\T1/lmr/bx/n/17.28 Requisitos de Se-gu-rança: O Po-der do ``Não Deve'' 
  []
 
-[74]
+[77]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75] [76]
+[78] [79]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[77] [78] [79]
+[80] [81] [82]
 Ap\^endice A.
-[80
+[83
 
-] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103]
+] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106]
 Ap\^endice B.
-[104
+[107
 
-] [105] [106]
-<formato.png, id=1572, 1472.50125pt x 673.51625pt>
+] [108] [109]
+<formato.png, id=1560, 1472.50125pt x 673.51625pt>
 File: formato.png Graphic file (type png)
 <use formato.png>
-Package pdftex.def Info: formato.png  used on input line 4442.
+Package pdftex.def Info: formato.png  used on input line 4862.
 (pdftex.def)             Requested size: 455.24411pt x 208.22264pt.
- [107] [108 <./formato.png>] [109] [110] [111]
+ [110] [111 <./formato.png>] [112] [113] [114]
 Ap\^endice C.
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 4555.
+(enumitem)                sense, on input line 4975.
 
-[112
+[115
 
-] [113] [114]
+] [116] [117]
 Ap\^endice D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4638--4638
+Underfull \hbox (badness 10000) in paragraph at lines 5058--5058
 []\T1/lmr/m/n/12 Sistema Ope-ra-ci-o-nal de
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 4642--4642
+Underfull \hbox (badness 2150) in paragraph at lines 5062--5062
 []\T1/lmr/m/n/12 Engenharia de Con-fi-a-bi-li-
  []
 
-[115
+[118
 
-] [116] [117
+] [119]
 
-] (./livro_introducao.aux)
+LaTeX Warning: Empty bibliography on input line 5083.
+
+[120
+
+] (livro_introducao.aux)
  ***********
-LaTeX2e <2023-11-01> patch level 1
+LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 
@@ -1499,24 +1690,28 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `livro_introducao.out' has not changed.
-(rerunfilecheck)             Checksum: BE8D41A3CBCF026A5A142E1464C8BB62;37969.
+(rerunfilecheck)             Checksum: 7AC99E572DFE8E405EABE66FF3E5435E;37136.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                livro_introducao
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'livro_introducao.run.xml'.
 \openout1 = `livro_introducao.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52628 strings out of 474222
- 1198258 string characters out of 5748734
- 2292755 words of memory out of 5000000
- 73528 multiletter control sequences out of 15000+600000
- 684024 words of font info for 115 fonts, out of 8000000 for 9000
+ 52975 strings out of 467871
+ 1219330 string characters out of 5417408
+ 2347770 words of memory out of 5000000
+ 80504 multiletter control sequences out of 15000+600000
+ 753914 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,97p,1348b,6032s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on livro_introducao.pdf (118 pages, 976401 bytes).
+ 84i,19n,104p,1273b,6025s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx6.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Leandro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on livro_introducao.pdf (122 pages, 1214043 bytes).
 PDF statistics:
- 1884 PDF objects out of 2073 (max. 8388607)
- 1666 compressed objects within 17 object streams
- 539 named destinations out of 1000 (max. 500000)
- 1383 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1868 PDF objects out of 2073 (max. 8388607)
+ 529 named destinations out of 1000 (max. 500000)
+ 1459 words of extra memory for PDF output out of 10000 (max. 10000000)
 
