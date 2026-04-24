@@ -1,0 +1,32 @@
+# LaTeX compilation files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.run.xml
+*.synctex.gz
+*.toc
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
+*mod.aux
+*mod.bcf
+*mod.run.xml
+*mod.toc
+__latexindent_temp_*.tex
+
+# Python / Tools / Scratch
+bin/
+fitz/
+pymupdf/
+pymupdf-*/
+*.py
+diff.txt
+unirv-logo.webp
+
+# Git ignore itself (optional, but good to have)
+#.gitignore

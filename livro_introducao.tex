@@ -1,6 +1,6 @@
 % Livro de apoio - Engenharia da Qualidade e Confiabilidade
 % Baseado nos slides da aula de Introdução
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper,twoside]{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{float}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,calc,fit,shadows}
 \usetikzlibrary{shapes.gates.logic.US, positioning}
@@ -79,11 +80,66 @@
 \definecolor{forestgreen}{RGB}{0,100,50}
 
 % Cor institucional UniRV
+\definecolor{azuluni}{RGB}{0,79,158}
 \definecolor{verdeuni}{RGB}{0,102,51}
 \definecolor{meuverde}{RGB}{0,128,0}
 \definecolor{meuvermelhoescuro}{RGB}{139,0,0}
 % Suporte a texto justificado dentro de ambientes especiais
 \usepackage{ragged2e}
+
+% =======================
+% Configuração de Cabeçalhos e Páginas
+% =======================
+\usepackage{fancyhdr}
+\usepackage{emptypage} % Garante páginas em branco 100% limpas automaticamente
+\setlength{\headheight}{45pt}
+
+% 1. Desenho do Cabeçalho para Páginas ÍMPARES (Direita)
+\newcommand{\waveOdd}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[azuluni] (current page.north west) 
+      -- (current page.north east) 
+      -- ([yshift=-1.8cm]current page.north east) 
+      .. controls ([yshift=-1.8cm, xshift=-6cm]current page.north east) and ([yshift=-1.2cm, xshift=6cm]current page.north west) .. 
+      ([yshift=-1.2cm]current page.north west) -- cycle;
+    
+    \node[anchor=west] at ([xshift=2.5cm, yshift=-0.9cm]current page.north west) {\small\sffamily\color{white} Tópicos em Confiabilidade e Qualidade de Software};
+    \node[anchor=east] at ([xshift=-2cm, yshift=-0.9cm]current page.north east) {\bfseries\color{white}\thepage};
+  \end{tikzpicture}%
+}
+
+% 2. Desenho do Cabeçalho para Páginas PARES (Esquerda)
+\newcommand{\waveEven}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[azuluni] (current page.north west) 
+      -- (current page.north east) 
+      -- ([yshift=-1.8cm]current page.north east) 
+      .. controls ([yshift=-1.8cm, xshift=-6cm]current page.north east) and ([yshift=-1.2cm, xshift=6cm]current page.north west) .. 
+      ([yshift=-1.2cm]current page.north west) -- cycle;
+      
+    \node[anchor=west] at ([xshift=2cm, yshift=-0.9cm]current page.north west) {\bfseries\color{white}\thepage};
+    \node[anchor=east] at ([xshift=-2.5cm, yshift=-0.9cm]current page.north east) {\small\sffamily\color{white} Novak, Bailão e Sanches};
+  \end{tikzpicture}%
+}
+
+% 3. Estilo FANCY (Páginas normais de conteúdo com onda azul)
+\fancypagestyle{fancy}{
+  \fancyhf{} 
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyhead[CO]{\waveOdd}  % CO: Center Odd
+  \fancyhead[CE]{\waveEven} % CE: Center Even
+}
+
+% 4. Estilo PLAIN (Páginas de Índice e inícios de capítulo)
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyhead[RO]{\bfseries\color{azuluni}\thepage} % RO: Right Odd
+  \fancyhead[LE]{\bfseries\color{azuluni}\thepage} % LE: Left Even
+}
+
+% Ativa o estilo fancy globalmente
+\pagestyle{fancy}
 
 % =======================
 % Ambiente de cartão de autor
@@ -110,38 +166,80 @@
   \begin{titlepage}
     \thispagestyle{empty}
     \begin{tikzpicture}[remember picture, overlay]
-      % Faixa Superior
-      \fill[verdeuni]
-        (current page.north west)
-        rectangle ++(\paperwidth,-6.5cm);
-      % Texto do Topo: Autores e Título
-      \node[anchor=north, text width=\paperwidth, align=center]
-        at ([yshift=-1.5cm]current page.north) {%
-          {\Large\sffamily\color{white} SERGIO S. NOVAK,\\ ADRIANO S. de O. BAILÃO, \\ LEANDRO M. P. SANCHES}\\[0.8cm]
-          {\Huge\bfseries\sffamily\color{yellow} Tópicos em Confiabilidade e Qualidade de Software}\\[0.4cm]
-          {\Large\sffamily\color{white} 1\textordfeminine{} EDI\c{C}\~{A}O}%
-        };
-      % Imagem Central
-      \node[anchor=center] at ([yshift=-2.2cm]current page.center) {%
-        \IfFileExists{figura_da_capa.png}{%
-          \includegraphics[width=1.02\paperwidth]{figura_da_capa.png}%
-        }{%
-          \begin{tikzpicture}
-            \fill[verdeuni!20] (0,0) rectangle (16cm,10cm);
-            \node[font=\Huge\bfseries\sffamily, color=verdeuni!60!black] at (8cm,5cm)
-              {Engenharia da Qualidade};
-          \end{tikzpicture}%
-        }%
+      % Fundo principal azul
+      \fill[azuluni] (current page.north west) rectangle (current page.south east);
+      
+      % Área branca no canto inferior direito
+      \fill[white] ([yshift=18cm]current page.south east) 
+        arc[start angle=90, end angle=180, x radius=17cm, y radius=18cm] 
+        -- (current page.south east) -- cycle;
+        
+      % Linha decorativa dourada acompanhando a curva
+      \draw[yellow!80!orange, line width=2pt] ([yshift=18.5cm]current page.south east) 
+        arc[start angle=90, end angle=180, x radius=17.5cm, y radius=18.5cm];
+
+      % Logo no Topo Esquerdo (Espaço Azul)
+      \node[anchor=north west, inner sep=0pt] (logo) at ([xshift=1.5cm, yshift=-1.5cm]current page.north west) {
+          \includegraphics[height=2.5cm, keepaspectratio]{unirv-logo.png}
       };
-      % Faixa Inferior
-      \fill[verdeuni] (current page.south west) rectangle ++(\paperwidth,2cm);
-      % Logo UniRV
-      \node[anchor=north] at ([yshift=-13cm]current page.center) {%
-        \IfFileExists{Universidade_de_Rio_Verde.jpg}{%
-        %   \includegraphics[width=4cm]{Universidade_de_Rio_Verde.jpg}%
-        }{%
-        %   {\color{white}\bfseries\large UniRV — Universidade de Rio Verde}%
-        }%
+        
+      % Nome da Universidade com ajuste fino de altura
+      \node[anchor=west, align=left] at ([xshift=0.4cm, yshift=0.4cm]logo.east) {
+          {\Large\bfseries\sffamily\color{white} UniRV} \\[0.1cm]
+          {\small\sffamily\color{white!80} Universidade de Rio Verde}
+      };
+        
+      % Autores no canto superior direito
+      \node[anchor=north east, align=right, font=\large\sffamily, text=white] 
+        at ([xshift=-2cm, yshift=-2.5cm]current page.north east) {
+          SERGIO S. NOVAK\\
+          ADRIANO S. DE O. BAILÃO\\
+          LEANDRO M. P. SANCHES
+        };
+        
+      % Título da obra
+      \node[anchor=west, align=left, font=\Huge\bfseries\sffamily, text=white] 
+        at ([xshift=2cm, yshift=2.5cm]current page.west) {
+          Tópicos em Confiabilidade\\[0.3cm]
+          e Qualidade de Software
+        };
+        
+      % Indicação de edição
+      \node[anchor=west, font=\Large\sffamily, text=yellow!80!orange] 
+        at ([xshift=2cm, yshift=0cm]current page.west) {
+          1ª EDIÇÃO
+        };
+        
+      % Cartão flutuante no canto inferior direito
+      \node[anchor=south east] (card) at ([xshift=-1.5cm, yshift=1.5cm]current page.south east) {
+        \begin{tikzpicture}
+          % Fundo do cartão com sombra
+          \node[fill=white, rounded corners=12pt, 
+                drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}, 
+                minimum width=15cm, minimum height=7cm] (box) {};
+                
+          % Gráfico abstrato (rede) inspirado na imagem
+          \begin{scope}[shift={(-3.5,-1)}]
+              \coordinate (n1) at (0,2);
+              \coordinate (n2) at (1.5,4);
+              \coordinate (n3) at (7,3);
+              \coordinate (n4) at (4.5,1);
+              \coordinate (n5) at (9,0);
+              \coordinate (n6) at (3.5,-1);
+              
+              \draw[verdeuni!30, thick] (n1) -- (n2) -- (n3) -- (n4) -- cycle;
+              \draw[verdeuni!30, thick] (n1) -- (n6) -- (n4);
+              \draw[verdeuni!30, thick] (n3) -- (n5) -- (n4);
+              
+              \foreach \p in {n1, n2, n3, n4, n5, n6}
+                  \fill[verdeuni!60] (\p) circle (0.15cm);
+          \end{scope}
+          
+          % Texto principal dentro do cartão perfeitamente centralizado na vertical
+          \node[anchor=west, align=left, font=\huge\bfseries\sffamily, text=azuluni] 
+            at ([xshift=1.5cm]box.west) {Engenharia de Qualidade\\[0.15cm]de Software};
+            
+        \end{tikzpicture}
       };
     \end{tikzpicture}
   \end{titlepage}%
@@ -154,20 +252,32 @@
 \newpage
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture, overlay]
-  \fill[verdeuni]
-    (current page.north west)
-    rectangle (current page.south east);
-  \node at ([yshift=-1.8cm]current page.north) {%
-    \IfFileExists{Universidade_de_Rio_Verde.jpg}{%
-      \includegraphics[width=5cm]{Universidade_de_Rio_Verde.jpg}%
-    }{%
-      {\color{white}\bfseries\Large UniRV}%
-    }%
+  % Fundo branco padrão
+  \fill[white] (current page.north west) rectangle (current page.south east);
+  
+  % Detalhe azul curvo no topo (Tamanho Reduzido)
+  \fill[azuluni] (current page.north west) 
+    -- (current page.north east) 
+    -- ([yshift=-3cm]current page.north east) 
+    .. controls ([yshift=-3cm, xshift=-10cm]current page.north east) and ([yshift=-4.5cm, xshift=10cm]current page.north west) .. 
+    ([yshift=-4.5cm]current page.north west) -- cycle;
+    
+  % Logo da UniRV (ancorado um pouco à esquerda do centro para equilibrar com o texto)
+  \node[anchor=east, inner sep=0pt] (logo) at ([xshift=-0.2cm, yshift=-1.8cm]current page.north) {
+      \includegraphics[height=2.2cm, keepaspectratio]{unirv-logo.png}
+  };
+  
+  % Nome da Universidade perfeitamente alinhado ao logo
+  \node[anchor=west, align=left] at ([xshift=0.2cm, yshift=0.35cm]logo.east) {
+      {\Large\bfseries\sffamily\color{white} UniRV} \\[0.1cm]
+      {\small\sffamily\color{white!80} Universidade de Rio Verde}
   };
 \end{tikzpicture}
-\vspace*{4.5cm}
+
+% Espaçamento ajustado porque a onda azul agora é menor
+\vspace*{2.5cm}
 \begin{center}
-{\color{white}\bfseries\LARGE Conhe\c{c}a os Autores}
+{\color{azuluni}\bfseries\LARGE Conhe\c{c}a os Autores}
 
 \vspace{1.5cm}
 
@@ -177,7 +287,7 @@
 \begin{minipage}[t]{0.30\textwidth}
 \begin{authorcard}
 \centering
-{\small\bfseries\color{white} Sergio Souza Novak}
+{\small\bfseries\color{azuluni} Sergio Souza Novak}
 
 \vspace{0.6cm}
 
@@ -185,7 +295,7 @@
 
 \vspace{0.7cm}
 
-\justifying\footnotesize\color{white}
+\justifying\footnotesize\color{darkgray}
 Sergio Souza Novak é Mestre em Ciências Agrárias pelo Instituto Federal Goiano.
 Atua nas áreas de Banco de Dados, Inteligência Artificial e Desenvolvimento de
 Software, com experiência acadêmica e industrial e publicações científicas
@@ -199,7 +309,7 @@ aplicadas à agricultura digital.
 \begin{minipage}[t]{0.30\textwidth}
 \begin{authorcard}
 \centering
-{\small\bfseries\color{white} ADRIANO S. de O. BAILÃO}
+{\small\bfseries\color{azuluni} ADRIANO S. de O. BAILÃO}
 
 \vspace{0.6cm}
 
@@ -207,7 +317,7 @@ aplicadas à agricultura digital.
 
 \vspace{0.7cm}
 
-\justifying\footnotesize\color{white}
+\justifying\footnotesize\color{darkgray}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
 Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec
 consectetur ante hendrerit.
@@ -220,7 +330,7 @@ consectetur ante hendrerit.
 \begin{minipage}[t]{0.30\textwidth}
 \begin{authorcard}
 \centering
-{\small\bfseries Leandro Manuel Pereira Sanches}
+{\small\bfseries\color{azuluni} Leandro Manuel Pereira Sanches}
 
 \vspace{0.6cm}
 
@@ -228,8 +338,8 @@ consectetur ante hendrerit.
 
 \vspace{0.7cm}
 
-\justifying\footnotesize\color{white}
-Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experiência em computação aplicada à educação, análise e desenvolvimento de software, banco de dados, processamento de linguagens naturais. Pariticipou de projetos de desenvolvimento de software comerciais e educacionais.
+\justifying\footnotesize\color{darkgray}
+Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experiência em computação aplicada à educação, análise e desenvolvimento de software, banco de dados, processamento de linguagens naturais. Participou de projetos de desenvolvimento de software comerciais e educacionais.
 \end{authorcard}
 \end{minipage}
 
@@ -237,6 +347,61 @@ Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experi
 \end{center}
 \newpage%
 }
+
+
+% =======================
+% Página de Ficha Catalográfica e Expediente
+% =======================
+\newcommand{\catalogpage}{%
+  \newpage
+  \thispagestyle{empty} % Remove cabeçalho e rodapé desta página
+  
+  % O texto do expediente (direitos autorais, editora) geralmente fica no topo ou antes da ficha
+  \vspace*{2cm}
+  \noindent
+  \textbf{\copyright\ \the\year\ Universidade de Rio Verde (UniRV)}\\
+  \textit{Todos os direitos reservados.} Nenhuma parte desta obra pode ser reproduzida, 
+  armazenada em sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio, 
+  eletrônico, mecânico, fotocópia, gravação ou outro, sem a permissão prévia por escrito 
+  dos detentores dos direitos autorais.
+
+  \vspace{1cm}
+  \noindent
+  \textbf{Editora:} UniRV - Universidade de Rio Verde \\
+  \textbf{Projeto Gráfico e Diagramação:} Os Autores \\
+  \textbf{Revisão Técnica e Ortográfica:} [Nome do Revisor/a aqui]
+
+  % Empurra a ficha catalográfica para o final da página
+  \vspace*{\fill}
+
+  % Ficha Catalográfica (Padrão CIP)
+  \begin{center}
+    Dados Internacionais de Catalogação na Publicação (CIP) \\
+    \vspace{0.5em}
+    \fbox{%
+      % O padrão da ficha geralmente tem cerca de 12.5cm de largura
+      \begin{minipage}{12.5cm}
+        \vspace{0.5cm}
+        \begin{tabular}{p{1.2cm} p{10cm}}
+          & Novak, Sergio Souza. \\
+          N935t & \hspace{0.5cm} Tópicos em Confiabilidade e Qualidade de Software / Sergio Souza Novak, Adriano S. de O. Bailão, Leandro Manuel Pereira Sanches. -- 1. ed. -- Rio Verde, GO : UniRV, \the\year. \\
+          & \hspace{0.5cm} XXX p. : il. ; 30 cm. \\
+          & \\
+          & \hspace{0.5cm} ISBN 978-XX-XXXXX-XX-X \\
+          & \\
+          & \hspace{0.5cm} 1. Engenharia de Software. 2. Qualidade de Software. 3. Confiabilidade. I. Bailão, Adriano S. de O. II. Sanches, Leandro Manuel Pereira. III. Universidade de Rio Verde. IV. Título. \\
+        \end{tabular}
+        \vspace{0.2cm}
+        \begin{flushright}
+          \textbf{CDD: 005.1}
+        \end{flushright}
+      \end{minipage}%
+    }
+  \end{center}
+  \newpage%
+}
+
+
 \newtcolorbox{resposta}[1]{%
   colback=white,
   colframe=forestgreen!30,
@@ -248,12 +413,18 @@ Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experi
 
 \begin{document}
 
-
 \makecapa
-% \authorpage
+\catalogpage
+\authorpage
 
+% --- Início do Índice ---
+\cleardoublepage
+\pagestyle{plain} 
 \tableofcontents
-\clearpage
+
+% --- Fim do Índice / Ligar a Onda ---
+\cleardoublepage
+\pagestyle{fancy}
 
 \chapter{Introdução à Engenharia da Qualidade}
 
@@ -329,12 +500,12 @@ O ponto de partida é a compreensão de que \textbf{qualidade não é um acaso},
             minimum size=2.8cm, % Define um tamanho mínimo maior para o círculo central
             top color=blue!2, % Gradiente suave
             bottom color=blue!15
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         outer node/.style={
             fill=gray!2,
             top color=gray!1, % Gradiente suave
             bottom color=gray!10
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         linha/.style={
             line width=1.5pt, 
             color=gray!70
@@ -370,7 +541,7 @@ do cliente \emph{no momento em que é entregue}.
 
 Já a \textbf{confiabilidade}
 diz respeito à capacidade desse produto ou serviço de manter seu desempenho
-adequado \emph{ao longo do tempo}, sob condições de uso específicas. 
+adequado \emph{ao longo do tempo}, sob condições de uso específicas.
 
 Como ilustra a \textbf{Figura \ref{fig:qualidade_vs_confiabilidade}}, enquanto a qualidade pode ser observada em um único instante (a entrega), a confiabilidade é necessariamente uma propriedade temporal que se estende durante o uso contínuo.
 
@@ -659,11 +830,11 @@ of failure}) altamente sensível a erro humano.
         comp/.style={
             caixa, draw=gray!60,
             top color=cyan!2, bottom color=cyan!15
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         spof/.style={
             caixa, draw=red!60!black,
             top color=red!5, bottom color=red!20
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         seta/.style={
             -{Stealth[length=3mm]}, line width=1.5pt, color=gray!70
         },
@@ -748,7 +919,7 @@ sempre acontecerão}.
     arrow/.style={-{Stealth[length=3mm]}, line width=1.5pt, color=gray!70},
     dashed_arrow/.style={-{Stealth[length=2.5mm]}, dashed, line width=1.5pt, color=gray!70},
     % Estilos de etiqueta aprimorados (texto maior e cor mais escura para legibilidade)
-    pass_label/.style={font=\scriptsize\itshape, color=gray!90, fill=white, inner sep=2pt},
+    pass_label/.style={font=\scriptsize\itshape, color=gray!90, fill=white, inner sep=2pt, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
     check_label/.style={font=\footnotesize\bfseries, inner sep=2pt}
 ]
 
@@ -845,10 +1016,10 @@ crítica, como energia e telecomunicações.
             inner sep=6pt
         },
         % Variações de cor para as caixas de lição
-        lesson_red/.style={lesson, draw=red!40, top color=red!2, bottom color=red!10},
-        lesson_orange/.style={lesson, draw=orange!40, top color=orange!2, bottom color=orange!10},
-        lesson_green/.style={lesson, draw=green!40, top color=green!2, bottom color=green!10},
-        lesson_cyan/.style={lesson, draw=cyan!40, top color=cyan!2, bottom color=cyan!10},
+        lesson_red/.style={lesson, draw=red!40, top color=red!2, bottom color=red!10, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        lesson_orange/.style={lesson, draw=orange!40, top color=orange!2, bottom color=orange!10, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        lesson_green/.style={lesson, draw=green!40, top color=green!2, bottom color=green!10, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        lesson_cyan/.style={lesson, draw=cyan!40, top color=cyan!2, bottom color=cyan!10, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         % Estilo das setas de conexão
         seta/.style={-{Stealth[length=3mm]}, line width=1.5pt}
     ]
@@ -878,31 +1049,15 @@ crítica, como energia e telecomunicações.
 
 \section{Modelo Tradicional: Sysadmin, Dev e Ops}
 
-No modelo tradicional, as organizações estruturavam suas equipes de tecnologia em dois grandes grupos distintos: Desenvolvimento (Dev) e Operações (Ops). Enquanto os desenvolvedores focavam na criação de novas funcionalidades, os administradores de sistemas (sysadmins), como integrantes da equipe de operações, eram encarregados de manter os serviços em pleno funcionamento. Na prática, a rotina desses profissionais envolvia integrar componentes de software, implantar os serviços em produção, monitorar a saúde dos servidores e das redes, além de atuar diretamente na resposta a incidentes e na execução de manutenções.
+No modelo tradicional, as organizações estruturam suas equipes de tecnologia em dois grandes grupos distintos: Desenvolvimento (Dev) e Operações (Ops). 
 
-O grande desafio dessa estrutura, no entanto, reside na sua escalabilidade. À medida que o serviço cresce em complexidade, infraestrutura e base de usuários, a demanda sobre a equipe de operações aumenta na mesma proporção. Consequentemente, faz-se necessário expandir o quadro de sysadmins, o que leva os custos operacionais a crescerem de forma quase linear em relação à escala do serviço, dificultando um crescimento mais sustentável.
+Os desenvolvedores possuem como objetivo principal a inovação e a entrega de valor ao negócio. A rotina desses profissionais é focada em escrever código, criar novas funcionalidades, desenvolver aplicativos e corrigir bugs. 
 
+Já os administradores de sistemas (sysadmins), como integrantes da equipe de operações, são encarregados de manter os serviços em pleno funcionamento. Na prática, a rotina dos mesmos envolve integrar componentes de software, implantar os serviços em produção, monitorar a saúde dos servidores e das redes, além de atuar diretamente na resposta a incidentes e na execução de manutenções.
 
-No modelo tradicional, as organizações estruturavam suas equipes de tecnologia
-em dois grandes grupos distintos: \textbf{Desenvolvimento (Dev)} e \textbf{Operações
-(Ops)}. Os administradores de sistemas (\emph{sysadmins}), integrantes da equipe de operações, eram
-responsáveis por manter serviços em funcionamento, enquanto os desenvolvedores
-criavam novas funcionalidades.
+O grande desafio dessa estrutura, no entanto, reside na sua escalabilidade. À medida que o serviço cresce em complexidade, infraestrutura e base de usuários, a demanda sobre a equipe de operações aumenta na mesma proporção. 
 
-\subsection{A Abordagem com Administradores de Sistemas}
-
-No modelo tradicional, os sysadmins:
-\begin{itemize}[nosep]
-    \item integram componentes de software;
-    \item implantam serviços em produção;
-    \item monitoram servidores e redes;
-    \item respondem a incidentes e realizam manutenções.
-\end{itemize}
-
-À medida que o serviço cresce em número de usuários, complexidade e
-infraestrutura, costuma-se aumentar também o número de administradores de
-sistemas. Dessa forma, o custo operacional tende a crescer aproximadamente de
-forma linear com a escala do serviço.
+Consequentemente, faz-se necessário expandir o quadro de sysadmins, o que leva os custos operacionais a crescerem de forma quase linear em relação à escala do serviço, dificultando um crescimento mais sustentável.
 
 \begin{figure}[h]
     \centering
@@ -962,7 +1117,8 @@ forma linear com a escala do serviço.
     \label{fig:escala_sysadmin_sre}
 \end{figure}
 
-Entre as vantagens desse modelo, podemos destacar:
+Apesar da clara limitação de escalabilidade em cenários de hipercrescimento, é fundamental compreender os motivos que tornaram a separação estrita entre Dev e Ops o padrão da engenharia de software por tantas décadas. Em contextos corporativos onde a estabilidade, a auditoria e a previsibilidade são mais valorizadas do que a velocidade de lançamento de novas funcionalidades, o modelo tradicional oferece alguns benefícios estruturais. Entre as principais vantagens dessa abordagem, destacam-se:
+
 \begin{itemize}[nosep]
     \item paradigma amplamente conhecido;
     \item facilidade de contratação de profissionais;
@@ -971,17 +1127,14 @@ Entre as vantagens desse modelo, podemos destacar:
     ``opera''.
 \end{itemize}
 
-Por outro lado, o modelo gera conflitos importantes, especialmente em
-organizações que precisam inovar com rapidez.
+
 
 \subsection{Conflitos Estruturais entre Dev e Ops}
 
-A equipe de desenvolvimento, de maneira geral, é avaliada pela velocidade com
-que entrega novas funcionalidades e responde a demandas de negócio. Já a
-equipe de operações é cobrada pela estabilidade, disponibilidade e ausência
-de incidentes em produção.
+Por outro lado, embora essa forte divisão traga controle e proteção ao ambiente produtivo, o modelo gera conflitos intrínsecos de interesse, especialmente em organizações que precisam inovar com rapidez.
 
-Assim, emergem objetivos que podem ser conflitantes:
+O choque de culturas ocorre devido a um conflito de incentivos estrutural: enquanto a equipe de desenvolvimento, de maneira geral, é avaliada pela velocidade com que entrega novas funcionalidades e responde às demandas de negócio, a equipe de operações é cobrada pela estabilidade, disponibilidade (uptime) e ausência de incidentes em produção. Assim, emergem objetivos que podem ser conflitantes:
+
 \begin{itemize}[nosep]
     \item \textbf{Dev} quer mudar o sistema com frequência para inovar;
     \item \textbf{Ops} prefere mudanças raras, cuidadosamente controladas, para preservar a estabilidade.
@@ -999,14 +1152,14 @@ Assim, emergem objetivos que podem ser conflitantes:
         },
         caixa_dev/.style={
             caixa, draw=blue!60, top color=blue!2, bottom color=blue!15
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         caixa_ops/.style={
             caixa, draw=red!60, top color=red!2, bottom color=red!15
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         caixa_result/.style={
             caixa, draw=orange!60, top color=orange!2, bottom color=orange!15, 
             minimum height=1.2cm, font=\small
-        },
+        , drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         parede/.style={
             draw=gray!80, thick, rectangle, rounded corners=2pt,
             top color=gray!10, bottom color=gray!35,
@@ -1053,33 +1206,32 @@ Assim, emergem objetivos que podem ser conflitantes:
 
 Como a maioria das falhas e interrupções está associada a mudanças em
 produção, a tendência natural de operações é criar barreiras, controles e
-processos de aprovação mais rígidos. Isso pode levar a:
+processos de aprovação mais rígidos, podendo levar a:
 \begin{itemize}[nosep]
     \item comunicação indireta e pouco transparente;
     \item ciclos de lançamento mais longos e menos frequentes;
+    \item formação de ``silos organizacionais'' isolados;
     \item sensação de ``guerra de trincheiras'', em que cada lado tenta
     defender seus interesses.
 \end{itemize}
 
-Na prática, o resultado é a redução da agilidade sem garantia de aumento
-real de confiabilidade.
+Esse desalinhamento consolida o clássico gargalo entre a inovação e a operação, sendo o principal catalisador que deu origem aos movimentos modernos de integração. Na prática, o resultado do modelo clássico tende à redução da agilidade sem garantia de aumento real de confiabilidade, na maioria dos casos.
+
+Diante desse cenário de engessamento, a pressão inerente do mercado e do negócio por novas entregas não desaparece. Pelo contrário, ela empurra a equipe de desenvolvimento a buscar caminhos alternativos para escoar seu trabalho, gerando comportamentos reativos.
 
 \subsection{Respostas Típicas ao Conflito}
 
-Para contornar os processos de aprovação longos, as equipes de desenvolvimento
-frequentemente:
+Na tentativa de contornar a burocracia e os longos processos de aprovação da equipe de operações, as equipes de desenvolvimento frequentemente adotam estratégias de sobrevivência, tais como:
+
 \begin{itemize}[nosep]
-    \item agrupam muitas mudanças em grandes \emph{releases}, o que aumenta o
-    risco de cada implantação;
-    \item utilizam \emph{feature flags} para ativar ou desativar recursos sem
-    novo deploy;
-    \item fragmentam o produto em múltiplos serviços menores, o que reduz o
-    escopo de cada revisão, mas pode aumentar a complexidade geral do sistema.
+\item \textbf{agrupamento de mudanças em grandes \emph{releases}:} devido à dificuldade de realizar \emph{deploys} frequentes, junta-se o trabalho de semanas ou meses em um único lote (o chamado \emph{Big Bang deployment}). Isso aumenta exponencialmente o risco da implantação, tornando o diagnóstico de falhas (\emph{troubleshooting}) e a reversão (\emph{rollback}) complexos;
+\item \textbf{uso de \emph{feature flags} como rota de fuga:} embora sejam uma excelente prática de engenharia, os sinalizadores de recursos passam a ser usados puramente para "esconder" código em produção, permitindo ativar ou desativar funcionalidades sem depender de um novo fluxo de aprovação da equipe de infraestrutura;
+\item \textbf{fragmentação precoce da arquitetura:} a quebra do produto em múltiplos serviços menores (como microsserviços) é muitas vezes forçada para reduzir o escopo das revisões e ganhar independência técnica. Contudo, sem a devida maturidade de integração, isso apenas transfere a complexidade do código para a rede.
 \end{itemize}
 
-Essas estratégias podem até aliviar alguns sintomas, mas não resolvem o
-problema estrutural de fundo: a falta de alinhamento entre os objetivos de
-desenvolvimento e de operações.
+Essas estratégias funcionam como otimizações locais e podem até aliviar a fricção imediata da equipe de Dev, mas não resolvem o problema estrutural de fundo: a falta de alinhamento entre os objetivos de construção e de estabilidade. Pelo contrário, essas "soluções" de contorno frequentemente se convertem em novas camadas de dívida técnica.
+
+Esse desalinhamento de metas instaura um padrão comportamental sistêmico e paralisante na organização. Conforme ilustra a Figura \ref{fig:ciclo_vicioso}, a reação instintiva da equipe de operações diante da postura adotada pelos Devs é endurecer ainda mais as barreiras e os controles de aprovação, consolidando um ciclo vicioso contínuo de desconfiança e degradação da agilidade.
 
 \begin{figure}[h]
     \centering
@@ -1137,49 +1289,46 @@ desenvolvimento e de operações.
     \label{fig:ciclo_vicioso}
 \end{figure}
 
-\section{A Abordagem do Google: Site Reliability Engineering (SRE)} \cite{beyer2016sre, beyer2018workbook}
+\section{A Abordagem do Google: Site Reliability Engineering (SRE)} 
 
-\subsection{Motivação para o Modelo SRE}
+Para romper com o ciclo vicioso de desconfiança e engessamento detalhado na seção anterior, fez-se necessária uma mudança de paradigma estrutural. Em vez de tentar apaziguar o conflito apenas com processos gerenciais ou a adoção de ferramentas isoladas, o Google propôs uma resposta fundamentalmente diferente por meio do \textbf{Site Reliability Engineering (SRE)} \cite{beyer2016sre, beyer2018workbook}.
 
-O Google propõe uma resposta diferente a esse conflito histórico por meio do
-\textbf{Site Reliability Engineering (SRE)}. Em vez de manter uma divisão rígida
-entre Dev e Ops, o SRE busca tratar operações como um problema de engenharia
-de software.
+Nessa abordagem, a divisão rígida e conflituosa entre Desenvolvimento e Operações é dissolvida por uma filosofia que trata a operação de sistemas não como uma tarefa de administração manual de infraestrutura, mas sim como um problema de engenharia de software.
 
-\subsection{Definição de SRE}
-
-Segundo a definição clássica do próprio Google:
+Segundo a definição clássica de Ben Treynor Sloss \cite{beyer2016sre, beyer2018workbook}, criador da disciplina no Google:
 \begin{quote}
 SRE é o que acontece quando você pede a um engenheiro de software para
 projetar uma equipe de operações.
 \end{quote}
 
-Isso significa que, em vez de depender de trabalho manual repetitivo e de
-processos puramente organizacionais, o SRE busca:
-\begin{itemize}[nosep]
-    \item automatizar o máximo possível das tarefas operacionais;
-    \item usar métricas formais de confiabilidade (SLI, SLO e \emph{error
-    budget}) para orientar decisões;
-    \item alinhar, por meio de código e processos, os objetivos de Dev e Ops.
+Na prática, essa transição de mentalidade altera a própria natureza do trabalho. Enquanto o modelo tradicional tenta lidar com o crescimento do serviço adicionando mais força de trabalho humana (resultando no custo quase linear visto anteriormente), o SRE foca em desenvolver sistemas de software que gerenciem outros sistemas.
 
-% \begin{figure}[h]
-%     \centering
-%     \begin{tikzpicture}[thick]
-%         \node[draw, circle, minimum size=3cm, fill=blue!20, opacity=0.7] (dev) {Dev};
-%         \node[draw, circle, minimum size=3cm, fill=red!20, opacity=0.7] (ops) at (2.5,0) {Ops};
-        
-%         \begin{scope}
-%             \clip (2.5,0) circle (1.5cm);
-%             \node[circle, fill=green!40, minimum size=1.5cm, align=center, font=\bfseries] at (1.25,0) {SRE};
-%         \end{scope}
-        
-%         \node[below=1.5cm of dev, font=\small, align=center] {Criação e\\Funcionalidades};
-%         \node[below=1.5cm of ops, font=\small, align=center] {Infraestrutura\\e Suporte};
-%         \node[below=0.5cm at (1.25, -1.5), font=\small, green!60!black, align=center] {Engenharia de\\Confiabilidade};
-%     \end{tikzpicture}
-%     \caption{SRE como a intersecção que alinha as metas de desenvolvimento e operações.}
-% \end{figure}
+Isso significa que, em vez de depender de trabalho manual, repetitivo e de processos puramente reativos (o que na terminologia SRE é chamado  de \emph{toil}), a abordagem busca:
+\begin{itemize}[nosep]
+    \item automatizar as tarefas operacionais, minimizando a intervenção humana;
+    \item usar métricas formais de confiabilidade, introduzindo a tríade SLI, SLO e Orçamento de Erro (\emph{Error Budget}) para orientar decisões com base em dados, e não em subjetividades;
+    \item alinhar, por meio de código e processos compartilhados, os objetivos de Dev e Ops.
 \end{itemize}
+
+\begin{comment}
+ \begin{figure}[h]
+     \centering
+     \begin{tikzpicture}[thick]
+         \node[draw, circle, minimum size=3cm, fill=blue!20, opacity=0.7] (dev) {Dev};
+         \node[draw, circle, minimum size=3cm, fill=red!20, opacity=0.7] (ops) at (2.5,0) {Ops};
+        
+         \begin{scope}
+             \clip (2.5,0) circle (1.5cm);
+             \node[circle, fill=green!40, minimum size=1.5cm, align=center, font=\bfseries] at (1.25,0) {SRE};
+         \end{scope}
+        
+         \node[below=1.5cm of dev, font=\small, align=center] {Criação e\\Funcionalidades};
+         \node[below=1.5cm of ops, font=\small, align=center] {Infraestrutura\\e Suporte};
+         \node[below=0.5cm, font=\small, green!60!black, align=center] at (1.25, -1.5) {Engenharia de\\Confiabilidade};
+     \end{tikzpicture}
+     \caption{SRE como a intersecção que alinha as metas de desenvolvimento e operações.}
+ \end{figure}
+\end{comment}
 
 \subsection{Composição e Perfil das Equipes de SRE}
 
@@ -1229,9 +1378,7 @@ operacionais por meio de software}. Isso inclui:
 Um princípio central da abordagem SRE é que serviços de sucesso não devem
 exigir crescimento proporcional da equipe de operações. Em modelos
 tradicionais, mais usuários quase sempre significam mais servidores, mais
-complexidade e, consequentemente, mais pessoas para administrar tudo isso.
-
-No modelo SRE, busca-se o oposto:
+complexidade e, consequentemente, mais pessoas para administrar tudo isso. No modelo SRE, busca-se o oposto:
 \begin{itemize}[nosep]
     \item investir continuamente em automação;
     \item reduzir o trabalho manual por meio de ferramentas;
@@ -1281,24 +1428,24 @@ tráfego.
 
 \subsection{A Regra dos 50\%}
 
-Para garantir que o foco em engenharia não seja engolido pelas demandas do
-dia a dia, o Google adota uma regra explícita:
+Para garantir que o foco em engenharia não seja engolido pelas urgências do dia a dia, o Google adota uma regra organizacional explícita:
 \begin{quote}
-Nenhuma equipe de SRE deve gastar mais de 50\% do tempo em atividades
-operacionais.
+Nenhuma equipe de SRE deve gastar mais de 50\% do tempo em atividades operacionais reativas.
 \end{quote}
 
-Em outras palavras, pelo menos metade do tempo da equipe deve ser dedicada a:
+Em outra palavras, menos metade do tempo da equipe deve ser rigorosamente dedicado ao trabalho de engenharia, o que inclui:
 \begin{itemize}[nosep]
-    \item desenvolver automações;
-    \item melhorar a arquitetura dos serviços;
-    \item eliminar causas-raiz de incidentes recorrentes;
-    \item aprimorar monitoração e ferramentas internas.
+    \item desenvolver automações para processos de rotina;
+    \item melhorar a arquitetura e a resiliência dos serviços;
+    \item investigar e eliminar as causas-raiz de incidentes recorrentes;
+    \item aprimorar a telemetria, a observabilidade e as ferramentas internas.
 \end{itemize}
 
-Quando esse limite é excedido por muito tempo, parte das tarefas operacionais
-é devolvida às equipes de desenvolvimento, forçando um redesenho do sistema
-para reduzir a necessidade de intervenção manual.
+Essa métrica não é apenas teórica; ela é medida e acompanhada. O limite de 50\% atua como uma válvula de segurança dupla: primeiro, protege a saúde mental da equipe, evitando o \emph{burnout} causado pela constante "luta contra incêndios". Segundo, força uma correção de curso na arquitetura do software. 
+
+Quando uma carga excessiva de operações empurra o tempo de \emph{toil} de uma equipe SRE para acima desse limite de forma sustentada, o Google aciona um mecanismo de transbordamento (\emph{pushback}). 
+
+Parte do suporte operacional --- incluindo os plantões de emergência (\emph{on-call}) --- é devolvida diretamente à equipe de desenvolvimento do produto. Isso cria um forte incentivo para que os desenvolvedores priorizem a correção de bugs sistêmicos e a estabilidade, alinhando forçosamente os interesses de Dev e Ops.
 
 \begin{figure}[h]
     \centering
@@ -1360,6 +1507,8 @@ Entre os principais benefícios do modelo SRE, destacam-se:
     \item cultura de aprendizado contínuo a partir de incidentes.
 \end{itemize}
 
+\vspace{1em}
+
 Por outro lado, há desafios significativos:
 \begin{itemize}[nosep]
     \item dificuldade em contratar profissionais com perfil adequado;
@@ -1370,11 +1519,11 @@ Por outro lado, há desafios significativos:
     tradicional de Dev e Ops separados.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[
-        benefit/.style={draw, rounded corners, fill=green!10, minimum width=4cm, minimum height=0.8cm, align=center, font=\footnotesize},
-        challenge/.style={draw, rounded corners, fill=red!10, minimum width=4.5cm, minimum height=0.8cm, align=center, font=\footnotesize}
+        benefit/.style={draw, rounded corners, fill=green!10, minimum width=4cm, minimum height=0.8cm, align=center, font=\footnotesize, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        challenge/.style={draw, rounded corners, fill=red!10, minimum width=4.5cm, minimum height=0.8cm, align=center, font=\footnotesize, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     % Coluna Benefícios
     \node[font=\small\bfseries, green!60!black] (tb) at (-3,3.5) {Benefícios};
@@ -1424,74 +1573,59 @@ larga escala.
     \centering
     \begin{tikzpicture}
 
-        % 1. Sombra unificada do diagrama (Deslocada para baixo e direita)
-        \fill[gray!25] (-1.4, -0.1) circle[radius=3.2cm];
-        \fill[gray!25] (1.6, -0.1) circle[radius=3.2cm];
+        % 1. Sombra unificada do diagrama
+        \fill[gray!20] (-1.5, -0.1) circle[radius=3.5cm];
+        \fill[gray!20] (1.7, -0.1) circle[radius=3.5cm];
 
         % 2. Fundo branco (Para "limpar" a parte interna da sombra)
-        \fill[white] (-1.5, 0) circle[radius=3.2cm];
-        \fill[white] (1.5, 0) circle[radius=3.2cm];
+        \fill[white] (-1.6, 0) circle[radius=3.5cm];
+        \fill[white] (1.6, 0) circle[radius=3.5cm];
 
         % 3. Preenchimentos com gradientes radiais
         % Círculo DevOps (Esquerda)
-        \fill[top color=blue!2, bottom color=blue!15] (-1.5,0) circle[radius=3.2cm];
+        \fill[top color=blue!2, bottom color=blue!15] (-1.6,0) circle[radius=3.5cm];
         
         % Círculo SRE (Direita)
-        \fill[top color=green!2, bottom color=green!15] (1.5,0) circle[radius=3.2cm];
+        \fill[top color=green!2, bottom color=green!15] (1.6,0) circle[radius=3.5cm];
 
         % 4. Interseção (Área compartilhada)
         \begin{scope}
-            \clip (-1.5,0) circle[radius=3.2cm];
-            \fill[top color=purple!5, bottom color=purple!20] (1.5,0) circle[radius=3.2cm];
+            \clip (-1.6,0) circle[radius=3.5cm];
+            \fill[top color=purple!5, bottom color=purple!20] (1.6,0) circle[radius=3.5cm];
         \end{scope}
 
-        % 5. Bordas dos círculos (Desenhadas por último para sobrepor os preenchimentos)
-        \draw[line width=1.5pt, blue!60] (-1.5,0) circle[radius=3.2cm];
-        \draw[line width=1.5pt, green!60] (1.5,0) circle[radius=3.2cm];
+        % 5. Bordas dos círculos
+        \draw[line width=1.5pt, blue!60] (-1.6,0) circle[radius=3.5cm];
+        \draw[line width=1.5pt, green!60] (1.6,0) circle[radius=3.5cm];
 
         % 6. Títulos dos Círculos
-        \node[font=\large\bfseries, color=blue!80!black] at (-3.2, 2.0) {DevOps};
-        \node[font=\large\bfseries, color=green!80!black] at (3.2, 2.0) {SRE};
+        \node[font=\large\bfseries, color=blue!80!black] at (-3.2, 2.2) {DevOps};
+        \node[font=\large\bfseries, color=green!80!black] at (3.2, 2.2) {SRE};
 
         % 7. Textos Exclusivos - DevOps
-        \node[font=\small, color=blue!80!black, align=center] at (-3.0, 0.6) {\textbf{Cultura}\\[0.5ex] colaborativa};
-        \node[font=\small, color=blue!80!black, align=center] at (-3.0, -1.2) {\textbf{CI/CD}\\[0.5ex] Deploy rápido};
+        \node[font=\small, color=blue!80!black, align=center] at (-3.1, 0.6) {\textbf{Cultura}\\[0.5ex] colaborativa};
+        \node[font=\small, color=blue!80!black, align=center] at (-3.1, -1.2) {\textbf{CI/CD}\\[0.5ex] Deploy rápido};
 
         % 8. Textos Exclusivos - SRE
-        \node[font=\small, color=green!80!black, align=center] at (3.0, 0.6) {\textbf{SLI / SLO}\\[0.5ex] Error Budget};
-        \node[font=\small, color=green!80!black, align=center] at (3.0, -1.2) {\textbf{Regra 50\%}\\[0.5ex] Toil limit};
+        \node[font=\small, color=green!80!black, align=center] at (3.1, 0.6) {\textbf{SLI / SLO}\\[0.5ex] Error Budget};
+        \node[font=\small, color=green!80!black, align=center] at (3.1, -1.2) {\textbf{Regra 50\%}\\[0.5ex] Toil limit};
 
         % 9. Textos da Interseção (Princípios Compartilhados)
         \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, 1.2) {Automação};
         \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, 0) {Confiabilidade};
         \node[font=\small\bfseries, color=purple!80!black, align=center] at (0, -1.2) {Monitoração};
 
-        % 10. Legenda Inferior Destacada (Caixa flutuante)
-        \node[
-            draw=gray!40, fill=white, thick, 
-            rounded corners=6pt, inner sep=8pt, 
-            font=\footnotesize\bfseries, color=gray!70!black, 
-            drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}
-        ] at (0,-4.2) {SRE = implementação concreta de princípios DevOps};
-
     \end{tikzpicture}
     \caption{Diagrama de Venn ilustrando a relação entre DevOps e SRE. DevOps define a cultura e práticas gerais; o SRE do Google representa uma implementação prescritiva dessas ideias com foco em confiabilidade.}
     \label{fig:venn_devops_sre}
 \end{figure}
 
-\section*{Considerações Finais}
-\addcontentsline{toc}{section}{Considerações Finais}
+\section{Fechamento do capítulo}
+Este capítulo inaugural estabeleceu o alicerce conceitual para a disciplina de Engenharia da Qualidade e Confiabilidade do curso de Engenharia de Software da Universidade de Rio Verde (UniRV).
 
-Este texto expandiu o conteúdo apresentado nos slides da aula de introdução à
-disciplina de Engenharia da Qualidade e Confiabilidade. A partir de exemplos
-históricos, como o programa Apollo, e de práticas contemporâneas, como o SRE
-do Google, buscamos mostrar que confiabilidade não é apenas um tema técnico,
-mas também organizacional e cultural.
+Ao revisitar exemplos históricos incontornáveis, como as lições de resiliência estrutural do programa Apollo, e ao contrastá-los com as práticas contemporâneas de hiperescala, como o SRE do Google, consolidamos uma premissa fundamental: a confiabilidade transcende a mera excelência técnica do código. Ela é, em sua essência, um desafio sistêmico, organizacional e profundamente cultural.
 
-Nas próximas aulas, aprofundaremos esses conceitos, explorando métricas
-quantitativas, arquiteturas tolerantes a falhas, diretrizes de projeto e
-ferramentas práticas que permitem projetar, construir e operar sistemas de
-software com alta qualidade e confiabilidade.
+Nos próximos capítulos, avançaremos dessa base teórica para a aplicação rigorosa. Aprofundaremos as métricas quantitativas de dependabilidade, projetaremos arquiteturas tolerantes a falhas e exploraremos as ferramentas práticas necessárias para que você possa conceber, construir e operar sistemas de software com os mais altos padrões de qualidade e disponibilidade.
 
 \clearpage
 
@@ -1556,17 +1690,28 @@ ocorre uma falha, com perda de informações e interrupção do serviço.
     \centering
     \begin{tikzpicture}[
         node distance=1.5cm,
-        box/.style={draw, rectangle, rounded corners, fill=blue!10, text width=2.5cm, align=center, minimum height=1.5cm, thick},
+        % Largura aumentada de 2.8cm para 3.2cm para evitar separação de sílabas
+        box/.style={draw, rectangle, rounded corners, text width=3.2cm, align=center, minimum height=1.6cm, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={->, ultra thick}
     ]
-        \node[box, fill=red!10] (erro) {Erro Humano\\(Engano)};
-        \node[box, fill=orange!10, right=of erro] (defeito) {Defeito\\(Bug no Código)};
-        \node[box, fill=yellow!10, right=of defeito] (estado) {Erro de Sistema\\(Estado Interno)};
-        \node[box, fill=red!20, right=of estado] (falha) {Falha\\(Visível ao Usuário)};
+        % Primeira linha
+        \node[box, fill=red!5, draw=red!70] (erro) {\textbf{Erro Humano}\\[0.1cm] \textit{(Engano)}};
         
-        \draw[arrow] (erro) -- (defeito);
-        \draw[arrow] (defeito) -- (estado) node[midway, below, font=\small] {Execução};
-        \draw[arrow] (estado) -- (falha) node[midway, below, font=\small] {Propagação};
+        % Distância aumentada para 2.8cm para dar espaço às setas
+        \node[box, fill=orange!5, draw=orange!70, right=2.8cm of erro] (defeito) {\textbf{Defeito}\\[0.1cm] \textit{(Bug no Código)}};
+        
+        % Segunda linha
+        \node[box, fill=yellow!10, draw=yellow!80!orange, below=1.8cm of defeito] (estado) {\textbf{Erro de Sistema}\\[0.1cm] \textit{(Estado Interno)}};
+        
+        % Distância aumentada para 2.8cm para não espremer "Propagação"
+        \node[box, fill=red!15, draw=red!80, right=2.8cm of estado] (falha) {\textbf{Falha}\\[0.1cm] \textit{(Visível ao Usuário)}};
+        
+        % Setas e Rótulos
+        \draw[arrow, draw=gray!80] (erro) -- (defeito);
+        \draw[arrow, draw=gray!80] (defeito) -- (estado) node[midway, right=0.1cm, text=gray!80!black, font=\small\bfseries] {Execução};
+        
+        % Distanciamento leve do texto em relação à seta (above=0.1cm)
+        \draw[arrow, draw=gray!80] (estado) -- (falha) node[midway, above=0.1cm, text=gray!80!black, font=\small\bfseries] {Propagação};
     \end{tikzpicture}
     \caption{A cadeia Erro-Defeito-Falha clássica da engenharia de confiabilidade.}
 \end{figure}
@@ -1620,21 +1765,20 @@ na presença de falhas internas.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        node distance=0.5cm,
-        str/.style={draw, rectangle, fill=green!10, text width=3cm, align=center, minimum height=1cm, thick},
-        desc/.style={font=\small, text width=5cm, align=left}
+        node distance=0.8cm,
+        box/.style={draw, rectangle, rounded corners, text width=7.5cm, align=center, minimum height=1.6cm, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        arrow/.style={->, ultra thick, draw=gray!80}
     ]
-        \node[str] (prev) {1. Prevenção};
-        \node[desc, right=of prev] {Evitar a introdução de defeitos (boas práticas, tipos fortes).};
+        % Blocos com título em negrito e descrição em itálico integrados
+        \node[box, fill=green!5, draw=green!70!black] (prev) {\textbf{1. Prevenção}\\[0.1cm] \textit{Evitar a introdução de defeitos (boas práticas, tipos fortes).}};
         
-        \node[str, below=of prev] (det) {2. Detecção};
-        \node[desc, right=of det] {Descobrir e remover defeitos (testes, revisão).};
+        \node[box, fill=blue!5, draw=blue!70, below=0.8cm of prev] (det) {\textbf{2. Detecção}\\[0.1cm] \textit{Descobrir e remover defeitos (testes, revisão).}};
         
-        \node[str, below=of det] (tol) {3. Tolerância};
-        \node[desc, right=of tol] {Operar mesmo com falhas (exceções, redundância).};
+        \node[box, fill=orange!5, draw=orange!70, below=0.8cm of det] (tol) {\textbf{3. Tolerância}\\[0.1cm] \textit{Operar mesmo com falhas (exceções, redundância).}};
         
-        \draw[->, ultra thick, gray] (prev.south) -- (det.north);
-        \draw[->, ultra thick, gray] (det.south) -- (tol.north);
+        % Setas conectando os blocos
+        \draw[arrow] (prev) -- (det);
+        \draw[arrow] (det) -- (tol);
     \end{tikzpicture}
     \caption{Estratégias complementares para lidar com defeitos ao longo do ciclo de vida.}
 \end{figure}
@@ -1687,25 +1831,28 @@ verificação, recuperação e proteção.
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        every node/.style={draw, rounded corners, thick, align=center},
-        main/.style={fill=blue!20, minimum width=3cm, minimum height=1cm, font=\bfseries},
-        sub/.style={fill=gray!10, minimum width=2.5cm, minimum height=1cm}
+        box/.style={draw, rectangle, rounded corners, align=center, minimum height=1.6cm, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        root/.style={box, fill=blue!10, draw=blue!70!black, text width=4.5cm},
+        leaf/.style={box, fill=gray!5, draw=gray!60, text width=3.4cm},
+        arrow/.style={->, ultra thick, draw=gray!80}
     ]
-        \node[main] (dep) {Dependabilidade};
+        % Nó Central
+        \node[root] (dep) at (0,0) {\textbf{Dependabilidade}};
         
-        \node[sub, below left=1.5cm and 2cm of dep] (disp) {Disponibilidade};
-        \node[sub, below left=1.5cm and -0.5cm of dep] (conf) {Confiabilidade};
-        \node[sub, below right=1.5cm and -0.5cm of dep] (saf) {Segurança\\(Safety)};
-        \node[sub, below right=1.5cm and 2cm of dep] (sec) {Proteção\\(Security)};
+        % Nós Satélites organizados em coordenadas polares (ângulo:distância)
+        \node[leaf] (disp) at (135:4.2cm) {\textbf{Disponibilidade}\\[0.1cm] \textit{(Availability)}};
+        \node[leaf] (conf) at (45:4.2cm)  {\textbf{Confiabilidade}\\[0.1cm] \textit{(Reliability)}};
+        \node[leaf] (sec)  at (225:4.2cm) {\textbf{Proteção}\\[0.1cm] \textit{(Security)}};
+        \node[leaf] (saf)  at (315:4.2cm) {\textbf{Segurança}\\[0.1cm] \textit{(Safety)}};
         
-        \draw[->, thick] (dep) -- (disp);
-        \draw[->, thick] (dep) -- (conf);
-        \draw[->, thick] (dep) -- (saf);
-        \draw[->, thick] (dep) -- (sec);
+        % Setas partindo do centro para os nós satélites
+        \draw[arrow] (dep) -- (disp);
+        \draw[arrow] (dep) -- (conf);
+        \draw[arrow] (dep) -- (saf);
+        \draw[arrow] (dep) -- (sec);
     \end{tikzpicture}
     \caption{Os principais atributos que compõem a Dependabilidade de um sistema.}
 \end{figure}
-
 
 \section{Métricas de Confiabilidade e Disponibilidade}
 
@@ -1780,32 +1927,36 @@ diversos. Um usuário cujo perfil de uso nunca atinge o conjunto de entradas
 problemáticas pode considerar o sistema ``perfeito'', enquanto outro, que
 depende intensamente dessas funções, experimenta falhas recorrentes.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \begin{tikzpicture}[thick]
+    \begin{tikzpicture}[
+        arrow/.style={->, ultra thick, draw=gray!80},
+        errorarrow/.style={->, ultra thick, draw=red!70}
+    ]
         % Espaço de Entradas
-        \draw[fill=gray!10] (0,0) ellipse (2cm and 3cm);
-        \node[font=\bfseries] at (0, 2.5) {Entradas};
+        \draw[thick, fill=blue!5, draw=blue!70, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}] (0,0) ellipse (2cm and 3cm);
+        \node[font=\bfseries\Large, text=blue!80!black] at (0, 2.2) {Entradas};
         
-        % Subconjunto de erro
-        \draw[fill=red!20] (0,-1) ellipse (1cm and 1cm);
-        \node[font=\small, align=center, text width=1.8cm] at (0,-1) {Entradas\\que causam\\falha};
+        % Subconjunto de erro (Entradas)
+        \draw[thick, fill=red!5, draw=red!80, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}] (0,-1) ellipse (1.2cm and 1.2cm);
+        \node[font=\small\bfseries, text=red!80!black, align=center, text width=2cm] at (0,-1) {Entradas\\que causam\\falha};
         
-        % Espaço de Saídas
-        \draw[fill=gray!10] (6,0) ellipse (2cm and 3cm);
-        \node[font=\bfseries] at (6, 2.5) {Saídas};
+        % Espaço de Saídas (Afastado para X=8 para dar máximo espaço central)
+        \draw[thick, fill=blue!5, draw=blue!70, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}] (8,0) ellipse (2cm and 3cm);
+        \node[font=\bfseries\Large, text=blue!80!black] at (8, 2.2) {Saídas};
         
-        % Subconjunto corrompido
-        \draw[fill=red!20] (6,-1) ellipse (1.2cm and 1.2cm);
-        \node[font=\small, align=center, text width=2cm] at (6,-1) {Saídas\\incorretas\\(Falhas)};
+        % Subconjunto corrompido (Saídas)
+        \draw[thick, fill=red!5, draw=red!80, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}] (8,-1) ellipse (1.4cm and 1.4cm);
+        \node[font=\small\bfseries, text=red!80!black, align=center, text width=2.4cm] at (8,-1) {Saídas\\incorretas\\(Falhas)};
         
-        % Mapeamento
-        \draw[->, dashed] (1.5, 1) -- (4.5, 1) node[midway, above, font=\small] {Operação Normal};
-        \draw[->, ultra thick, red] (1, -1) -- (4.8, -1) node[midway, below, font=\small] {Executa o Defeito};
+        % Mapeamento - Operação Normal (Dashed e com yshift)
+        \draw[arrow, dashed] (2, 0.8) -- (6, 0.8) node[midway, above=0.2cm, text=gray!80!black, font=\small\bfseries] {Operação Normal};
+        
+        % Mapeamento - Executa o Defeito (Vermelha e com yshift)
+        \draw[errorarrow] (1.2, -1) -- (6.6, -1) node[midway, below=0.2cm, text=red!80!black, font=\small\bfseries] {Executa o Defeito};
     \end{tikzpicture}
     \caption{Visão de confiabilidade baseada no mapeamento de entradas e saídas.}
 \end{figure}
-
 
 \section{Considerações Finais sobre Sommerville}
 
@@ -1855,7 +2006,7 @@ falhas.
     \centering
     \begin{tikzpicture}[
         node distance=0.5cm and 0.5cm,
-        box/.style={rectangle,draw,rounded corners,minimum width=2.6cm,minimum height=1cm,align=center},
+        box/.style={rectangle,draw,rounded corners,minimum width=2.6cm,minimum height=1cm,align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={-{Latex},thick}
     ]
         \node[box] (entrada) {Entradas\\(sensores, requisições)};
@@ -1895,7 +2046,7 @@ novas cópias. A Figura~\ref{fig:hadoop-simples} resume essa ideia.
     \centering
     \begin{tikzpicture}[
         node distance=1.6cm and 1.4cm,
-        box/.style={rectangle,draw,rounded corners,minimum width=2.3cm,minimum height=0.9cm,align=center},
+        box/.style={rectangle,draw,rounded corners,minimum width=2.3cm,minimum height=0.9cm,align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={-{Latex},thick}
     ]
         \node[box] (cliente) {Cliente / Aplicação};
@@ -1948,7 +2099,7 @@ principal, o ambiente físico e o sistema de proteção:
     \centering
     \begin{tikzpicture}[
         node distance=1.8cm and 2.0cm,
-        box/.style={rectangle,draw,rounded corners,minimum width=3cm,minimum height=1cm,align=center},
+        box/.style={rectangle,draw,rounded corners,minimum width=3cm,minimum height=1cm,align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={-{Latex},thick}
     ]
         \node[box] (ambiente) {Ambiente Físico};
@@ -2002,8 +2153,8 @@ automonitoramento com dois canais redundantes e um comparador:
     \centering
     \begin{tikzpicture}[
         node distance=1.5cm and 2.0cm,
-        box/.style={rectangle,draw,rounded corners,minimum width=2.4cm,minimum height=0.9cm,align=center},
-        circlebox/.style={circle,draw,minimum size=0.9cm,align=center},
+        box/.style={rectangle,draw,rounded corners,minimum width=2.4cm,minimum height=0.9cm,align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        circlebox/.style={circle,draw,minimum size=0.9cm,align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={-{Latex},thick}
     ]
         \node[box] (entrada) {Entradas};
@@ -2097,8 +2248,8 @@ independentes com um votador:
         % Definindo distâncias padrão
         node distance=0.8cm and 1.5cm,
         % Estilos
-        box/.style={rectangle, draw, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, fill=gray!5},
-        circlebox/.style={circle, draw, minimum size=1cm, align=center, fill=orange!10, font=\bfseries},
+        box/.style={rectangle, draw, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, fill=gray!5, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        circlebox/.style={circle, draw, minimum size=1cm, align=center, fill=orange!10, font=\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={-{Latex[scale=1.2]}, thick}
     ]
         % Coluna 1: Entrada
@@ -2197,8 +2348,8 @@ O ecossistema Hadoop é composto por dois núcleos fundamentais:
     \vspace{0.3cm}
     \begin{center}
     \begin{tikzpicture}[
-        node/.style={draw, rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, align=center},
-        block/.style={draw, rectangle, fill=green!20, minimum width=1.5cm, minimum height=0.6cm},
+        node/.style={draw, rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        block/.style={draw, rectangle, fill=green!20, minimum width=1.5cm, minimum height=0.6cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={->, thick}
     ]
         % Arquivo original
@@ -2236,8 +2387,8 @@ O ecossistema Hadoop é composto por dois núcleos fundamentais:
     \vspace{0.3cm}
     \begin{center}
     \begin{tikzpicture}[
-        node/.style={draw, rectangle, rounded corners, minimum width=2.2cm, minimum height=0.8cm, align=center},
-        task/.style={draw, rectangle, fill=blue!20, minimum width=1.6cm, minimum height=0.6cm},
+        node/.style={draw, rectangle, rounded corners, minimum width=2.2cm, minimum height=0.8cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        task/.style={draw, rectangle, fill=blue!20, minimum width=1.6cm, minimum height=0.6cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={->, thick}
     ]
         % Gerenciador
@@ -2302,10 +2453,10 @@ típico, mostrando como o processamento e os dados se distribuem globalmente.
     \centering
     \begin{tikzpicture}[
         master/.style={draw, rounded corners, fill=blue!15, minimum width=3cm,
-                        minimum height=1cm, align=center, font=\small\bfseries},
+                        minimum height=1cm, align=center, font=\small\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         worker/.style={draw, rounded corners, fill=green!10, minimum width=2.5cm,
-                        minimum height=0.8cm, align=center, font=\tiny},
-        rack/.style={draw, dashed, rounded corners, fill=gray!5, inner sep=0.3cm},
+                        minimum height=0.8cm, align=center, font=\tiny, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        rack/.style={draw, dashed, rounded corners, fill=gray!5, inner sep=0.3cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={->, thick, >=Stealth}
     ]
     % ---- NameNode e ResourceManager (masters) ----
@@ -2421,7 +2572,7 @@ Uma falha de serviço não é apenas um "bug" no código; ela tem repercussões 
     \centering
     \begin{tikzpicture}[
         node distance=2.2cm and 1.5cm,
-        every node/.style={draw, rounded corners, align=center, thick, fill=white, minimum width=3cm, minimum height=1cm}
+        every node/.style={draw, rounded corners, align=center, thick, fill=white, minimum width=3cm, minimum height=1cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     \node[fill=red!20] (falha) {Falha de\\ Serviço};
     \node (usuarios) [below left=of falha] {Insatisfação dos\\ Usuários};
@@ -2524,7 +2675,7 @@ Imagine um sistema com datacenters na América, Europa e Ásia. Se o datacenter 
     \begin{tikzpicture}[
         node distance=2cm,
         user/.style={font=\small, align=center},
-        dc/.style={draw, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, fill=green!10}
+        dc/.style={draw, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, fill=green!10, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     \node[user] (u1) at (0,3) {Usuários\\ América};
     \node[user] (u2) at (0,1.5) {Usuários\\ Europa};
@@ -2593,7 +2744,7 @@ Uma requisição é o pedido do cliente ao servidor. Ela contém:
     \centering
     \begin{tikzpicture}[
         node distance=4cm,
-        box/.style={draw, rounded corners, minimum width=3cm, minimum height=1.5cm, align=center, thick}
+        box/.style={draw, rounded corners, minimum width=3cm, minimum height=1.5cm, align=center, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     \node[box, fill=blue!5] (cliente) {Cliente\\ (App/Browser)};
     \node[box, fill=green!5] (api) at (6,0) {API REST\\ (Servidor)};
@@ -2705,7 +2856,7 @@ Uma falha de serviço raramente é um evento isolado sem consequências externas
     \centering
     \begin{tikzpicture}[
         node distance=2cm,
-        every node/.style={draw, rounded corners, align=center, fill=blue!5, minimum width=3cm, minimum height=1cm, thick}
+        every node/.style={draw, rounded corners, align=center, fill=blue!5, minimum width=3cm, minimum height=1cm, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     \node (falha) [fill=red!10] {\textbf{Falha de Serviço}};
     \node (usuarios) [below left=of falha] {Insatisfação do\\Usuário};
@@ -2816,8 +2967,8 @@ Medir isso como "tempo fora do ar" não captura a realidade da experiência do u
     \centering
     \begin{tikzpicture}[
         node distance=1.5cm,
-        region/.style={draw, circle, fill=green!10, minimum size=1.5cm, font=\small},
-        fail/.style={draw, circle, fill=red!20, minimum size=1.5cm, font=\small, dashed}
+        region/.style={draw, circle, fill=green!10, minimum size=1.5cm, font=\small, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        fail/.style={draw, circle, fill=red!20, minimum size=1.5cm, font=\small, dashed, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
     \node (lb) [draw, rounded corners, fill=gray!10] {Load Balancer Global};
     \node (am) [region, below left=of lb] {América};
@@ -3429,7 +3580,7 @@ Em SRE, criou-se um consenso prático do que a equipe de frente deve fazer ao ba
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        fase/.style={draw, rounded corners=4pt, text width=3.2cm, align=center, minimum height=1.5cm, font=\small\bfseries},
+        fase/.style={draw, rounded corners=4pt, text width=3.2cm, align=center, minimum height=1.5cm, font=\small\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         seta/.style={->, ultra thick, >=stealth}
     ]
         \node[fase, fill=meuverde!10, draw=meuverde] (f1) at (0,0) {1. Acalmar e\\Avaliar Carga};
@@ -3477,7 +3628,7 @@ Pior ainda: a comunicação interna de rádio e mensagens cruciais das ferrament
     \centering
     \begin{tikzpicture}[
         node distance=0.8cm,
-        box/.style={draw, rectangle, rounded corners, font=\scriptsize, align=center, fill=gray!10, text width=2.5cm, minimum height=1.2cm},
+        box/.style={draw, rectangle, rounded corners, font=\scriptsize, align=center, fill=gray!10, text width=2.5cm, minimum height=1.2cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arr/.style={->, thick, >=stealth}
     ]
 
@@ -3528,7 +3679,7 @@ Incentivar simulações incertas controladas corrói o otimismo nocivo baseado e
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[
-        block/.style={draw, rounded corners, fill=blue!10, text width=3.2cm, align=center, minimum height=1.2cm, font=\small},
+        block/.style={draw, rounded corners, fill=blue!10, text width=3.2cm, align=center, minimum height=1.2cm, font=\small, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arrow/.style={->, ultra thick, >=stealth}
     ]
     \node[block, fill=red!15, draw=red!60!black] (incidente) at (0,0) {\textbf{Incidente Real}\\(Término do Estresse)};
@@ -3569,7 +3720,7 @@ No dia do acidente, devido à fina camada de água na pista, o avião aquaplanou
     \centering
     \begin{tikzpicture}[
         node distance=1.5cm,
-        block/.style={draw, rounded corners, fill=red!10, text width=3.5cm, align=center, font=\small, minimum height=1cm},
+        block/.style={draw, rounded corners, fill=red!10, text width=3.5cm, align=center, font=\small, minimum height=1cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
         arr/.style={->, thick, >=stealth}
     ]
         \node[block] (evento) {Pouso com\\Aquaplanagem};
@@ -3616,9 +3767,9 @@ A segurança é um dos atributos primordiais da dependabilidade de um sistema. C
     \centering
     \begin{tikzpicture}[node distance=1.8cm, every node/.style={font=\small}]
         \tikzstyle{prop} = [rectangle, rounded corners, minimum width=3.2cm, minimum height=1cm,
-                            align=center, draw=verdeuni, fill=verdeuni!10, text=verdeuni, font=\small\bfseries]
+                            align=center, draw=verdeuni, fill=verdeuni!10, text=verdeuni, font=\small\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{center} = [ellipse, minimum width=4cm, minimum height=1.3cm,
-                              align=center, draw=verdeuni, fill=verdeuni, text=white, font=\large\bfseries]
+                              align=center, draw=verdeuni, fill=verdeuni, text=white, font=\large\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{arrow} = [thick, ->, >=Stealth, verdeuni]
 
         \node (dep) [center] {Dependabilidade};
@@ -3655,11 +3806,11 @@ O software atua como um sistema de proteção independente. Ele monitora sensore
     \centering
     \begin{tikzpicture}[node distance=1.2cm, every node/.style={font=\small}]
         \tikzstyle{box} = [rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm,
-                           align=center, draw=blue!60, fill=blue!5]
+                           align=center, draw=blue!60, fill=blue!5, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{boxr} = [rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm,
-                            align=center, draw=meuvermelhoescuro, fill=red!5]
+                            align=center, draw=meuvermelhoescuro, fill=red!5, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{boxg} = [rectangle, rounded corners, minimum width=3.5cm, minimum height=1cm,
-                            align=center, draw=meuverde, fill=meuverde!5]
+                            align=center, draw=meuverde, fill=meuverde!5, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{arr} = [thick,->,>=Stealth]
 
         \node (sw)  [box]  {Software de\\Controle};
@@ -3719,9 +3870,9 @@ A FTA é uma técnica dedutiva (\emph{top-down}) que começa com um "Evento de T
     \centering
     \begin{tikzpicture}[
         node distance=1.5cm,
-        event/.style={draw, rectangle, rounded corners, fill=red!10, text width=3cm, align=center, font=\scriptsize, minimum height=0.8cm},
-        gate/.style={draw, diamond, aspect=1.5, fill=gray!10, font=\tiny\bfseries, inner sep=1pt},
-        leaf/.style={draw, circle, fill=green!10, font=\tiny, align=center, minimum size=1.5cm}
+        event/.style={draw, rectangle, rounded corners, fill=red!10, text width=3cm, align=center, font=\scriptsize, minimum height=0.8cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        gate/.style={draw, diamond, aspect=1.5, fill=gray!10, font=\tiny\bfseries, inner sep=1pt, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+        leaf/.style={draw, circle, fill=green!10, font=\tiny, align=center, minimum size=1.5cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}}
     ]
         % Topo
         \node (top) [event] {Acidente (Colisão)};
@@ -3779,7 +3930,7 @@ Nem toda falha tem o mesmo peso. A engenharia de segurança classifica os sistem
     \centering
     \begin{tikzpicture}[every node/.style={font=\small}, scale=0.9]
         \tikzstyle{cat} = [rectangle, rounded corners, minimum width=6cm,
-                           minimum height=0.8cm, align=center, draw, thick]
+                           minimum height=0.8cm, align=center, draw, thick, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \node[cat, fill=red!30,    draw=meuvermelhoescuro] (c1) at (0,3) {\textbf{Catastrófico} — Mortes em massa};
         \node[cat, fill=orange!30, draw=orange!80!black]   (c2) at (0,2) {\textbf{Crítico} — Lesões graves};
         \node[cat, fill=yellow!30, draw=yellow!80!black]   (c3) at (0,1) {\textbf{Marginal} — Lesões leves};
@@ -3828,11 +3979,11 @@ Neste modelo, três cópias independentes do software (muitas vezes escritas por
     \centering
     \begin{tikzpicture}[node distance=1.5cm, every node/.style={font=\small}]
         \tikzstyle{sw}      = [rectangle, rounded corners, draw=blue!60, fill=blue!5,
-                               minimum width=3cm, minimum height=0.9cm, align=center]
+                               minimum width=3cm, minimum height=0.9cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{vote}    = [diamond, draw=meuverde, fill=meuverde!10, aspect=2.5,
-                               minimum width=2cm, minimum height=1cm, align=center, font=\tiny\bfseries]
+                               minimum width=2cm, minimum height=1cm, align=center, font=\tiny\bfseries, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{outstyle}= [rectangle, rounded corners, draw=meuverde, fill=meuverde!20,
-                               minimum width=2.8cm, minimum height=0.9cm, align=center]
+                               minimum width=2.8cm, minimum height=0.9cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{arr}     = [thick,->,>=Stealth]
 
         % Entradas
@@ -3913,8 +4064,8 @@ A especificação de segurança segue quatro etapas fundamentais:
 \begin{figure}[h]
     \centering
     \begin{tikzpicture}[node distance=1.1cm, every node/.style={font=\small}, scale=0.9]
-        \tikzstyle{oval} = [ellipse, draw=verdeuni, fill=verdeuni!5, minimum width=2.5cm, minimum height=1cm, align=center]
-        \tikzstyle{rect} = [rectangle, draw=gray, fill=gray!5, minimum width=2.5cm, minimum height=1cm, align=center, font=\tiny]
+        \tikzstyle{oval} = [ellipse, draw=verdeuni, fill=verdeuni!5, minimum width=2.5cm, minimum height=1cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
+        \tikzstyle{rect} = [rectangle, draw=gray, fill=gray!5, minimum width=2.5cm, minimum height=1cm, align=center, font=\tiny, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{arr}  = [thick,->,>=Stealth]
 
         \node (id)  [oval] {Identificação};
@@ -3962,7 +4113,7 @@ Todo o trabalho de análise e mitigação deve ser formalizado no \textbf{Regist
     \centering
     \begin{tikzpicture}[every node/.style={font=\small}, node distance=1.1cm]
         \tikzstyle{box} = [rectangle, rounded corners, draw=verdeuni, fill=verdeuni!10,
-                           minimum width=6cm, minimum height=0.9cm, align=center]
+                           minimum width=6cm, minimum height=0.9cm, align=center, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}]
         \tikzstyle{arr} = [thick,->,>=Stealth,verdeuni]
 
         \node (a) [box] {Identificar Perigos (FTA/FMEA)};
@@ -4578,9 +4729,9 @@ automação interpretou uma resposta vazia como ``aplicar a todas as máquinas''
 \begin{center}
 \begin{tikzpicture}[
     node distance=1.2cm,
-    box/.style={draw, fill=gray!5, text width=2.5cm, align=center, font=\scriptsize, minimum height=0.8cm},
-    gateOR/.style={or gate US, draw, thick, fill=blue!10, logic gate inputs=nn, rotate=90, scale=1.2},
-    gateAND/.style={and gate US, draw, thick, fill=red!10, logic gate inputs=nn, rotate=90, scale=1.2},
+    box/.style={draw, fill=gray!5, text width=2.5cm, align=center, font=\scriptsize, minimum height=0.8cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+    gateOR/.style={or gate US, draw, thick, fill=blue!10, logic gate inputs=nn, rotate=90, scale=1.2, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+    gateAND/.style={and gate US, draw, thick, fill=red!10, logic gate inputs=nn, rotate=90, scale=1.2, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
     arrow/.style={-Stealth, thick}
 ]
     % Nós
@@ -4632,9 +4783,9 @@ Um conjunto m\'inimo de corte (\textit{minimal cut set}) \'e: ``Obstru\c{c}\~ao 
 \begin{center}
 \begin{tikzpicture}[
     node distance=2.0cm,
-    box/.style={draw, fill=gray!5, text width=2.4cm, align=center, font=\tiny, minimum height=0.7cm},
-    gateOR/.style={or gate US, draw, thick, fill=blue!10, logic gate inputs=nn, rotate=90, scale=1.0},
-    gateAND/.style={and gate US, draw, thick, fill=red!10, logic gate inputs=nn, rotate=90, scale=1.0},
+    box/.style={draw, fill=gray!5, text width=2.4cm, align=center, font=\tiny, minimum height=0.7cm, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+    gateOR/.style={or gate US, draw, thick, fill=blue!10, logic gate inputs=nn, rotate=90, scale=1.0, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
+    gateAND/.style={and gate US, draw, thick, fill=red!10, logic gate inputs=nn, rotate=90, scale=1.0, drop shadow={opacity=0.15, shadow xshift=0.3ex, shadow yshift=-0.3ex}},
     arrow/.style={thick}
 ]
     % (Diagrama mantido conforme anterior)
