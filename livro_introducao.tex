@@ -1,5 +1,4 @@
 % Livro de apoio - Engenharia da Qualidade e Confiabilidade
-% Baseado nos slides da aula de Introdução
 \documentclass[12pt,a4paper,twoside]{report}
 
 \usepackage[utf8]{inputenc}
@@ -12,7 +11,7 @@
 \usepackage{pgfplots}
 \usepackage{float}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,calc,fit,shadows}
+\usetikzlibrary{arrows.meta,positioning,shapes.multipart,shapes.geometric,shapes.symbols,calc,fit,shadows}
 \usetikzlibrary{shapes.gates.logic.US, positioning}
 
 \usepackage{hyperref}
@@ -153,7 +152,7 @@
 % Foto do autor (com fallback se o arquivo não existir)
 \newcommand{\authorphoto}[1]{%
   \IfFileExists{#1}{%
-    \includegraphics[width=2.8cm, height=3.5cm, keepaspectratio]{#1}%
+    \includegraphics[width=2.8cm, height=3.5cm]{#1}%
   }{%
     \fbox{\parbox[c][3.5cm][c]{2.8cm}{\centering\color{gray}\small Foto}}%
   }%
@@ -281,54 +280,25 @@
 
 \vspace{1.5cm}
 
-\begin{tabular}{ccc}
-
-% Autor 1
-\begin{minipage}[t]{0.30\textwidth}
-\begin{authorcard}
+\noindent
+\begin{minipage}[t]{0.30\textwidth}%
 \centering
-{\small\bfseries\color{azuluni} Sergio Souza Novak}
+{\small\bfseries\color{azuluni} Sergio Souza\\ Novak}
 
 \vspace{0.6cm}
 
-\authorphoto{foto_sergio.jpeg}
+\authorphoto{sergio.jpeg}
 
 \vspace{0.7cm}
 
-\justifying\footnotesize\color{darkgray}
-Sergio Souza Novak é Mestre em Ciências Agrárias pelo Instituto Federal Goiano.
-Atua nas áreas de Banco de Dados, Inteligência Artificial e Desenvolvimento de
-Software, com experiência acadêmica e industrial e publicações científicas
-aplicadas à agricultura digital.
-\end{authorcard}
-\end{minipage}
+{\justifying\scriptsize\color{darkgray}
 
-&
+Sergio Souza Novak é professor na Universidade de Rio Verde (UniRV), vinculado à Faculdade de Engenharia de Software. Atualmente, é doutorando em Ciências Agrárias pelo Instituto Federal Goiano (IFGOIANO), onde também obteve o título de Mestre em Ciências Agrárias. É bacharel em Ciência da Computação pela mesma instituição.
 
-% Autor 2
-\begin{minipage}[t]{0.30\textwidth}
-\begin{authorcard}
-\centering
-{\small\bfseries\color{azuluni} ADRIANO S. de O. BAILÃO}
-
-\vspace{0.6cm}
-
-\authorphoto{foto_sergio.jpeg}
-
-\vspace{0.7cm}
-
-\justifying\footnotesize\color{darkgray}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec
-consectetur ante hendrerit.
-\end{authorcard}
-\end{minipage}
-
-&
-
-% Autor 3
-\begin{minipage}[t]{0.30\textwidth}
-\begin{authorcard}
+Adicionalmente, possui especialização em Docência para o Ensino Superior. No âmbito de suas atividades acadêmicas, leciona a disciplina de Engenharia da Qualidade e Confiabilidade na Universidade de Rio Verde (UniRV).\par}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.30\textwidth}%
 \centering
 {\small\bfseries\color{azuluni} Leandro Manuel Pereira Sanches}
 
@@ -338,12 +308,23 @@ consectetur ante hendrerit.
 
 \vspace{0.7cm}
 
-\justifying\footnotesize\color{darkgray}
-Leandro Sanches é Mestre em Ciências da Computação e Advogado, possui experiência em computação aplicada à educação, análise e desenvolvimento de software, banco de dados, processamento de linguagens naturais. Participou de projetos de desenvolvimento de software comerciais e educacionais.
-\end{authorcard}
-\end{minipage}
+{\justifying\scriptsize\color{darkgray}
+Leandro Manuel Pereira Sanches é professor da faculdade de Engenharia de Software, vinculada à Universidade de Rio Verde (UniRV). Mestre em Ciência da Computação pela UFBA e graduado em Engenharia de Computação, possui experiência como analista desenvolvedor em sistemas web (.NET, C\#). Sua atuação acadêmica e profissional foca em arquitetura de software, Web Semântica e computação aplicada à educação. Atualmente ministra disciplinas de Análise e Projeto de Sistemas e Bancos de Dados na UniRV.\par}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.30\textwidth}%
+\centering
+{\small\bfseries\color{azuluni} Adriano Soares de Oliveira Bailão}
 
-\end{tabular}
+\vspace{0.6cm}
+
+\authorphoto{bailao.jpeg}
+
+\vspace{0.7cm}
+
+{\justifying\scriptsize\color{darkgray}
+Adriano Soares de Oliveira Bailão é professor e pesquisador no Instituto Federal Goiano (IFGOIANO), vinculado ao Programa de Pós-Graduação em Ciências Agrárias (PPGCA). Doutor em Ciência da Computação pela parceria UFG/UFMS (com período na Universidade do Minho) e mestre pela UnB. Possui trajetória multidisciplinar integrando computação e automação. Sua atuação foca em Inteligência Artificial, IoT, sistemas embarcados e Engenharia de Software, com ênfase em agricultura de precisão. Atualmente ministra as disciplinas de Engenharia de Software e Inteligência Artificial no IFGOIANO.\par}
+\end{minipage}%
 \end{center}
 \newpage%
 }
@@ -4135,6 +4116,768 @@ Todo o trabalho de análise e mitigação deve ser formalizado no \textbf{Regist
 %=============================================================
 % APÊNDICES
 %=============================================================
+
+\chapter{Engenharia de Segurança da Informação}
+
+Enquanto a engenharia de segurança física (\emph{safety}) foca na proteção das pessoas e do ambiente contra falhas do sistema, a \textbf{Engenharia de Segurança da Informação} (\emph{security}) dedica-se ao problema inverso: proteger o sistema e seus dados contra as ameaças do mundo exterior. Em um cenário de conectividade global, a segurança deixou de ser um recurso opcional ou um "toque final" no desenvolvimento para se tornar um requisito fundamental da qualidade e da confiabilidade de software.
+
+\section{Fundamentos e Evolução Histórica}
+
+A necessidade por sistemas seguros não é nova, mas o seu perfil mudou drasticamente nas últimas décadas. Nos anos 1980, a computação era predominantemente isolada. O maior risco de segurança era físico ou vinha de dispositivos de armazenamento removíveis. Com a adoção generalizada da Internet na década de 1990, a superfície de ataque expandiu-se exponencialmente.
+
+O desafio da engenharia moderna é projetar sistemas que não apenas façam o que devem fazer (requisitos funcionais), mas que também \textbf{não permitam} o que não deve ser feito (requisitos de segurança). Como ilustrado na Figura \ref{fig:evolucao_conectividade}, a transição do processamento isolado para a rede global criou um novo paradigma de vulnerabilidades.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=2.5cm,
+        terminal/.style={draw, thick, rectangle, rounded corners, minimum width=1.5cm, minimum height=1cm, fill=gray!10},
+        netcloud/.style={draw, thick, cloud, cloud puffs=12, cloud puff arc=120, minimum width=3.5cm, minimum height=2cm, fill=azuluni!10, text=azuluni, font=\bfseries}
+    ]
+        % Anos 80
+        \node[terminal] (pc1) {PC Isolado};
+        \node[below=0.3cm of pc1, font=\small\bfseries] {Anos 80};
+        
+        % Anos 90+
+        \node[netcloud, right=of pc1, xshift=2cm] (net) {INTERNET};
+        \node[terminal, above right=0.5cm and 1cm of net] (pc2) {Estação A};
+        \node[terminal, right=1.2cm of net] (pc3) {Estação B};
+        \node[terminal, below right=0.5cm and 1cm of net] (pc4) {Estação C};
+        \node[below=0.3cm of net, yshift=-0.5cm, font=\small\bfseries] {Anos 90 em diante};
+
+        \draw[<->, thick, dashed, azuluni] (net) -- (pc2);
+        \draw[<->, thick, dashed, azuluni] (net) -- (pc3);
+        \draw[<->, thick, dashed, azuluni] (net) -- (pc4);
+        
+        \node[draw=red, dashed, thick, fit=(net) (pc2) (pc3) (pc4), inner sep=10pt] (surf) {};
+        \node[below=0.1cm of surf, color=red!70!black, font=\scriptsize\itshape] {Superfície de Ataque Expandida};
+    \end{tikzpicture}
+    \caption{A transição da computação isolada para a conectividade global aumentou drasticamente a superfície de ataque.}
+    \label{fig:evolucao_conectividade}
+\end{figure}
+
+\section{As Dimensões da Segurança: A Tríade CIA}
+
+A segurança da informação sustenta-se em três pilares fundamentais, conhecidos como a \textbf{Tríade CIA} (\emph{Confidentiality, Integrity, Availability}). Como ilustra a Figura \ref{fig:triade_cia}, a quebra de qualquer um desses pilares compromete a integridade do sistema como um todo.
+
+\begin{itemize}
+    \item \textbf{Confidencialidade:} Garantia de que a informação só é acessível por pessoas ou sistemas autorizados. O roubo de dados é a principal ameaça aqui.
+    \item \textbf{Integridade:} Garantia de que a informação e o software não foram alterados de forma não autorizada ou acidental.
+    \item \textbf{Disponibilidade:} Garantia de que o sistema e seus dados estão acessíveis quando requisitados por usuários legítimos. Ataques de negação de serviço (DoS) visam especificamente este pilar.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm]
+        \tikzstyle{pillar} = [draw, circle, thick, minimum size=2.8cm, align=center, font=\small\bfseries]
+        
+        \node[pillar, fill=azuluni!10, draw=azuluni] (c) {Confidencialidade};
+        \node[pillar, fill=meuverde!10, draw=meuverde, below left=1.5cm and 1cm of c] (i) {Integridade};
+        \node[pillar, fill=meuvermelhoescuro!10, draw=meuvermelhoescuro, below right=1.5cm and 1cm of c] (a) {Disponibilidade};
+
+        \draw[<->, ultra thick, gray!60] (c) -- (i);
+        \draw[<->, ultra thick, gray!60] (i) -- (a);
+        \draw[<->, ultra thick, gray!60] (a) -- (c);
+        
+        \node[font=\Large\bfseries, color=gray!80] at (0,-1.8) {CIA};
+    \end{tikzpicture}
+    \caption{A Tríade CIA: Os três pilares essenciais da segurança da informação.}
+    \label{fig:triade_cia}
+\end{figure}
+
+\section{Terminologia e Conceitos Fundamentais}
+
+Para projetar sistemas seguros, é essencial utilizar uma terminologia precisa. O campo da segurança define relações claras entre ameaças, vulnerabilidades e ativos:
+
+\begin{description}
+    \item[Ativo (\textit{Asset}):] Qualquer coisa de valor no sistema que precisa de proteção, como dados de clientes, código-fonte ou o próprio hardware.
+    \item[Ameaça (\textit{Threat}):] Uma circunstância ou evento com potencial de causar dano ou perda ao sistema.
+    \item[Vulnerabilidade:] Um ponto fraco no projeto, na implementação ou na operação que um ataque pode aproveitar.
+    \item[Ataque:] Uma ação deliberada que explora uma vulnerabilidade para comprometer um ativo.
+    \item[Controle:] Uma medida de segurança (técnica ou administrativa) que reduz a vulnerabilidade ou abranda o impacto de um ataque.
+\end{description}
+
+A Figura \ref{fig:relacionamento_seguranca} mostra como esses conceitos se inter-relacionam em um ciclo de risco.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=2cm,
+        box/.style={draw, thick, rounded corners, minimum width=2.5cm, minimum height=1cm, align=center, font=\small}
+    ]
+        \node[box, fill=red!10, draw=red] (threat) {Ameaça};
+        \node[box, right=of threat, fill=orange!10, draw=orange] (vuln) {Vulnerabilidade};
+        \node[box, below=of vuln, fill=red!20, draw=red!80!black] (attack) {Ataque};
+        \node[box, left=of attack, fill=azuluni!10, draw=azuluni] (asset) {Ativo};
+        \node[box, right=of attack, fill=meuverde!10, draw=meuverde] (control) {Controle};
+
+        \draw[->, thick] (threat) -- node[above, font=\tiny]{explora} (vuln);
+        \draw[->, thick] (vuln) -- node[right, font=\tiny]{possibilita} (attack);
+        \draw[->, thick] (attack) -- node[above, font=\tiny]{danifica} (asset);
+        \draw[->, thick, dashed, meuverde] (control) -- node[above, font=\tiny, sloped]{mitiga} (vuln);
+    \end{tikzpicture}
+    \caption{Relacionamento entre ameaças, vulnerabilidades, ataques e controles de segurança.}
+    \label{fig:relacionamento_seguranca}
+\end{figure}
+
+\section{Ameaças: Classificação e Tipos}
+
+As ameaças à segurança podem ser classificadas de diversas formas. Uma divisão clássica separa os ataques em \textbf{Passivos} e \textbf{Ativos}.
+
+\begin{itemize}
+    \item \textbf{Ataques Passivos:} O atacante apenas monitora ou intercepta a informação sem alterá-la. O objetivo é o conhecimento (ex: \emph{sniffing} de rede). São extremamente difíceis de detectar, pois não deixam rastros físicos ou lógicos óbvios.
+    \item \textbf{Ataques Ativos:} O atacante tenta alterar dados, interromper serviços ou fabricar informações falsas. São mais fáceis de detectar, mas o dano já pode ter sido causado.
+\end{itemize}
+
+\subsection{Categorias de Ameaças à Informação}
+
+Podemos detalhar as ameaças em quatro categorias operacionais, conforme ilustrado na Figura \ref{fig:tipos_ameaca}:
+
+\begin{enumerate}
+    \item \textbf{Interceptação:} Um atacante ganha acesso não autorizado a dados (quebra de confidencialidade).
+    \item \textbf{Interrupção:} Um ativo do sistema torna-se indisponível ou inutilizável (quebra de disponibilidade).
+    \item \textbf{Alteração:} Um atacante manipula ou destrói informações do sistema (quebra de integridade).
+    \item \textbf{Fabricação:} Um atacante insere objetos falsos ou transações forjadas no sistema.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=0.8cm and 1.5cm,
+        box/.style={draw, thick, rectangle, rounded corners, minimum width=2.8cm, minimum height=1.2cm, align=center, font=\scriptsize, fill=azuluni!5, draw=azuluni}
+    ]
+        \node[box] (intc) {\textbf{Interceptação}\\(Confidencialidade)};
+        \node[box, right=of intc] (intr) {\textbf{Interrupção}\\(Disponibilidade)};
+        \node[box, below=of intc] (alt) {\textbf{Alteração}\\(Integridade)};
+        \node[box, right=of alt] (fab) {\textbf{Fabricação}\\(Autenticidade)};
+        
+        \node[above=0.4cm of $(intc)!0.5!(intr)$, font=\small\bfseries] {Ameaças à Segurança};
+    \end{tikzpicture}
+    \caption{As quatro categorias fundamentais de ameaças à segurança da informação.}
+    \label{fig:tipos_ameaca}
+\end{figure}
+
+\section{Malware: O Software Malicioso}
+
+O mundo dos softwares maliciosos (\textbf{malware}) é vasto e em constante evolução. Eles podem ser classificados pela sua forma de propagação e pela agressividade de sua "carga útil" (\emph{payload}).
+
+\subsection{Taxonomia do Malware}
+
+Uma forma didática de entender o malware é dividi-los entre aqueles que dependem de um programa hospedeiro para existir e aqueles que são entidades independentes, como mostrado no diagrama de árvore da Figura \ref{fig:taxonomia_malware}.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[
+        node distance=1cm and 1cm,
+        root/.style={draw, thick, fill=azuluni!20, font=\bfseries, minimum width=3cm},
+        level1/.style={draw, thick, fill=azuluni!10, text width=3cm, align=center, font=\small},
+        level2/.style={draw, rounded corners, fill=white, text width=2.5cm, align=center, font=\scriptsize}
+    ]
+        \node[root] (mal) {Malware};
+        
+        \node[level1, right=of mal, yshift=1.2cm] (dep) {Necessitam de Hospedeiro};
+        \node[level1, right=of mal, yshift=-1.2cm] (ind) {Independentes};
+        
+        \node[level2, right=of dep, yshift=0.6cm] (v) {Vírus};
+        \node[level2, right=of dep, yshift=-0.6cm] (t) {Trojans / Rootkits};
+        
+        \node[level2, right=of ind, yshift=0.6cm] (w) {Worms (\emph{Vermes})};
+        \node[level2, right=of ind, yshift=-0.6cm] (b) {Bots / Ransomware};
+        
+        \draw[thick, ->] (mal.east) -- +(0.5,0) |- (dep.west);
+        \draw[thick, ->] (mal.east) -- +(0.5,0) |- (ind.west);
+        \draw[->] (dep.east) -- +(0.4,0) |- (v.west);
+        \draw[->] (dep.east) -- +(0.4,0) |- (t.west);
+        \draw[->] (ind.east) -- +(0.4,0) |- (w.west);
+        \draw[->] (ind.east) -- +(0.4,0) |- (b.west);
+    \end{tikzpicture}
+    \caption{Taxonomia básica de malwares baseada na dependência de execução.}
+    \label{fig:taxonomia_malware}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Vírus:} Códigos que se anexam a arquivos legítimos. Dependem da execução humana para se espalharem.
+    \item \textbf{Worms:} Softwares autônomos que se autorreplicam através da rede, explorando vulnerabilidades sem intervenção do usuário.
+    \item \textbf{Trojans (Cavalos de Tróia):} Disfarçam-se como softwares úteis para enganar o usuário a instalá-los, liberando uma carga maliciosa oculta.
+    \item \textbf{Ransomware:} Uma das ameaças mais rentáveis atualmente; o malware criptografa os dados do usuário e exige um pagamento (geralmente em criptomoeda) para fornecer a chave de descriptografia.
+\end{itemize}
+
+\section{O Fator Humano e a Segurança Operacional}
+
+Imagine a seguinte situação: um gerente de TI muito rigoroso decide que o sistema da empresa precisa ser tecnicamente invulnerável. Para garantir isso, ele implementa uma política implacável: a cada 15 dias, todos os funcionários devem criar uma senha nova de 16 caracteres, contendo maiúsculas, minúsculas, números e símbolos especiais, sendo estritamente proibido repetir qualquer senha usada nos últimos cinco anos. 
+
+No papel, o sistema agora é hermético e à prova de ataques de força bruta. No entanto, na semana seguinte à implementação, um auditor caminha pelo escritório e percebe uma mudança curiosa: as bordas de quase todos os monitores estão decoradas com pequenos \textit{post-its} amarelos. Neles, os funcionários anotaram suas respectivas senhas complexas, já que memorizar uma nova sequência aleatória a cada quinze dias é cognitivamente inviável debaixo das demandas do trabalho diário.
+
+A tentativa cega de criar uma barreira tecnológica absoluta acabou criando uma vulnerabilidade física imediata.
+
+Muitas vezes, a vulnerabilidade mais crítica não está no código, mas no comportamento humano. A \textbf{Engenharia Social} explora a psicologia das pessoas para obter acesso a sistemas.
+
+Um dilema central na engenharia de segurança é o equilíbrio entre proteção e usabilidade. O clássico \textbf{"Problema do Post-it"} (Figura \ref{fig:postit_problem}) ilustra como regras de segurança excessivamente rígidas podem levar os usuários a adotarem comportamentos inseguros por conveniência ou necessidade funcional.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \node[draw, thick, fill=gray!20, minimum width=3cm, minimum height=2.2cm] (mon) {Monitor};
+        \node[draw, fill=yellow, minimum size=0.8cm, below right=of mon, xshift=-1.4cm, yshift=1.2cm, font=\tiny\bfseries] {Senha123!};
+        
+        \node[right=of mon, text width=6cm, font=\small] {
+            \textbf{Cenário:} Troca obrigatória de senha a cada 15 dias com caracteres complexos.\\
+            \textbf{Resultado:} O usuário anota a senha fisicamente por não conseguir memorizá-la.\\
+            \textbf{Lição:} A segurança operacional deve ser humanamente viável.
+        };
+    \end{tikzpicture}
+    \caption{O Problema do Post-it: Quando a política de segurança ignora as limitações humanas, ela cria novas vulnerabilidades.}
+    \label{fig:postit_problem}
+\end{figure}
+
+\begin{block}{Estudo de Caso Prático: Engenharia Social Operacional}
+ 
+
+    Um exemplo clássico de como o fator humano suplanta barreiras tecnológicas é o ataque via \textit{Spear Phishing}. Considere uma organização que investiu pesadamente em \textit{firewalls} de última geração e criptografia de ponta para proteger seu servidor (garantindo os preceitos de dependabilidade técnica).
+
+Um atacante, ao invés de tentar transpor o \textit{firewall} (o que custaria meses de esforço computacional), realiza uma pesquisa em redes sociais corporativas. Ele identifica um funcionário do setor financeiro, elabora um e-mail falso com tom de urgência do ``CEO'' solicitando o preenchimento de um formulário em anexo, e o envia durante o fechamento de fim de mês, que é um momento de alta pressão e estresse cognitivo.
+
+O funcionário, focado em resolver a urgência imposta pela ``autoridade'' do remetente, baixa e executa o anexo (que na verdade contém um \textit{Trojan}). O \textit{malware} então assume o controle da máquina da vítima — que \textbf{já possui acesso autorizado e legítimo} à rede interna. Toda a barreira tecnológica milionária perimetral é contornada simplesmente porque o elo mais fraco do software não era o código, mas a interface psicológica com o usuário humano.
+\end{block}
+
+\section{Resiliência e Gestão de Riscos}
+
+Assim como na engenharia de confiabilidade estudamos a resiliência de hardware, na segurança buscamos a \textbf{Resiliência à Intrusão}. O objetivo não é apenas resistir a ataques, mas garantir uma recuperação eficiente e um aprendizado contínuo.
+
+A segurança deve ser gerida em camadas (Infraestrutura, Aplicação e Operacional). Atacantes costumam focar na infraestrutura (navegadores, sistemas operacionais e bibliotecas comuns) justamente pela sua disponibilidade universal. Uma vulnerabilidade em um componente amplamente utilizado (como o OpenSSL ou o Apache) tem um impacto global imediato.
+
+\section{Decisões de Projeto vs. Erro Humano}
+O "Problema do Post-it" nos leva a uma reflexão mais profunda sobre a culpa em incidentes de segurança. Historicamente, a indústria de software tendia a responsabilizar o usuário final (o "fator humano") pela quebra dos protocolos. No entanto, a engenharia moderna reconhece que o \textbf{erro humano é frequentemente um sintoma de um design de sistema falho}.
+
+Quando um sistema exige um nível de esforço irrazoável — seja cognitivo (memorizar senhas enormes), temporal (autenticações lentas que atrasam atendimentos de emergência médica) ou processual — a segurança será inevitavelmente burlada por conveniência ou pura necessidade operacional.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2.5cm and 2cm]
+        \node (dec) [draw, thick, rounded corners, fill=azuluni!10, text width=4.5cm, align=center, minimum height=1.5cm, drop shadow] {Má Decisão de Projeto\\{\scriptsize (Ex: Troca frequente de senha complexa)}};
+        \node (err) [draw, thick, rounded corners, fill=meuvermelhoescuro!10, right=of dec, text width=4.5cm, align=center, minimum height=1.5cm, drop shadow] {Comportamento Inseguro\\{\scriptsize (Ex: Anotar senha no monitor)}};
+        
+        \draw[->, ultra thick, gray] (dec) -- node[above, font=\small\bfseries] {Provoca} (err);
+    \end{tikzpicture}
+    \caption{A relação de causalidade entre requisitos de segurança draconianos e o surgimento de vulnerabilidades comportamentais.}
+    \label{fig:design_vs_erro}
+\end{figure}
+
+\section{Design para Segurança (\textit{Security by Design})}
+A constatação de que o design afeta diretamente o comportamento humano e a resiliência do sistema reforça o princípio do \textit{Design para Segurança}. Tradicionalmente, a segurança era tratada como um módulo adicional, algo que a equipe de infraestrutura "configurava" após o software estar pronto.
+
+Hoje, sabemos que \textbf{a segurança não é um adicional; ela deve estar no DNA do projeto}. Ela precisa ser considerada em absolutamente todos os estágios do ciclo de vida de desenvolvimento de software (SDLC).
+
+\begin{itemize}
+    \item \textbf{Requisitos Iniciais:} Identificar proativamente quais são os ativos de informação que precisam de proteção e qual a superfície de ataque esperada.
+    \item \textbf{Arquitetura e Design:} Criar mecanismos nativos de controle de acesso, criptografia, e interfaces que induzam (ao invés de forçar) comportamentos seguros.
+    \item \textbf{Operação e Manutenção:} Garantir rotinas de atualização contínua (\textit{patching}), monitoramento e auditoria de \textit{logs} para identificar anomalias precoces.
+\end{itemize}
+
+\section{Estudos de Caso: Entendendo as Ameaças na Prática}
+Para solidificar os conceitos da Tríade CIA (Confidencialidade, Integridade e Disponibilidade) e as tipologias de ataque, vamos analisar cenários de ameaças aplicados a ambientes críticos reais. Utilizaremos como base arquitetônica o \textbf{Mentcare}, um sofisticado sistema de informação médica para clínicas de psiquiatria e saúde mental, cujos dados possuem o mais alto grau de sensibilidade.
+
+\subsection{Ameaças à Confidencialidade: Interceptação}
+A interceptação ocorre quando uma entidade não autorizada obtém acesso a um ativo. Como vimos anteriormente, essa é a ameaça direta à \textbf{Confidencialidade}. Em sistemas de rede, isso frequentemente ocorre via escuta clandestina (\textit{sniffing}) de pacotes não criptografados, acesso físico indevido a arquivos locais, ou furtos de credenciais (engenharia social).
+
+\begin{block}{Estudo de Caso 2 (CS2) – Mentcare: Interceptação de Dados}
+\textbf{Cenário:} O Mentcare utiliza um aplicativo móvel para que os psicólogos em campo sincronizem suas anotações com o banco de dados central da clínica. Por uma falha de design arquitetônico, uma API legada ainda permite tráfego HTTP simples (sem SSL/TLS) em uma rede Wi-Fi pública.
+
+Um atacante conectado à mesma rede de uma cafeteria intercepta silenciosamente os pacotes de rede enquanto o psicólogo sincroniza o aplicativo.
+
+\textbf{Impacto:} Prontuários detalhados, diagnósticos e históricos sensíveis dos pacientes são expostos em texto plano. Além da devassa na privacidade e na integridade psicológica dos pacientes, a clínica incorre em multas severas pelo descumprimento rigoroso das normas da Lei Geral de Proteção de Dados (LGPD).
+\end{block}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=3cm]
+        \node (cli) [draw, thick, rectangle, rounded corners, fill=azuluni!10, minimum width=2cm, minimum height=1cm, drop shadow, align=center] {App\\Clínico};
+        \node (srv) [draw, thick, cylinder, shape border rotate=90, fill=azuluni!20, right=of cli, minimum width=2cm, minimum height=1.5cm, drop shadow] {Servidor Mentcare};
+        \node (att) [draw, thick, circle, fill=meuvermelhoescuro!20, above=1.5cm of $(cli)!0.5!(srv)$, drop shadow] {\textbf{Atacante}};
+        
+        \draw[thick, <->, azuluni] (cli) -- node[below, font=\scriptsize]{Dados em transito aberto (HTTP)} (srv);
+        \draw[->, thick, dashed, meuvermelhoescuro] (att) -- node[right, font=\scriptsize, text width=2cm]{Escuta de\\Rede (\textit{Sniffing})} ($(cli)!0.5!(srv)$);
+    \end{tikzpicture}
+    \caption{Dinâmica de um ataque de interceptação na comunicação cliente-servidor do sistema Mentcare.}
+    \label{fig:mentcare_intercptacao}
+\end{figure}
+
+\subsection{Ameaças à Disponibilidade: Interrupção}
+A interrupção destrói ou torna indisponível um ativo do sistema, comprometendo diretamente o pilar da \textbf{Disponibilidade}. Ao contrário da interceptação, que é passiva, a interrupção é altamente contundente e perceptível. As táticas variam desde o corte físico direcionado de cabos de fibra óptica até ataques lógicos de sobrecarga de recursos de processamento computacional ou de largura de banda de rede.
+
+\begin{block}{Estudo de Caso 3 (CS3) – Ataque de Negação de Serviço (DoS)}
+\textbf{Cenário:} Uma gangue virtual busca extorquir um provedor de infraestrutura médica. Utilizando uma rede de computadores zumbis (\textit{botnet}), eles inundam o portal web do Mentcare com milhões de requisições malformadas simultâneas (Ataque DDoS - \textit{Distributed Denial of Service}).
+
+\textbf{Impacto:} O servidor passa a consumir toda a sua capacidade de CPU processando ruído cibernético. Consequentemente, médicos legítimos nas alas de urgência não conseguem acessar a plataforma de registros para verificar parâmetros vitais de pacientes antes da administração de remédios fundamentais, resultando no bloqueio da operação hospitalar e em riscos iminentes à vida humana.
+\end{block}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \node (srv) [draw, thick, cylinder, shape border rotate=90, fill=azuluni!20, minimum height=3cm, minimum width=2.5cm, drop shadow] {Servidor DB};
+        
+        \foreach \i in {1,...,4} {
+            \node (req\i) [draw, fill=meuvermelhoescuro!10, left=3cm of srv, yshift=\i*0.8cm - 2cm, font=\scriptsize, drop shadow, rounded corners] {Falsa Requis. TCP};
+            \draw[->, ultra thick, meuvermelhoescuro] (req\i) -- (srv.west);
+        }
+        
+        \node (medico) [draw, fill=meuverde!10, right=3cm of srv, drop shadow, rounded corners, font=\scriptsize] {Médico (Legítimo)};
+        \draw[<->, dashed, thick, gray] (medico) -- node[above, font=\scriptsize]{Timeout de Acesso} (srv.east);
+    \end{tikzpicture}
+    \caption{Ataque de Interrupção via Negação de Serviço: o exaurimento de recursos barra acessos autênticos.}
+    \label{fig:ataque_dos}
+\end{figure}
+
+\subsection{Ameaças à Integridade: Alteração}
+Na alteração, o invasor não se contenta apenas em espionar o dado; ocorre uma manipulação nefasta da sua essência. Essa ameaça atinge diretamente a base da \textbf{Integridade}. A violação das bases de dados por indivíduos maliciosos destrói permanentemente a métrica de confiança. Em esferas que resguardam o bem estar e a saúde clínica, trabalhar com balizas de dados incorretas e sabotadas transcende as perdas financeiras, alcançando danos físicos irreversíveis.
+
+\begin{block}{Estudo de Caso 4 (CS4) – Mentcare: Alteração de Registros Clínicos}
+\textbf{Cenário:} Devido a um erro letal no gerenciamento de saída de recursos humanos, as contas administrativas de um médico recém-demitido não foram devidamente suspensas. Nutrindo intenções de retaliação e equipado com acesso \textit{insider}, o suspeito invade o diretório clínico e deleta da ficha os registros indicativos de "Alergia Severa e Potencialmente Fatal à Penicilina" de determinados associados da clínica.
+
+\textbf{Impacto:} Eliminando arbitrariamente esse indicativo indispensável, a interface clínica cessa instantaneamente a exibição de seus alarmes restritivos. Cegos por uma barreira digital subvertida internamente pelo adversário, as equipes de enfermagem prestam o atendimento aplicando a medicação banida, arremessando o usuário a um choque anafilático induzido diretamente pelo sequestro estrutural de informações.
+\end{block}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=3cm]
+        \node (doc) [draw, thick, rectangle, rounded corners, fill=azuluni!10, text width=3.5cm, align=center, minimum height=1.5cm, drop shadow] {\textbf{Registro Original:}\\Possui Alergia Grave};
+        \node (fake) [draw, thick, rectangle, rounded corners, fill=meuvermelhoescuro!10, right=of doc, text width=3.5cm, align=center, minimum height=1.5cm, drop shadow] {\textbf{Registro Alterado:}\\Nenhuma Alergia Consta};
+        
+        \draw[->, ultra thick, meuvermelhoescuro] (doc) -- node[above, font=\small\bfseries] {Manipulação Silenciosa} (fake);
+    \end{tikzpicture}
+    \caption{Ataque de Alteração: dados corruptos atuam como vetores armadilhados.}
+    \label{fig:alteracao_registros}
+\end{figure}
+
+\subsection{Ameaças à Autenticidade: Fabricação}
+Fabricar e produzir artefatos inexistentes e forçar a validação deles ocorre de modo expressivo onde um malfeitor insere deliberações e transações artificialmente forjadas num arranjo verídico. É o principal agressor contra a métrica de \textbf{Autenticidade}. Em contraponto aos preceitos da alteração de valores de bens digitais fidedignos, trata-se de materializar do nada fragmentos informacionais não sustentados legitimamente. 
+
+\begin{block}{Estudo de Caso 5 (CS5) – Sistema Bancário: Fabricação de Transações}
+\textbf{Cenário:} Transportando o foco do campo biomédico para as arenas das moedas cibernéticas institucionais e financeiras, tomemos um sofisticado e lucrativo roubo tecnológico. Agentes maliciosos apoderam-se imperceptivelmente das estruturas de processamento logístico de chaves e de \textit{gateways} de conversões virtuais em agências tradicionais. Ao revés pernicioso de roubar pacotes monetários vigentes (o que acenderia alarmes iminentes antifraudes de movimentação volumosa de contas conhecidas), os agentes fabricam transações de faturas.
+
+\textbf{Impacto:} Esses elementos emitem mil instâncias artificiais na rubrica de transferência atestada avaliada a R\$ 1.000,00 cada. Com seus certificados assinados enganosamente pelas credenciais sequestradas das autoridades centrais correspondentes do banco local em conluio com os vetores internos, o computador balizador da matriz recepcionará as mil linhas validamente credenciadas alocando integralmente  R\$ 1.000.000,00 nos passaportes portáteis mantidos estrategicamente no exterior. Prejuízos puros criados de fragmentos de ar sistêmico, burlando a autenticidade processual e enxugando os cofres da nação subjacente.
+\end{block}
+
+\subsection{Ameaças à Autenticidade: Fabricação}
+A fabricação ocorre quando um atacante cria informações ou registros que nunca existiram e consegue fazer com que o sistema os aceite como verdadeiros. Nesse tipo de ataque, dados falsos são inseridos em um sistema legítimo como se fossem válidos.
+
+Esse é um dos principais ataques contra a propriedade de \textbf{Autenticidade}, pois compromete a garantia de que as informações realmente foram geradas por fontes confiáveis. Diferente da alteração de dados reais, aqui o problema é ainda mais grave: trata-se da criação de informações completamente falsas, sem qualquer origem legítima.
+
+\begin{block}{Estudo de Caso 5 (CS5) – Sistema Bancário: Fabricação de Transações}
+\textbf{Cenário:} Considere um ataque em um sistema bancário. Em vez de roubar diretamente dinheiro de contas existentes (o que poderia gerar alertas de fraude), os atacantes invadem o sistema e passam a criar transações falsas.
+
+Eles comprometem partes críticas do sistema, como mecanismos de autenticação e validação, e utilizam credenciais legítimas roubadas para fazer com que essas transações pareçam confiáveis.
+
+\textbf{Impacto:} Os atacantes geram, por exemplo, mil transações falsas de R\$ 1.000,00 cada. Como essas transações parecem válidas e estão assinadas com credenciais legítimas, o sistema bancário as aceita sem suspeita.
+
+Ao final, R\$ 1.000.000,00 são transferidos para contas controladas pelos atacantes, muitas vezes no exterior. O prejuízo ocorre sem que dinheiro real tenha sido inicialmente “roubado” de uma conta específica — ele foi simplesmente criado dentro do sistema, comprometendo totalmente a autenticidade das operações.
+\end{block}
+
+\section{Introdução à Criptografia}
+
+Em sistemas tecnológicos, especialmente os mais críticos, é essencial proteger os dados contra acessos indevidos, alterações maliciosas e espionagem. A criptografia é a principal ferramenta utilizada para garantir essa proteção.
+
+De forma simples, criptografia é o processo de transformar dados legíveis (chamados de \textit{texto plano} ou \textit{plaintext}) em dados embaralhados e ilegíveis (o \textit{texto cifrado} ou \textit{ciphertext}). Apenas quem possui a \textbf{chave criptográfica correta} consegue reverter esse processo e acessar o conteúdo original.
+
+Atualmente, a criptografia é utilizada em praticamente todas as etapas do uso de dados:
+\begin{itemize}
+    \item Dados em repouso: armazenados em discos ou bancos de dados;
+    \item Dados em trânsito: enviados pela rede;
+    \item Dados em processamento: manipulados em ambientes como computação em nuvem.
+\end{itemize}
+
+\subsection{Funcionamento Teórico: Chaves, Algoritmos e Força Bruta}
+Um ponto importante é que a segurança da criptografia não depende de esconder o algoritmo utilizado. Na verdade, algoritmos modernos (como o AES) são públicos e amplamente estudados.
+
+O verdadeiro segredo está na \textbf{chave criptográfica}. É ela que garante a segurança do sistema.
+
+Se um atacante obtiver essa chave, ele poderá acessar os dados protegidos, independentemente da complexidade do algoritmo. Por isso, proteger a chave é fundamental.
+
+Um dos principais tipos de ataque contra sistemas criptográficos é o \textbf{ataque de força bruta}. Nesse ataque, o invasor tenta descobrir a chave testando todas as combinações possíveis até encontrar a correta.
+
+Para tornar esse tipo de ataque inviável, utilizam-se chaves muito grandes. Quanto maior a chave, maior o número de combinações possíveis e, consequentemente, maior o tempo necessário para quebrá-la.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2.5cm]
+        \node (p) [draw, thick, rectangle, rounded corners, fill=gray!10, text width=2.5cm, align=center, minimum height=1.5cm, drop shadow] {\textbf{Texto Original}\\(Legível)};
+        \node (a) [draw, thick, circle, fill=azuluni!10, right=of p, minimum size=2cm, align=center, drop shadow] {\textbf{Algoritmo}\\(Matemática)};
+        \node (c) [draw, thick, rectangle, rounded corners, fill=meuvermelhoescuro!10, right=of a, text width=2.5cm, align=center, minimum height=1.5cm, drop shadow] {\textbf{Texto Cifrado}\\(Embaralhado)};
+        
+        \draw[->, ultra thick, gray] (p) -- (a);
+        \draw[->, ultra thick, gray] (a) -- (c);
+        
+        \node (k) [draw, thick, dashed, fill=yellow!20, above=1.5cm of a, drop shadow, rounded corners, font=\small\bfseries] {Chave de Acesso Secreta};
+        \draw[->, ultra thick, dashed, orange] (k) -- node[right]{\scriptsize Destrava} (a);
+    \end{tikzpicture}
+    \caption{Fluxo de processamento lógico de dados submetidos à técnica de encriptação.}
+    \label{fig:cripto_flow}
+\end{figure}
+Longe dos sistemas modernos baseados em nuvem e chaves extremamente complexas, a ideia de criptografia tem origem em métodos bastante simples, como a \textbf{Cifra de César}. Na Roma Antiga, o imperador Júlio César utilizava esse método para proteger mensagens militares.
+
+O funcionamento era direto: cada letra da mensagem era deslocada algumas posições no alfabeto. Por exemplo, ao deslocar três casas para a frente, a letra A se tornava D, B se tornava E, e assim por diante. Nesse caso, a "chave" era apenas a regra de deslocamento, como “avançar 3 posições” ou “voltar 4 posições”.
+
+Apesar de simples, esse conceito introduz um elemento fundamental da criptografia: o uso de uma \textbf{chave} para transformar a informação.
+
+Atualmente, as chaves criptográficas são muito mais complexas. Elas são compostas por sequências longas de bits (zeros e uns), geradas de forma aleatória, podendo atingir centenas ou milhares de bits. Isso torna praticamente impossível adivinhar a chave por tentativa.
+
+\subsection{Tipologias de Construção: Simétrica e Assimétrica}
+
+A criptografia moderna é dividida em dois grandes tipos, que buscam equilibrar segurança e desempenho: a criptografia simétrica e a criptografia assimétrica.
+
+Na \textbf{Criptografia Simétrica} (ou criptografia de chave privada), o emissor e o receptor utilizam a \textbf{mesma chave} para criptografar e descriptografar a informação.
+
+Esse modelo é bastante eficiente do ponto de vista computacional. Ele permite processar grandes volumes de dados rapidamente, sendo muito utilizado em transmissões em tempo real, como vídeos e comunicações em rede.
+
+No entanto, existe um problema importante: como compartilhar essa chave de forma segura?
+
+Antes que a comunicação comece, a chave precisa ser enviada ao destinatário. Se essa transmissão for interceptada por um atacante (por exemplo, usando ferramentas de captura de rede, conhecidas como \textit{sniffers}), toda a segurança do sistema é comprometida.
+
+Esse desafio — conhecido como \textbf{problema da distribuição de chaves} — é uma das principais limitações da criptografia simétrica.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[every node/.style={font=\small}]
+        % Remetente
+        \node (r1) [draw, thick, rounded corners, fill=azuluni!5, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Mensagem Clara};
+        \node (r2) [draw, thick, rectangle, fill=gray!10, below=0.3cm of r1, minimum width=3.5cm, minimum height=0.6cm] {Função de Fechamento};
+        \node (r3) [draw, thick, rounded corners, fill=meuvermelhoescuro!10, below=0.3cm of r2, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Fragmento Cifrado};
+        \node [above=0.2cm of r1, font=\bfseries] {Plataforma Emissora};
+        
+        \draw[->, thick] (r1) -- (r2);
+        \draw[->, thick] (r2) -- (r3);
+        
+        % Destinatário
+        \node (d1) [draw, thick, rounded corners, fill=azuluni!5, minimum width=3.5cm, minimum height=0.6cm, right=4.5cm of r1, drop shadow] {Mensagem Clara};
+        \node (d2) [draw, thick, rectangle, fill=gray!10, below=0.3cm of d1, minimum width=3.5cm, minimum height=0.6cm] {Função de Abertura};
+        \node (d3) [draw, thick, rounded corners, fill=meuvermelhoescuro!10, below=0.3cm of d2, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Fragmento Cifrado};
+        \node [above=0.2cm of d1, font=\bfseries] {Plataforma Receptora};
+        
+        \draw[->, thick] (d3) -- (d2);
+        \draw[->, thick] (d2) -- (d1);
+        
+        % Canal e Chave Unica
+        \draw[->, ultra thick, meuvermelhoescuro, dashed] (r3.east) -- node[above, font=\scriptsize, text=black] {Trânsito Inseguro (Internet)} (d3.west);
+        
+        \node (k) [draw, thick, star, star points=6, fill=yellow!30, drop shadow, below=1.5cm of $(r3)!0.5!(d3)$] {Chave Única};
+        \draw[->, thick, orange] (k) -| (r2);
+        \draw[->, thick, orange] (k) -| (d2);
+    \end{tikzpicture}
+    \caption{Arquitetura estrutural da Criptografia Simétrica ancorada sob o conceito de uma Chave Única partilhada sob gigantesco risco direcional.}
+    \label{fig:cripto_simetrica}
+\end{figure}
+Para resolver o principal problema da criptografia simétrica — o compartilhamento seguro da chave — foi desenvolvida a \textbf{Criptografia Assimétrica}, também conhecida como criptografia de chave pública. A principal inovação desse modelo está no uso de duas chaves distintas, porém matematicamente relacionadas: a chave pública e a chave privada.
+
+Essas chaves formam um par inseparável, no qual o que é feito por uma só pode ser desfeito pela outra. Em termos práticos, uma mensagem criptografada com a chave pública só poderá ser descriptografada com a chave privada correspondente. Em algumas aplicações, como nas assinaturas digitais, o processo pode ocorrer de forma inversa.
+
+Esse mecanismo resolve diretamente o problema da distribuição de chaves. A chave pública pode ser compartilhada livremente, sem comprometer a segurança, permitindo que qualquer pessoa a utilize para enviar mensagens protegidas. Por outro lado, a chave privada deve ser mantida em absoluto sigilo, pois é ela que garante o acesso ao conteúdo original.
+
+Assim, um usuário pode disponibilizar sua chave pública abertamente, enquanto apenas ele, de posse da chave privada correspondente, será capaz de descriptografar as mensagens recebidas. Com isso, elimina-se a necessidade de transmitir previamente uma chave secreta, reduzindo significativamente os riscos de interceptação.
+
+A segurança desse modelo está fundamentada em problemas matemáticos complexos, como a fatoração de números muito grandes, o que torna inviável, na prática, quebrar o sistema por meios computacionais convencionais.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[every node/.style={font=\small}]
+        % Remetente
+        \node (r1) [draw, thick, rounded corners, fill=azuluni!5, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Mensagem Clara};
+        \node (r2) [draw, thick, rectangle, fill=gray!10, below=0.3cm of r1, minimum width=3.5cm, minimum height=0.6cm] {Função de Fechamento};
+        \node (r3) [draw, thick, rounded corners, fill=meuvermelhoescuro!10, below=0.3cm of r2, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Fragmento Cifrado};
+        \node [above=0.2cm of r1, font=\bfseries] {Plataforma Emissora};
+        
+        \draw[->, thick] (r1) -- (r2);
+        \draw[->, thick] (r2) -- (r3);
+        
+        % Destinatário
+        \node (d1) [draw, thick, rounded corners, fill=azuluni!5, minimum width=3.5cm, minimum height=0.6cm, right=2.5cm of r1, drop shadow] {Mensagem Clara};
+        \node (d2) [draw, thick, rectangle, fill=gray!10, below=0.3cm of d1, minimum width=3.5cm, minimum height=0.6cm] {Função de Abertura};
+        \node (d3) [draw, thick, rounded corners, fill=meuvermelhoescuro!10, below=0.3cm of d2, minimum width=3.5cm, minimum height=0.6cm, drop shadow] {Fragmento Cifrado};
+        \node [above=0.2cm of d1, font=\bfseries] {Plataforma Receptora};
+        
+        \draw[->, thick] (d3) -- (d2);
+        \draw[->, thick] (d2) -- (d1);
+        
+        % Canal Inseguro
+        \draw[->, ultra thick, meuvermelhoescuro, dashed] (r3.east) -- node[above, font=\scriptsize, text=black] {Trânsito Inseguro} (d3.west);
+        
+        % Chaves Assimétricas
+        \node (pub) [draw, thick, star, star points=8, fill=azuluni!20, drop shadow, left=0.5cm of r2, font=\scriptsize\bfseries, align=center] {Chave\\Pública};
+        \node (priv) [draw, thick, star, star points=8, fill=meuvermelhoescuro!20, drop shadow, right=0.5cm of d2, font=\scriptsize\bfseries, align=center] {Chave\\Privada};
+        
+        \draw[->, thick, azuluni] (pub) -- node[above, font=\tiny] {Tranca} (r2);
+        \draw[->, thick, meuvermelhoescuro] (priv) -- node[above, font=\tiny] {Destranca} (d2);
+    \end{tikzpicture}
+    \caption{Arquitetura da Criptografia Assimétrica ancorada no pareamento indissociável de engrenagens Públicas e Privadas.}
+    \label{fig:cripto_assimetrica}
+\end{figure}
+
+Entretanto, a criptografia assimétrica também possui limitações importantes. Seu principal problema está no alto custo computacional: os algoritmos assimétricos exigem muito mais processamento do que os simétricos, especialmente durante o processo de descriptografia.
+
+Por esse motivo, ela não é adequada para uso contínuo em aplicações que envolvem grande volume de dados, como transmissão de vídeos, bancos de dados massivos ou sistemas de alta taxa de requisições. Utilizá-la nesses cenários tornaria o sistema lento e ineficiente.
+
+Na prática, a criptografia assimétrica é utilizada principalmente no início da comunicação, em uma etapa específica: o estabelecimento seguro de uma chave. Ou seja, ela serve para trocar, de forma protegida, uma chave simétrica entre as partes.
+
+Após essa etapa inicial, a comunicação passa a utilizar criptografia simétrica, que é muito mais rápida e eficiente para grandes volumes de dados. Esse modelo híbrido é amplamente utilizado em protocolos modernos, como HTTPS.
+
+\subsection{Os Quatro Propósitos Soberanos da Criptografia}
+
+O uso da criptografia em sistemas computacionais não serve apenas para "esconder" informações. Na verdade, ela garante quatro propriedades fundamentais que sustentam a segurança das comunicações digitais.
+
+Essas propriedades são essenciais para manter a confiança em sistemas, redes e transações. Se qualquer uma delas falhar, a segurança como um todo pode ser comprometida.
+
+De forma geral, a criptografia é utilizada para garantir quatro objetivos principais:
+\begin{enumerate}
+    \item \textbf{A Confidencialidade Absoluta:} Por primazia, as chaves embaralham a essência visual dos trânsitos protegendo do olhar passivo indiscreto toda a massa comunicacional remetida;
+    \item \textbf{A Manutenção Incorruptível da Integridade:} Qualquer adulteração subreptícia introduzida artificialmente pelos perpetradores dentro do cilindro da mensagem rompe drasticamente todo o conjunto do quebra-cabeça decodificado (o \textit{Hash}), tornando o pacote visceralmente impenetrável à chave original e acusando o flagrante de adulteração perversa do elo digital;
+    \item \textbf{A Autenticação Direcional Confiável:} Graças às propriedades vitais conjuntas das fechaduras assimétricas de origem pública ligadas aos emissores detentores exclusivos de raízes privadas, qualquer nó do sistema verifica intrinsecamente pela natureza da descriptografia inabalável se procedeu irrevogavelmente da porta garantida que jurou disparar;
+    \item \textbf{O Princípio de Não Repúdio (Irretratabilidade):} Um amalgama definitivo onde um signatário não possuirá jamais em qualquer instância legal administrativa global o embasamento físico, digital ou matemático cabível de contestar e perjurar judicialmente que o envio emanou de seus cofres geradores exclusivos.
+\end{enumerate}
+
+\section{Controles Estratégicos e Atributos Integrados}
+
+A Segurança da Informação não se resume apenas ao uso de ferramentas isoladas, como firewalls. Na prática, ela funciona como um conjunto organizado de ações que trabalham em conjunto para proteger os sistemas. Esse conjunto é conhecido como \textbf{Ciclo de Defesa}.
+
+O objetivo desse ciclo não é tornar o sistema totalmente invulnerável — isso, na prática, não é possível. Em vez disso, a ideia é criar múltiplas camadas de proteção, de forma que, se uma falhar, outras consigam reduzir os impactos do ataque.
+
+Assim, a segurança é tratada como um processo contínuo, estruturado e planejado, e não como uma solução única.
+
+\subsection{O Ciclo de Defesa Clássico: Prevenção, Detecção e Recuperação}
+
+O Ciclo de Defesa é baseado em três etapas principais, que atuam de forma complementar:
+
+\begin{enumerate}
+    \item \textbf{Prevenção da Vulnerabilidade (Evitar):} Corresponde à construção ostensiva do castelo tecnológico. É a estratégia fundamental de projetar o sistema antecipadamente para que as incursões adversárias não logrem o sucesso do acesso ou da exfiltração. Mecanismos práticos incluem o isolamento físico de sub-redes militares extremas sob regime de \textit{Air Gap} (ausência absoluta de conexões à rede mundial IP) e a própria encriptação maciça de discos rígidos em repouso. A prevenção pura arca com o \textbf{custo latente} mais pesado: a restrição extrema que engole a fluidez operacional natural da máquina e do usuário final.
+    
+    \item \textbf{Detecção e Neutralização Direcionada:} Cedo ou tarde, a muralha principal cederá. Assumindo a falha parcial preventiva, entroniza-se a fase de monitoramento em tempo real contínuo (\textit{SOCs - Security Operations Centers}). Sensores analíticos processuais medem fluxos de rede, inspecionando intrusões e comportamentos anômalos volumosos (extensões atípicas de requisições por segundo vindas de fontes estrangeiras, por exemplo). Ao soar do \textbf{alerta investigativo}, a ação corretiva deflagra o fechamento forçado de portos ou revogação súbita de \textit{tokens} autoriais, limitando imediatamente o espalhamento passivo do cancro.
+    
+    \item \textbf{Limitação da Exposição e Recuperação Contínua:} Quando tanto as valas de prevenção quanto as patrulhas de detecção se rendem à inovação sorrateira do invasor (como nos terrores fulminantes dos \textit{Ransomwares}), invoca-se o estágio final: sobreviver metodicamente à calamidade instalada. Restaura-se a sanidade operacional mediante espelhamento (\textit{Mirroring}) transcontinental com atrasos na ordem de milissegundos, acionam-se os \textit{backups} encriptados congelados localizados geograficamente distantes (ou fitas magnéticas profundas frias impenetráveis por malware contemporâneo) minimizando o tempo crasso de inoperabilidade sem arriar aos desejos obscuros do extorsionário virtual.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2.5cm]
+        \node (prev) [draw, thick, circle, fill=azuluni!10, text width=2.5cm, align=center, drop shadow, minimum size=2.5cm] {\textbf{1. Prevenção}\\(Evitar)};
+        \node (det) [draw, thick, circle, fill=meuverde!10, right=3cm of prev, text width=2.5cm, align=center, drop shadow, minimum size=2.5cm] {\textbf{2. Detecção}\\(Neutralizar)};
+        \node (rec) [draw, thick, circle, fill=meuvermelhoescuro!10, below=2cm of $(prev)!0.5!(det)$, text width=2.8cm, align=center, drop shadow, minimum size=2.5cm] {\textbf{3. Recuperação}\\(Limitar Danos)};
+        
+        \draw[thick, ->, bend left=20] (prev) to node[above, font=\scriptsize] {Se Falhar} (det);
+        \draw[thick, ->, bend left=20] (det) to node[right, font=\scriptsize] {Se Falhar} (rec);
+        \draw[thick, ->, bend left=20] (rec) to node[left, font=\scriptsize] {Análise} (prev);
+    \end{tikzpicture}
+    \caption{Ciclo de retroalimentação perpétua das defesas operacionais em Arquiteturas Críticas.}
+    \label{fig:ciclo_defesa}
+\end{figure}
+\subsection{Conexões com Outros Atributos de Sistemas}
+
+A Segurança da Informação não atua de forma isolada dentro de um sistema. Ela está diretamente relacionada a outros atributos fundamentais da engenharia de sistemas, como confiabilidade, disponibilidade e segurança física (\textit{safety}). Dessa forma, falhas de segurança podem desencadear impactos em cadeia, comprometendo o funcionamento global do sistema.
+
+No que diz respeito à \textbf{confiabilidade (reliability)}, ataques que alteram ou inserem dados incorretos prejudicam a execução correta das funcionalidades. Um exemplo típico é o ataque de injeção de código, como o SQL Injection, no qual o invasor manipula comandos enviados ao banco de dados. Isso pode levar o sistema a produzir resultados incorretos ou executar operações não previstas, comprometendo sua confiabilidade.
+
+Em relação à \textbf{disponibilidade (availability)}, a ausência de mecanismos de segurança adequados pode tornar o sistema inacessível. Um caso clássico são os ataques de Negação de Serviço Distribuída (DDoS), nos quais diversos dispositivos comprometidos enviam grandes volumes de requisições simultaneamente. Esse excesso de tráfego sobrecarrega os recursos do sistema, impedindo o acesso por usuários legítimos.
+
+Outro ponto importante é a distinção entre \textbf{\textit{Security}} e \textbf{\textit{Safety}}. Enquanto a \textit{safety} está relacionada à prevenção de falhas acidentais (como defeitos em sensores ou equipamentos), a \textit{security} trata de ameaças intencionais, como ataques cibernéticos. Apesar de distintos, esses conceitos são interdependentes: uma falha de segurança pode comprometer diretamente a segurança física de um sistema.
+
+Por fim, destaca-se o conceito de \textbf{resiliência cibernética}. Considerando que nenhum sistema é totalmente imune a ataques, é fundamental que ele seja capaz de resistir, responder e se recuperar de falhas. Sistemas resilientes são projetados para isolar incidentes, limitar danos e manter suas funções essenciais em operação, mesmo diante de adversidades.
+
+\section{Segurança Computacional, Organizações e Políticas Internas}
+
+A implementação de segurança em sistemas computacionais não envolve apenas aspectos técnicos, mas também decisões estratégicas e econômicas. As organizações precisam equilibrar o nível de proteção adotado com os custos envolvidos em sua implementação e manutenção.
+
+Diferentemente da área de \textit{safety}, na qual a preservação da vida humana é prioridade absoluta e independe de custos, a \textit{security} frequentemente está associada a análises de risco e viabilidade financeira. Nesse contexto, as decisões sobre investimentos em segurança são tomadas com base na relação entre custo e benefício.
+
+\subsection{A Segurança como Decisão de Negócio}
+
+Nas organizações, é comum a realização de análises de risco para orientar investimentos em segurança. Essas análises consideram a probabilidade de ocorrência de incidentes e os prejuízos associados, comparando-os com os custos de implementação de medidas de proteção.
+
+Em alguns casos, pode ser economicamente mais viável aceitar determinados riscos do que investir em soluções completas. Um exemplo relevante é o setor de cartões de crédito. Durante anos, fraudes por clonagem foram frequentes, especialmente em sistemas baseados em tarja magnética.
+
+Apesar disso, muitas instituições demoraram a adotar tecnologias mais seguras, como cartões com chip. Isso ocorreu porque, sob o ponto de vista financeiro, o custo de reembolsar clientes afetados por fraudes era inferior ao investimento necessário para modernizar toda a infraestrutura de pagamento.
+
+Esse cenário evidencia que, no ambiente corporativo, a segurança da informação é frequentemente tratada como uma decisão estratégica, baseada em análise de riscos, custos e impactos operacionais.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=3cm]
+        \node (bal) [draw, thick, rectangle, fill=gray!10, minimum width=6cm, minimum height=1cm, drop shadow, anchor=south] {\textbf{A Balança Comercial Custo-Benefício}};
+        \node (cost) [draw, thick, circle, fill=azuluni!10, text width=2cm, align=center, drop shadow, below=0.5cm of bal.south west, xshift=1.5cm] {Despesas com Prevenção};
+        \node (loss) [draw, thick, circle, fill=meuvermelhoescuro!10, text width=2cm, align=center, drop shadow, below=0.5cm of bal.south east, xshift=-1.5cm] {Absorção da Fraude Passiva};
+        
+        \draw[<->, ultra thick, dashed] (cost) -- node[above, font=\scriptsize\bfseries] {Trade-off} (loss);
+        \draw[thick] (bal.south) -- +(0,-0.5);
+    \end{tikzpicture}
+    \caption{Representação das deliberações corporativas aceitando exposições calculadas face aos pesados orçamentos das engenharias perimetrais.}
+    \label{fig:decisao_negocios}
+\end{figure}
+
+\subsection{Documentação Formativa: A Política de Segurança da Informação}
+
+Para garantir que a segurança da informação seja aplicada de forma consistente dentro de uma organização, é essencial a existência de um documento formal chamado \textbf{Política de Segurança da Informação (PSI)}.
+
+A PSI não trata de detalhes técnicos específicos, como configurações de firewall ou códigos de programas. Em vez disso, ela define diretrizes gerais que orientam o comportamento de usuários, gestores e equipes técnicas, estabelecendo regras claras sobre como proteger os ativos da organização.
+
+De forma geral, uma Política de Segurança da Informação bem estruturada aborda quatro pontos principais:
+
+\begin{enumerate}
+    \item \textbf{Identificação dos Ativos:} O primeiro passo é definir o que precisa ser protegido. Nem todas as informações têm o mesmo valor. Por isso, é importante identificar quais dados, sistemas e recursos são críticos para a organização, evitando aplicar controles excessivos onde não são necessários.
+
+    \item \textbf{Classificação da Informação:} Após identificar os ativos, é necessário classificá-los de acordo com seu nível de sensibilidade. Informações mais críticas exigem níveis mais altos de proteção, enquanto dados públicos ou menos sensíveis podem ter controles mais simples.
+
+    \item \textbf{Definição de Responsabilidades:} A política deve deixar claro quem é responsável por cada tipo de recurso e quais são as obrigações de cada usuário. Isso inclui boas práticas, como proteger senhas, bloquear o computador quando não estiver em uso e seguir as normas estabelecidas pela organização.
+
+    \item \textbf{Gestão de Sistemas Legados:} Muitas organizações ainda utilizam sistemas antigos que não podem ser facilmente substituídos. A PSI deve considerar esses casos, definindo como esses sistemas serão protegidos, geralmente por meio de isolamento e controle de acesso, reduzindo os riscos sem comprometer as operações.
+\end{enumerate}
+
+\subsection{Classificação de Acesso e Controle de Permissões}
+
+Nos sistemas modernos, o controle de acesso é fundamental para garantir que cada usuário tenha acesso apenas às informações necessárias para suas atividades.
+
+Esse modelo é inspirado em estruturas clássicas de segurança, como as utilizadas por organizações governamentais, onde o acesso à informação é restrito com base no nível de autorização de cada indivíduo.
+
+Na prática, isso significa que os sistemas implementam mecanismos de controle que verificam continuamente se um usuário possui permissão para acessar determinado recurso. Tecnologias como tokens de autenticação (por exemplo, JWT) são utilizadas para representar essas permissões durante a comunicação entre sistemas.
+
+Cada usuário ou sistema recebe um conjunto de permissões associado ao seu perfil. Quando uma solicitação é feita, o sistema verifica se o nível de acesso é suficiente para realizar aquela ação.
+
+Esse modelo segue o princípio do \textbf{menor privilégio}, ou seja, cada entidade deve ter apenas as permissões estritamente necessárias para executar suas funções. Isso reduz significativamente os riscos em caso de falhas ou ataques.
+
+Em ambientes mais estruturados, as informações e os acessos podem ser classificados em diferentes níveis hierárquicos, garantindo uma separação clara entre dados públicos, restritos e confidenciais.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=0cm, every node/.style={draw, thick, minimum width=10.5cm, minimum height=1cm, align=center, drop shadow}]
+        \node (top) [fill=meuvermelhoescuro!20] {\textbf{Ultrassecreto (\textit{Top Secret})} - Danos Críticos};
+        \node (sec) [below=of top, fill=orange!20] {\textbf{Secreto (\textit{Secret})} - Danos Severos};
+        \node (con) [below=of sec, fill=azuluni!10] {\textbf{Confidencial} - Danos Reputacionais};
+        \node (ope) [below=of con, fill=gray!10] {\textbf{Aberto} - Uso Público};
+        
+    \end{tikzpicture}
+    \caption{Hierarquia de controle de acesso para mitigação de riscos internos.} \label{fig:classificacao_mil}
+\end{figure}
+
+\section{Engenharia de Requisitos de Segurança Orientada ao Risco}
+
+Na etapa de desenvolvimento de sistemas, os profissionais de software precisam transformar riscos identificados na organização em requisitos técnicos claros. Esse processo é conhecido como \textbf{Engenharia de Requisitos de Segurança}.
+
+Diferente dos requisitos tradicionais — que descrevem o que o sistema deve fazer — os requisitos de segurança focam, em grande parte, no que o sistema \textbf{não deve permitir}.
+
+Enquanto um requisito funcional pode ser, por exemplo: \textit{“O sistema deve processar a folha de pagamento no dia 5”}, os requisitos de segurança seguem uma lógica diferente. Eles estabelecem restrições para evitar falhas e ataques.
+
+Esse é o principal contraste:  
+\begin{itemize}
+    \item Requisitos funcionais definem comportamentos esperados;
+    \item Requisitos de segurança definem comportamentos proibidos ou restritos.
+\end{itemize}
+
+Por exemplo:
+\begin{itemize}
+    \item O sistema \textbf{não deve} armazenar senhas em formato legível;
+    \item O sistema \textbf{não deve} permitir acesso a áreas restritas sem autenticação;
+    \item O sistema \textbf{não deve} conceder permissões além do necessário para cada usuário.
+\end{itemize}
+
+Esses requisitos existem para reduzir riscos e proteger o sistema contra usos indevidos, sejam eles acidentais ou maliciosos.
+
+Portanto, a engenharia de requisitos de segurança exige uma mudança de perspectiva: em vez de pensar apenas em funcionalidades, é necessário antecipar possíveis falhas, abusos e ataques, traduzindo esses cenários em regras claras que limitem o comportamento do sistema.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=2cm]
+        \node (func) [draw, thick, rectangle, fill=azuluni!10, text width=6cm, align=center, drop shadow, minimum height=1.5cm] {\textbf{Requisitos Funcionais:}\\Define as virtudes criativas estendendo a liberdade do "O que o sistema \textbf{deve} fazer".};
+        \node (sec) [draw, thick, rectangle, fill=meuvermelhoescuro!10, right=of func, xshift=1cm, text width=6cm, align=center, drop shadow, minimum height=1.5cm] {\textbf{Requisitos de Segurança:}\\Define as amarras restritivas estendendo as proibições imperativas contrárias da engenharia de falhas.};
+        \draw[ultra thick, <->, dashed, gray] (func) -- node[above, font=\scriptsize\bfseries] {Dualidade} (sec);
+    \end{tikzpicture}
+    \caption{A antítese primordial existente entre a Engenharia Funcional e a Restritiva.}
+    \label{fig:func_vs_sec}
+\end{figure}
+
+\subsection{Dicotomias: \textit{Safety} versus \textit{Security}}
+
+Para compreender melhor a segurança em sistemas, é importante diferenciar dois conceitos que, embora relacionados, têm origens e objetivos distintos: \textbf{\textit{Safety}} e \textbf{\textit{Security}}.
+
+A \textbf{\textit{Safety}} está associada à prevenção de falhas acidentais. Nesse contexto, assume-se que não há intenção de causar danos. Os problemas surgem por erros de projeto, falhas de hardware, desgaste de componentes ou eventos naturais. O objetivo é evitar acidentes e garantir que o sistema funcione de forma segura mesmo quando algo dá errado.
+
+Já a \textbf{\textit{Security}} trata de ameaças intencionais. Aqui, existe um agente malicioso tentando explorar vulnerabilidades do sistema. Esse atacante pode agir de forma planejada, buscando não apenas causar danos, mas também evitar ser detectado.
+
+Essa diferença leva a estratégias distintas. Em situações de \textit{Safety}, quando ocorre uma falha, a ação mais segura geralmente é interromper o sistema para evitar danos maiores. Por exemplo, em uma usina industrial, uma falha crítica pode levar ao desligamento automático dos equipamentos.
+
+Por outro lado, em cenários de \textit{Security}, interromper o sistema pode significar exatamente o sucesso do ataque. Em um ataque de negação de serviço (DDoS), por exemplo, o objetivo do atacante é justamente tornar o sistema indisponível. Desligá-lo voluntariamente atenderia ao interesse do invasor.
+
+Portanto, enquanto a \textit{Safety} prioriza evitar acidentes, a \textit{Security} busca proteger o sistema contra ações maliciosas, exigindo estratégias mais dinâmicas e adaptativas.
+
+\subsection{A Taxonomia de Segurança de Firesmith}
+
+Para organizar os diferentes aspectos da segurança em sistemas, foi proposta uma classificação com dez áreas principais que devem ser consideradas durante o desenvolvimento:
+
+\begin{enumerate}
+    \item \textbf{Identificação:} Garantir que cada usuário ou sistema seja identificado de forma única.
+    
+    \item \textbf{Autenticação:} Verificar se a identidade informada é realmente válida, por meio de senhas, biometria ou tokens.
+    
+    \item \textbf{Autorização:} Definir quais ações cada usuário pode realizar, seguindo o princípio do menor privilégio.
+    
+    \item \textbf{Proteção contra ataques:} Implementar mecanismos que dificultem ou impeçam invasões e exploração de falhas.
+    
+    \item \textbf{Integridade:} Assegurar que os dados não sejam alterados indevidamente.
+    
+    \item \textbf{Detecção de intrusões:} Monitorar o sistema para identificar comportamentos suspeitos ou tentativas de ataque.
+    
+    \item \textbf{Não repúdio:} Garantir que ações realizadas possam ser comprovadas, impedindo que usuários neguem suas atividades.
+    
+    \item \textbf{Privacidade:} Proteger as informações contra acesso não autorizado.
+    
+    \item \textbf{Auditoria:} Registrar eventos importantes do sistema para análise e rastreabilidade.
+    
+    \item \textbf{Manutenção segura:} Garantir que atualizações e mudanças no sistema não introduzam novas vulnerabilidades.
+\end{enumerate}
+
+\subsection{Processo de Engenharia de Segurança Orientado ao Risco}
+
+A definição de requisitos de segurança deve seguir um processo estruturado baseado na análise de riscos. Esse processo ajuda a identificar ameaças, avaliar impactos e definir medidas de proteção adequadas.
+
+Em vez de depender apenas de intuição, a engenharia de segurança utiliza etapas bem definidas para garantir que os riscos sejam compreendidos e tratados de forma sistemática.
+
+De modo geral, esse processo envolve:
+\begin{itemize}
+    \item Identificação dos ativos importantes;
+    \item Análise das ameaças e vulnerabilidades;
+    \item Avaliação dos riscos envolvidos;
+    \item Definição de requisitos de segurança;
+    \item Implementação de controles;
+    \item Monitoramento e revisão contínua.
+\end{itemize}
+
+Esse modelo é cíclico, ou seja, deve ser repetido continuamente ao longo do ciclo de vida do sistema, garantindo que novas ameaças sejam tratadas conforme surgem.
+
+
+Na transição entre as etapas de análise e definição de soluções de segurança, a engenharia deixa de trabalhar apenas com listas teóricas e passa a utilizar uma ferramenta prática chamada \textbf{Árvore de Ataque}, proposta por Bruce Schneier.
+
+A Árvore de Ataque é uma forma de representar, de maneira estruturada, como um sistema pode ser atacado. Diferente de outras abordagens, ela não foca na defesa, mas sim na perspectiva do atacante.
+
+O processo começa com a definição de um objetivo principal do invasor, que é colocado no topo da árvore. Esse objetivo pode ser, por exemplo, “acessar dados confidenciais” ou “transferir dinheiro indevidamente”.
+
+A partir desse ponto, os analistas vão decompondo esse objetivo em etapas menores, identificando todos os caminhos possíveis que um atacante poderia seguir para alcançar esse resultado. Cada ramo da árvore representa uma estratégia ou conjunto de ações necessárias para o ataque.
+
+Ao final, a árvore mostra diferentes caminhos que podem levar ao sucesso do ataque. Se existir um caminho simples, direto e com poucas barreiras desde o ponto de entrada até o objetivo final, isso indica uma vulnerabilidade importante no sistema.
+
+Dessa forma, a Árvore de Ataque ajuda a identificar pontos fracos e priorizar melhorias de segurança, permitindo que a equipe fortaleça exatamente as partes mais críticas do sistema.
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[level 1/.style={sibling distance=8cm}, level 2/.style={sibling distance=3.5cm}, every node/.style={draw, thick, fill=azuluni!10, font=\tiny\bfseries, align=center, rounded corners, drop shadow, minimum height=0.8cm}]
+        \node[fill=meuvermelhoescuro!20] {OBJETIVO:\\Roubar Dados Sigilosos (Mentcare)}
+            child {node {Vetor A:\\Acesso Físico Violento}
+                child {node {Ação Furtiva 1:\\Invasão do Setor\\Furtar Servidor Físico}}
+                child {node {Ação Furtiva 2:\\Engenharia Social\\Dissimular Eletricista}}
+            }
+            child {node {Vetor B:\\Acesso Remoto Global Lógico}
+                child {node {Ação Lógica 1:\\Força Bruta Oculta\\Exaurir as Senhas}}
+                child {node {Ação Lógica 2:\\Injeção Persistente (SQLi)\\Contornar Validações}}
+            };
+    \end{tikzpicture}
+    \caption{Estrutura de uma Árvore de Ataque: decomposição de objetivos em vetores e ações de ataque.} \label{fig:arvore_ataque}
+\end{figure}
+
+\begin{block}{Conclusão do Capítulo}
+A segurança da informação pode ser entendida como uma disputa contínua entre quem protege os sistemas e quem tenta explorá-los. De um lado, estão os profissionais que desenvolvem mecanismos de defesa; do outro, agentes que buscam identificar falhas para obter vantagens indevidas.
+
+Nesse cenário, é importante compreender que não existe segurança absoluta. Em sistemas conectados, é praticamente impossível garantir uma proteção totalmente impenetrável. Por isso, o objetivo da segurança não é eliminar todos os riscos, mas sim reduzi-los ao máximo e controlar seus impactos.
+
+Para alcançar esse objetivo, adota-se uma abordagem baseada em múltiplas camadas de proteção, conhecida como \textbf{defesa em profundidade}. Essa estratégia combina diferentes mecanismos de segurança, como validações, monitoramento, controle de acesso e redundância, de modo que, se uma camada falhar, outras ainda consigam proteger o sistema.
+
+Além disso, um princípio fundamental é o \textbf{\emph{Security by Design}}, que consiste em considerar a segurança desde o início do desenvolvimento do sistema. Em vez de adicionar proteção apenas após a implementação, a segurança deve fazer parte do projeto desde sua concepção, garantindo soluções mais robustas e eficientes.\end{block}
+
 \appendix
 
 \chapter{Exercícios de Fixação}
